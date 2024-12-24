@@ -24,7 +24,7 @@ export default async function Post(props: Params) {
       <Alert preview={post.preview} />
       <Container>
         <Header />
-        <article className="prose lg:prose-xl md:text-4xl items-center">
+        <article className="prose dark:prose-invert lg:prose-xl md:text-4xl items-center">
           <PostHeader
             title={post.title}
             coverImage={post.coverImage}
