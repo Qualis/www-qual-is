@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: `The quality of quality`,
-  description: `Explore insightful musings on software development and delivery, covering architecture, agile practices, DevOps, and cutting-edge tech trends to empower your digital transformation journey.`,
+  description: `Musings on software development and delivery, covering architecture, agile practices, and DevOps to empower your digital journey.`,
   openGraph: {
     images: [HOME_OG_IMAGE_URL],
   },
