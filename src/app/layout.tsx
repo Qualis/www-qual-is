@@ -10,8 +10,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: `Qual.is - The quality of quality`,
-  description: `The quality of quality.`,
+  title: `The quality of quality`,
+  description: `Explore insightful musings on software development and delivery, covering architecture, agile practices, DevOps, and cutting-edge tech trends to empower your digital transformation journey.`,
   openGraph: {
     images: [HOME_OG_IMAGE_URL],
   },
