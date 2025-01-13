@@ -1,4 +1,5 @@
 import Container from "@/app/_components/container";
+import { ContactModal } from '@/app/_components/modal/contact-modal';
 import { HeroPost } from "@/app/_components/hero-post";
 import { Intro } from "@/app/_components/intro";
 import { MoreStories } from "@/app/_components/more-stories";

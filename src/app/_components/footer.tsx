@@ -1,4 +1,5 @@
 import Container from "@/app/_components/container";
+import { ContactModal } from '@/app/_components/modal/contact-modal';
 
 export function Footer() {
   return (
@@ -17,11 +18,12 @@ export function Footer() {
               LinkedIn
             </a>
             <a
-              href={`mailto:svo@qual.is`}
-              className="mx-3 font-bold hover:underline"
+              href="mailto:svo@qual.is"
+              className="mx-3 font-bold hover:underline border border-black py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
             >
               Email
             </a>
+            <ContactModal />
           </div>
         </div>
       </Container>

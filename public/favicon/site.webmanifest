@@ -1,0 +1,15 @@
+{
+   "background_color" : "#ffffff",
+   "display" : "standalone",
+   "icons" : [
+      {
+         "sizes" : "192x192",
+         "src" : "/favicon-192x192.png",
+         "type" : "image/png"
+      }
+   ],
+   "name" : "Qual.is",
+   "short_name" : "Qual.is",
+   "theme_color" : "#ffffff"
+}
+
