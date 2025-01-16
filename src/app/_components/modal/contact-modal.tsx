@@ -4,9 +4,10 @@ import React from 'react';
 import Iframe from 'react-iframe';
 import Modal from 'react-modal';
 
+import "./modal.css";
+
 const modalStyle = {
   content: {
-    width: '70%',
     top: '50%',
     left: '50%',
     right: 'auto',
@@ -35,7 +36,9 @@ const ContactModal = () => {
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
-        style={modalStyle}
+        onAfterOpen={() => document.body.style.overflow = 'hidden'}
+        onAfterClose={() => document.body.style.overflow = 'unset'}
+        className="modal-dialog"
         contentLabel="Contact"
       >
         <Iframe
@@ -44,6 +47,7 @@ const ContactModal = () => {
           height="640"
           display="block"
           position="relative"
+          className="border-solid border-4 border-slate-400"
         />
           <button type="button" onClick={closeModal} className="float-right focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900">Close</button>
       </Modal>
