@@ -35,7 +35,7 @@ const ContactModal = () => {
         <Iframe
           url="https://docs.google.com/forms/d/e/1FAIpQLScJBVr6_vCYt0Nz4jgNBJ6f6-qpcRLM6jFtNtOoqVWhmvf7ng/viewform?embedded=true"
           width="100%"
-          height="640"
+          height="600"
           display="block"
           position="relative"
           className="border-solid border-4 border-slate-400"
