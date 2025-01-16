@@ -4,8 +4,6 @@ import React from 'react';
 import Iframe from 'react-iframe';
 import Modal from 'react-modal';
 
-import "./modal.css";
-
 Modal.setAppElement('#__next');
 
 const ContactModal = () => {
@@ -25,8 +23,12 @@ const ContactModal = () => {
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
-        onAfterOpen={() => document.body.style.overflow = 'hidden'}
-        onAfterClose={() => document.body.style.overflow = 'unset'}
+        onAfterOpen={() => {
+          document.body.style.overflow = 'hidden';
+        }}
+        onAfterClose={() => {
+          document.body.style.overflow = 'unset';
+        }}
         className="modal-dialog"
         contentLabel="Contact"
       >

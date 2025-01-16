@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.modal-dialog {
+  position: "absolute";
+  max-width: 50%;
+  max-height: 50%;
+  background-color: #CCCCCC;
+  margin: 0 25% 0 25%;
+  outline: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 1024px) {
+  .modal-dialog {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 0 0 0;
+  }
+}
