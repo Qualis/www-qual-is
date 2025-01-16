@@ -7,7 +7,7 @@ import Modal from 'react-modal';
 Modal.setAppElement('#__next');
 
 const ContactModal = () => {
-  const [modalIsOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = React.useState(false);
 
   function openModal() {
     setIsOpen(true);
@@ -21,7 +21,7 @@ const ContactModal = () => {
     <div>
       <button type="button" onClick={openModal} className="mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0">Contact</button>
       <Modal
-        isOpen={modalIsOpen}
+        isOpen={isOpen}
         onRequestClose={closeModal}
         onAfterOpen={() => {
           document.body.style.overflow = 'hidden';
