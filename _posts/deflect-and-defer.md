@@ -10,22 +10,52 @@ ogImage:
   url: "/assets/blog/categories/leadership.png"
 ---
 
-## Deflect and defer to avoid conflict and achieve better results
+## Deflect and Defer: A Leadership Technique to Avoid Conflict and Achieve Better Results
 
-Deflect and defer is the name I give to a leadership technique I have found useful historically. It is a mechanism to avoid conflict, and ensure the appropriate audience is involved in decision making.
+**Deflect and Defer** is a leadership technique I have found invaluable in avoiding unnecessary conflict and ensuring that decision-making involves the appropriate stakeholders. This approach is particularly useful in situations where a request is made outside standard prioritization processes or when immediate action may not be in the best interest of the broader organization.
 
-### When
+### When to Use This Technique
 
-Someone requests some action without going through the normal prioritisation process, or if there is anything concerning about the action being requested.
+This method is effective when:
+- Someone requests an action outside of the normal prioritization or decision-making process.
+- There are concerns about the request, such as misalignment with strategic goals, potential conflicts, or incomplete information.
+- You are put in a position where you are expected to make an immediate decision without proper evaluation.
 
-### Why
+### Why It Matters
 
-The request is placing you in the position of both being the decision maker and making the decision in the moment.
+When faced with an impromptu request, leaders can feel pressured to provide an immediate response. However, saying “no” outright can create unnecessary conflict, particularly if the request holds value to the individual making it. Conversely, saying “yes” without full consideration can lead to misaligned priorities, improper resource allocation, and unintended consequences. The Deflect and Defer technique helps navigate these challenges by creating space for thoughtful decision-making.
 
-### What
+### The Core Concept
 
-The idea here is to avoid saying “no” in the moment. It’s not unlike the “turn your tongue seven times before speaking” approach to giving yourself time to think before speaking. A “no” can potentially cause conflict as the action may be of value to the individual.
+Rather than immediately rejecting or accepting a request, this technique involves:
+1. **Deflecting** responsibility to a broader audience or a more appropriate decision-making group.
+2. **Deferring** the decision to a later time, ensuring that it undergoes proper evaluation and prioritization.
 
-### How
+This approach prevents emotional reactions, ensures that decisions are aligned with organizational priorities, and involves the right people in the process.
 
-In this situation you want to deflect to another, or potentially just broader audience, and defer the decision in time e.g. “no problem, but we will likely want to involve Bob and Jane so they are across the change”. In this example you are deflecting the decision at least in part to Bob and/or Jane. You are also deferring when the decision can be made, by requiring Bob and Jane in the decision making process.
+### How to Implement Deflect and Defer
+
+1. **Deflect to the Right Stakeholders**
+   - Identify who else should be involved in the decision and mention their role in the process.
+   - Example: _“This sounds like something Bob and Jane should be across, so we should include them in the conversation before deciding.”_
+   - By doing this, you remove yourself as the sole decision-maker while ensuring proper oversight.
+
+2. **Defer to Allow for Proper Evaluation**
+   - Avoid committing to an immediate answer by setting a future discussion or review.
+   - Example: _“Let’s bring this up in next week’s prioritization meeting to make sure we’re aligned with our goals.”_
+   - This shifts the focus from an immediate response to a structured decision-making process.
+
+3. **Ensure Follow-Through**
+   - If deflecting and deferring, it is important to track the request and ensure it is revisited at the right time.
+   - Acknowledge the person’s request and provide a clear next step so they feel heard rather than dismissed.
+
+### The Benefits of Deflect and Defer
+
+- **Reduces Unnecessary Conflict:** Prevents immediate rejection that could escalate into tension.
+- **Ensures Informed Decision-Making:** Provides time for deeper analysis and involvement of key stakeholders.
+- **Protects Prioritization Processes:** Keeps decisions aligned with strategic goals rather than being dictated by ad-hoc requests.
+- **Enhances Leadership Credibility:** Demonstrates thoughtfulness and strategic thinking rather than reactive decision-making.
+
+### Final Thoughts
+
+Deflect and Defer is an essential leadership tool that helps manage spontaneous requests without causing friction. By redirecting decisions to the right people and allowing time for proper evaluation, leaders can maintain alignment with strategic goals while fostering a collaborative and well-structured decision-making culture. Rather than making rushed choices or engaging in unnecessary conflict, this approach ensures that decisions are made with clarity, purpose, and the right level of oversight.
