@@ -42,5 +42,3 @@ This repository utilizes [D3.js](https://d3js.org/) for data visualization and s
 If you’d like to see what my final visualization looked like, you can check it out [here](https://raw.githack.com/svo/accept-new-job-guidance/main/index.html)
 
 ![Example](/assets/blog/job-on-offer-is-the-right-one/example.png "Example")
-
-
