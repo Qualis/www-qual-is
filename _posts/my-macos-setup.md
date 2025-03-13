@@ -77,5 +77,3 @@ Here’s what these roles do:
 ## Conclusion
 
 Automating your macOS setup with Ansible ensures a streamlined, reliable, and efficient system configuration. Whether setting up a fresh Mac or maintaining consistency across multiple devices, this approach saves time and reduces errors. Start by forking my repository, adapt it to your workflow, and enjoy a hassle-free setup.
-
-
