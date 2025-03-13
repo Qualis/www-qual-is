@@ -10,17 +10,25 @@ ogImage:
   url: "/assets/blog/categories/engineering.png"
 ---
 
-## Using the intent rather than the domain in your RESTful API
+## Using Intent Rather Than Domain in Your RESTful API
 
-An alternate approach to using domain **CRUD** operations in your **RESTful** API, is to develop it around a **resource** that reflects a business process or domain event. For example, to split a bill we can **POST** a request to a **split-bill** resource. This resource can capture all the information for “splitting” a bill.
+A more effective alternative to designing your **RESTful** API around domain-specific **CRUD** operations is to structure it around **resources** that represent business processes or domain events. This approach ensures that your API models user intent rather than just exposing internal domain entities.
 
-The **split-bill** resource created as part of the **POST** request can have an identifier to support future e.g. **GET** requests. Additionally, you can return any created/updated resources as links for the **split-bill** resource using e.g. the [Link Header](https://www.w3.org/wiki/LinkHeader).
+For example, instead of performing **CRUD** operations directly on a **bill** entity, you can introduce a **split-bill** resource that encapsulates the entire process of bill splitting. A **POST** request to this resource initiates the action of splitting a bill, capturing all necessary details within a single operation.
 
-This approach can be useful in context of event-driven architectures, as the resource can map to a command. It is also useful as the resource logically reflects a user operation, and can be treated as an e.g. Audit Log. Another benefit is that a **POST** to a resource that reflects intent, avoids bleeding internal domain knowledge to callers.
+### Benefits of an Intent-Based API
 
-It may not be logical to support all the **HTTP** methods for an intent based route, but nothing prevents it if required.
+1. **Encapsulation of Business Logic**: The **split-bill** resource abstracts internal domain details, preventing unnecessary exposure of domain entities to API consumers.
+2. **Improved UX and Maintainability**: Intent-driven APIs align closely with user workflows, making them more intuitive and easier to maintain.
+3. **Support for Event-Driven Architectures**: The **split-bill** resource can act as a command that triggers additional business processes, making it suitable for event-driven systems.
+4. **Enhanced Auditability**: Intent-based endpoints can naturally serve as audit logs by capturing user actions in a structured way.
+5. **Better Hypermedia Support**: The response can return related resources using standard mechanisms like the [Link Header](https://www.w3.org/wiki/LinkHeader), improving discoverability and navigation.
 
-A potential **POST** request/response structure is detailed below:
+While it may not always be logical to support all **HTTP** methods for an intent-based route, nothing prevents additional operations if they are required.
+
+---
+
+## Example API Structure
 
 ### Resource
 
@@ -36,22 +44,42 @@ POST
 
 ### Request
 
-#### Body
+#### Headers
 
 ```
+Content-Type: application/json
+```
+
+#### Body
+
+```json
 {
-  "bill-to-split" : "/bill/53d88bdc-a37a-11ec-b909-0242ac120002",
-  "user-to-split-with" : "/user/C6943737-32D5-4CAB-B536-91D1B9540568",
-  "user-to-split-with-pays-amount" : 10000
+  "bill-to-split": "/bill/53d88bdc-a37a-11ec-b909-0242ac120002",
+  "user-to-split-with": "/user/C6943737-32D5-4CAB-B536-91D1B9540568",
+  "user-to-split-with-pays-amount": 10000
 }
 ```
 
 ### Response
 
+#### Status Code
+
+```
+201 Created
+```
+
 #### Headers
 
 ```
 Location: /split-bill/E26CC223-E96C-4B24-9AC4-727AE0FE1C94
-Link: /bill/53d88bdc-a37a-11ec-b909-0242ac120002: rel=bill
-Link: /email/356FF116-A362-11EC-B909-0242AC120002: rel=email
+Link: </bill/53d88bdc-a37a-11ec-b909-0242ac120002>; rel="bill"
+Link: </email/356FF116-A362-11EC-B909-0242AC120002>; rel="email"
 ```
+
+### Explanation
+
+- **POST /split-bill**: Creates a new instance of the split-bill process.
+- **Location header**: Returns the newly created resource identifier.
+- **Link headers**: Provide references to related entities, such as the original bill and an associated email confirmation.
+
+This approach streamlines API design by focusing on user interactions rather than domain structures, resulting in a cleaner and more maintainable architecture.
