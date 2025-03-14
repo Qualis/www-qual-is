@@ -1,16 +1,17 @@
 import cn from "classnames";
 import Link from "next/link";
-import Image from "next/image";
+import { OptimizedImage } from "./optimized-image";
 
 type Props = {
   title: string;
   src: string;
   slug?: string;
+  priority?: boolean;
 };
 
-const CoverImage = ({ title, src, slug }: Props) => {
+const CoverImage = ({ title, src, slug, priority = false }: Props) => {
   const image = (
-    <Image
+    <OptimizedImage
       src={src}
       alt={`Cover Image for ${title}`}
       className={cn("shadow-sm w-full", {
@@ -18,6 +19,7 @@ const CoverImage = ({ title, src, slug }: Props) => {
       })}
       width={1300}
       height={630}
+      priority={priority}
     />
   );
   return (
