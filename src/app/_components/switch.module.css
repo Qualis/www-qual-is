@@ -1,14 +1,12 @@
 .switch {
   all: unset;
-  position: absolute;
-  right: 20px;
-  top: 70px;
+  position: relative;
   display: inline-block;
   color: currentColor;
   border-radius: 50%;
   border: 1px dashed currentColor;
   cursor: pointer;
-  --size: 24px;
+  --size: 28px;
   height: var(--size);
   width: var(--size);
   transition: all 0.3s ease-in-out 0s !important;
