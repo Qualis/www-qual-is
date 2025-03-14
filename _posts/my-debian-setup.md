@@ -20,10 +20,10 @@ Automating your OS setup ensures that your environment is **consistent, repeatab
 
 Setting up a system manually every time is time-consuming, error-prone, and difficult to track. By automating your setup using **Ansible**, you get:
 
-- **Repeatability** – Run the same setup across multiple machines with confidence.
-- **Testability** – Validate configurations and quickly identify issues.
-- **Version Control** – Store your setup in a repository and track changes over time.
-- **Flexibility** – Modify and extend the configuration to match evolving requirements.
+- **Repeatability** - Run the same setup across multiple machines with confidence.
+- **Testability** - Validate configurations and quickly identify issues.
+- **Version Control** - Store your setup in a repository and track changes over time.
+- **Flexibility** - Modify and extend the configuration to match evolving requirements.
 
 ## Getting Started with My Debian Setup
 
@@ -56,17 +56,17 @@ If you want to inspect what each role does, you can browse the **roles** directo
 ```
 
 Here’s what these roles do:
-- **cli-tools** – Installs command-line utilities (e.g., **htop**, **curl**).
-- **development** – Sets up development tools like **git**, **docker**, and programming languages.
+- **cli-tools** - Installs command-line utilities (e.g., **htop**, **curl**).
+- **development** - Sets up development tools like **git**, **docker**, and programming languages.
 
 **NOTE:** This is not best practice as roles should be singularly purposed. I have gone this route to limit the number of roles and make it easier to maintain the setup.
 
 ## Customizing Your Setup
 
-1. **Fork the Repository** – Clone your own version and modify as needed.
-2. **Modify **playbook.yml**** – Add or remove roles to fit your setup.
-3. **Customize Roles** – Edit task files under **roles/** to install specific packages or configurations.
-4. **Run the Playbook** – Execute the following command:
+1. **Fork the Repository** - Clone your own version and modify as needed.
+2. **Modify **playbook.yml**** - Add or remove roles to fit your setup.
+3. **Customize Roles** - Edit task files under **roles/** to install specific packages or configurations.
+4. **Run the Playbook** - Execute the following command:
 
    ```sh
    ./prepare.sh && ./build.sh

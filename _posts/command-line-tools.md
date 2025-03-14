@@ -18,7 +18,7 @@ You can find the setup here:
 
 [GitHub Repository: Command-Line Tools Buzz Session](https://github.com/svo/command-line-tools-buzz-session)
 
-This guide is intended for absolute beginners. If you're already a command-line wizard, feel free to move along—nothing new to see here. But if you're just getting started, these tools can help you build a solid foundation.
+This guide is intended for absolute beginners. If you're already a command-line wizard, feel free to move along-nothing new to see here. But if you're just getting started, these tools can help you build a solid foundation.
 
 ### Tools Introduced
 

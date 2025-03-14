@@ -18,10 +18,10 @@ For quite some time, I have been using [Ansible](https://www.ansible.com/) to ma
 
 Setting up a system manually each time is time-consuming, error-prone, and difficult to track. By automating your setup with **Ansible**, you gain:
 
-- **Repeatability** – Consistently set up multiple machines with confidence.
-- **Testability** – Validate configurations and quickly identify issues.
-- **Version Control** – Store your setup in a repository and track changes over time.
-- **Flexibility** – Modify and extend configurations to match evolving requirements.
+- **Repeatability** - Consistently set up multiple machines with confidence.
+- **Testability** - Validate configurations and quickly identify issues.
+- **Version Control** - Store your setup in a repository and track changes over time.
+- **Flexibility** - Modify and extend configurations to match evolving requirements.
 
 ## Getting Started with My macOS Setup
 
@@ -54,17 +54,17 @@ If you want to see what each role does, browse the **roles** directory and open 
 ```
 
 Here’s what these roles do:
-- **cli-tools** – Installs essential command-line utilities (e.g., **htop**, **curl**).
-- **development** – Sets up development tools like **git**, **docker**, and programming languages.
+- **cli-tools** - Installs essential command-line utilities (e.g., **htop**, **curl**).
+- **development** - Sets up development tools like **git**, **docker**, and programming languages.
 
 **NOTE:** This is not necessarily best practice, as roles should ideally be singularly purposed. However, I have structured it this way to reduce the number of roles and make it easier to maintain the setup.
 
 ## Customizing Your Setup
 
-1. **Fork the Repository** – Clone your own version and modify it as needed.
-2. **Modify **playbook.yml**** – Add or remove roles to fit your setup.
-3. **Customize Roles** – Edit task files under **roles/** to install specific packages or configurations.
-4. **Run the Playbook** – Execute the following command:
+1. **Fork the Repository** - Clone your own version and modify it as needed.
+2. **Modify **playbook.yml**** - Add or remove roles to fit your setup.
+3. **Customize Roles** - Edit task files under **roles/** to install specific packages or configurations.
+4. **Run the Playbook** - Execute the following command:
 
    ```sh
    ./prepare.sh && ./build.sh

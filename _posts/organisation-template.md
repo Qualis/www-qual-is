@@ -33,29 +33,29 @@ This template provides a structured approach to organisational design, combining
 
 #### 🏗️ Team Structure & Communication
 
-- **Team Topologies Framework** – Define clear team boundaries and interaction modes using [Team Topologies](https://teamtopologies.com/key-concepts).
-- **PlantUML-Generated Visualisations** – Communicate team structures and roles with dynamic diagrams.
-- **Sample Team Charter** – Create a clear mission statement to keep your teams happy and productive.
+- **Team Topologies Framework** - Define clear team boundaries and interaction modes using [Team Topologies](https://teamtopologies.com/key-concepts).
+- **PlantUML-Generated Visualisations** - Communicate team structures and roles with dynamic diagrams.
+- **Sample Team Charter** - Create a clear mission statement to keep your teams happy and productive.
 
 #### 📊 Decision-Making & Governance
 
-- **Engineering & Architecture Defaults** – Predefined [Thoughtworks Radar](https://www.thoughtworks.com/radar) guidelines for technology adoption.
+- **Engineering & Architecture Defaults** - Predefined [Thoughtworks Radar](https://www.thoughtworks.com/radar) guidelines for technology adoption.
 - **Decision Management Mechanisms**:
-  - [Architecture Decision Records (ADR)](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions) – Maintain a history of critical architectural choices.
-  - [RAPID Model](https://www.bain.com/insights/rapid-tool-to-clarify-decision-accountability/) – Clarify decision accountability within teams.
+  - [Architecture Decision Records (ADR)](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions) - Maintain a history of critical architectural choices.
+  - [RAPID Model](https://www.bain.com/insights/rapid-tool-to-clarify-decision-accountability/) - Clarify decision accountability within teams.
 
 #### 📅 Planning & Execution
 
 - **Task Management Frameworks**:
-  - [RACI Model](https://racichart.org/the-raci-model/) – Define roles and responsibilities clearly.
-  - [RAID Analysis](https://www.techagilist.com/agile/scrum/raid/) – Track Risks, Assumptions, Issues, and Dependencies.
-- **Outdated Design Strategy** – A structured approach to managing and mitigating long-term outdated design.
-- **Incident Management & Response** – Guidelines for handling outages and operational challenges.
+  - [RACI Model](https://racichart.org/the-raci-model/) - Define roles and responsibilities clearly.
+  - [RAID Analysis](https://www.techagilist.com/agile/scrum/raid/) - Track Risks, Assumptions, Issues, and Dependencies.
+- **Outdated Design Strategy** - A structured approach to managing and mitigating long-term outdated design.
+- **Incident Management & Response** - Guidelines for handling outages and operational challenges.
 
 #### 💰 Cost, Profitability & Scaling
 
-- **Cost Awareness Strategy** – Track and communicate costs to align technology investments with business outcomes.
-- **Scalability Frameworks** – Guidelines for evolving team structures as your organisation grows.
+- **Cost Awareness Strategy** - Track and communicate costs to align technology investments with business outcomes.
+- **Scalability Frameworks** - Guidelines for evolving team structures as your organisation grows.
 
 ---
 
