@@ -10,32 +10,38 @@ ogImage:
   url: "/assets/blog/categories/engineering.png"
 ---
 
-## Start your linux command-line friendship
+## Start Your Linux Command-Line Friendship
 
-A few years back I knocked together this quick Vagrant setup to introduce some peeps to the joy of the linux command-line.
+A few years ago, I created a simple Vagrant setup to introduce beginners to the power and joy of the Linux command-line. If you're new to the command-line, this setup provides a structured way to explore and experiment with some useful tools.
 
-[https://github.com/svo/command-line-tools-buzz-session](https://github.com/svo/command-line-tools-buzz-session)
+You can find the setup here:
 
-This was intended as an introduction for a novice audience. If you have the love already, move right along… nothing to see here.
+[GitHub Repository: Command-Line Tools Buzz Session](https://github.com/svo/command-line-tools-buzz-session)
 
-Tools introduced:
+This guide is intended for absolute beginners. If you're already a command-line wizard, feel free to move along—nothing new to see here. But if you're just getting started, these tools can help you build a solid foundation.
 
-* `locate` - Find files on your file system quickly using a portion of it's name.
-* `ncdu` - Command line file system size utilisation with navigation.
-* `tree` - Directory tree listing.
-* `pstree` - Process tree listing.
-* `nmap` - Network port scanner.
-* `lsof` - Process owning an open file/port.
-* `mc` - Midnight Commander command line file manager.
-* `who` - List currently logged in users.
-* `w` - List currently logged in users and what they are doing.
-* `write` - Send messages to another logged in user.
-* `watch` - Run a command repeatedly at a given interval.
-* `find` - Find files in a give path.
-* `cut` - Remove line sections from a file.
-* `pushd` - Change to directory `<path>` and push current directory onto directory stack.
-* `popd` - Navigate to the directory at the top of the directory stack.
-* `xargs` - Execute command on standard out from previous command with `|`.
-* `time` - Time a command.
-* `wondershaper` - Network adapter shaping tool.
-* `jq` - `JSON` processor.
+### Tools Introduced
+
+Below is a list of essential command-line tools covered in this session, along with a brief explanation of their functionality.
+
+- **locate** - Quickly find files on your system by name using a pre-built index.
+- **ncdu** - A command-line tool for visualizing file system usage with navigable output.
+- **tree** - Displays directory structures in a hierarchical format.
+- **pstree** - Shows processes running on the system in a tree-like format.
+- **nmap** - A powerful network scanner used to discover hosts and services on a network.
+- **lsof** - Lists open files and the processes that are using them, including network ports.
+- **mc** - Midnight Commander, a text-based file manager for the command-line.
+- **who** - Shows who is currently logged into the system.
+- **w** - Displays logged-in users along with their current activities.
+- **write** - Sends messages to other users logged into the system.
+- **watch** - Runs a command repeatedly at a set interval and displays the output.
+- **find** - Searches for files and directories based on name, type, and other attributes.
+- **cut** - Extracts specific columns or sections from each line of a file.
+- **pushd** - Changes to a specified directory while saving the current one onto a stack.
+- **popd** - Returns to the directory stored at the top of the stack.
+- **xargs** - Passes output from one command as input to another, useful in command pipelines.
+- **time** - Measures the execution time of a given command.
+- **wondershaper** - A bandwidth-limiting tool that allows you to shape network traffic.
+- **jq** - A lightweight and flexible command-line JSON processor.
+
+These tools help users navigate, manage, and analyze systems efficiently. If you’re looking to improve your Linux skills, experimenting with these commands is a great place to start.
