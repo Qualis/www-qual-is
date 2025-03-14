@@ -9,6 +9,7 @@ author:
 ogImage:
   url: "/assets/blog/categories/management.png"
 ---
+
 ## OKR to Set You and Your New Employer Up for Success in the First 90 Days of Your Engineering Management
 
 The following personal Objectives and Key Results (OKR) are a potential set to help you achieve positive results.
