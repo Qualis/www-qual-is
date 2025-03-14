@@ -82,11 +82,11 @@ Bug reports should provide clear and reproducible information to aid efficient r
 
 ---
 
-### ✅ Why This Format Works
+### Why This Format Works
 
-- **🟢 Low Friction:** The templates are lightweight and encourage meaningful participation.
-- **🟢 Concise & Structured:** Bullet points and checklists promote clarity and brevity.
-- **🟢 Improved Collaboration:** The **Activity Checklist** ensures seamless hand-offs between team members.
-- **🟢 Actionable & Measurable:** Clear criteria and structured documentation reduce ambiguity.
+- **Low Friction:** The templates are lightweight and encourage meaningful participation.
+- **Concise & Structured:** Bullet points and checklists promote clarity and brevity.
+- **Improved Collaboration:** The **Activity Checklist** ensures seamless hand-offs between team members.
+- **Actionable & Measurable:** Clear criteria and structured documentation reduce ambiguity.
 
 By keeping templates lean and emphasizing clarity, teams can work with greater autonomy and effectiveness while ensuring efficiency and alignment across all work items.
