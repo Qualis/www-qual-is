@@ -60,7 +60,7 @@ I utilize multiple AI tools, each serving a distinct role in my workflow:
 
 ---
 
-# The Impact of Generative AI
+## The Impact of Generative AI
 
 By integrating **generative AI** into my workflow, I have:
 
