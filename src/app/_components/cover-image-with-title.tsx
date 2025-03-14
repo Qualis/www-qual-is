@@ -31,7 +31,7 @@ const CoverImageWithTitle = ({ title, src, slug, priority = false }: Props) => {
           { "group-hover:bg-opacity-60": slug }
         )}
       >
-        <h3 className="text-2xl md:text-3xl lg:text-4xl text-white font-bold text-center px-4 max-w-[90%] relative">
+        <h3 className="text-lg md:text-xl lg:text-2xl text-white font-bold text-center px-4 max-w-[90%] relative">
           {title}
           {slug && (
             <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
