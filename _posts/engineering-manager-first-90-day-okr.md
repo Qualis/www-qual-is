@@ -10,13 +10,11 @@ ogImage:
   url: "/assets/blog/categories/management.png"
 ---
 
-## OKR to Set You and Your New Employer Up for Success in the First 90 Days of Your Engineering Management
-
 The following personal Objectives and Key Results (OKR) are a potential set to help you achieve positive results.
 
 The priority order and/or relevance will depend on you and the business.
 
-### Objective 1 - We Have the Team We Need
+## Objective 1 - We Have the Team We Need
 
 Understand if and how to grow your team to materially increase your productivity as an organization.
 
@@ -25,7 +23,7 @@ Understand if and how to grow your team to materially increase your productivity
 3. I have reached out to at least **5** qualified individuals in my direct network that match our hiring needs.
 4. I have developed and executed a communication strategy to reach at least **3** external hiring channels.
 
-### Objective 2 - We Are Delivering Value Efficiently and Have a Plan for Continuous Improvement
+## Objective 2 - We Are Delivering Value Efficiently and Have a Plan for Continuous Improvement
 
 Make sure you are providing customer value efficiently and continually improving the way you do so.
 
@@ -34,7 +32,7 @@ Make sure you are providing customer value efficiently and continually improving
 3. I have documented a strategic plan outlining at least **3** long-term initiatives for improving our delivery efficiency.
 4. I have established and communicated at least **5** system-of-work sensible defaults for continuous improvement, with at least **1** feedback mechanism in place.
 
-### Objective 3 - We Have a Budget Plan
+## Objective 3 - We Have a Budget Plan
 
 Ensuring you understand any budget constraints so you can make good decisions on any spend.
 
@@ -42,7 +40,7 @@ Ensuring you understand any budget constraints so you can make good decisions on
 2. I can track at least **90%** of our spend against our budget using a transparent reporting method.
 3. I have documented a budget utilization plan that aligns at least **80%** of spending with high-value initiatives.
 
-### Objective 4 We Have Engineering Function Objectives and Key Results
+## Objective 4 We Have Engineering Function Objectives and Key Results
 
 Plan for the future and build a language for talking about what you want to achieve as a business.
 
@@ -50,7 +48,7 @@ Plan for the future and build a language for talking about what you want to achi
 2. I have documented and communicated at least **3** commercial Objectives and Key Results.
 3. I have developed an engineering function strategic Objectives and Key Results plan for the next quarter, and shared it with **100%** of my cross functional peers.
 
-### Objective 5 - We Have a Ubiquitous Language to Align with the Broader Business
+## Objective 5 - We Have a Ubiquitous Language to Align with the Broader Business
 
 Ensure you and your new peers are using the same words with similar interpretations.
 
@@ -60,7 +58,7 @@ Ensure you and your new peers are using the same words with similar interpretati
 4. I have conducted at least **3** stakeholder meetings to capture language and terminology used.
 5. I have documented and shared at least **1** version of a ubiquitous language reference document within the company.
 
-### Objective 6 - We Have a Defined Set of Cultural Norms and Values
+## Objective 6 - We Have a Defined Set of Cultural Norms and Values
 
 Understand how your new peers work and live their lives so you can align, build relationships, and motivate your team.
 
@@ -71,7 +69,7 @@ Understand how your new peers work and live their lives so you can align, build 
 5. I have documented and circulated at least **1** version of a cultural norms guide within the organization.
 6. I have made our engineering function’s cultural norms and values publicly visible to the broader business through at least **1** internal communication channel.
 
-### Objective 7 - We Understand the Architecture and Technology to Utilize to Meet Our Objectives
+## Objective 7 - We Understand the Architecture and Technology to Utilize to Meet Our Objectives
 
 Find out what is being used and what is being looked at for the future.
 

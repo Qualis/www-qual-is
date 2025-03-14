@@ -10,13 +10,11 @@ ogImage:
   url: "/assets/blog/categories/engineering.png"
 ---
 
-## Using Intent Rather Than Domain in Your RESTful API
-
 A more effective alternative to designing your **RESTful** API around domain-specific **CRUD** operations is to structure it around **resources** that represent business processes or domain events. This approach ensures that your API models user intent rather than just exposing internal domain entities.
 
 For example, instead of performing **CRUD** operations directly on a **bill** entity, you can introduce a **split-bill** resource that encapsulates the entire process of bill splitting. A **POST** request to this resource initiates the action of splitting a bill, capturing all necessary details within a single operation.
 
-### Benefits of an Intent-Based API
+## Benefits of an Intent-Based API
 
 1. **Encapsulation of Business Logic**: The **split-bill** resource abstracts internal domain details, preventing unnecessary exposure of domain entities to API consumers.
 2. **Improved UX and Maintainability**: Intent-driven APIs align closely with user workflows, making them more intuitive and easier to maintain.
@@ -28,29 +26,29 @@ While it may not always be logical to support all **HTTP** methods for an intent
 
 ---
 
-## Example API Structure
+# Example API Structure
 
-### Resource
+## Resource
 
 ```
 /split-bill
 ```
 
-### Method
+## Method
 
 ```
 POST
 ```
 
-### Request
+## Request
 
-#### Headers
+### Headers
 
 ```
 Content-Type: application/json
 ```
 
-#### Body
+### Body
 
 ```json
 {
@@ -60,15 +58,15 @@ Content-Type: application/json
 }
 ```
 
-### Response
+## Response
 
-#### Status Code
+### Status Code
 
 ```
 201 Created
 ```
 
-#### Headers
+### Headers
 
 ```
 Location: /split-bill/E26CC223-E96C-4B24-9AC4-727AE0FE1C94
@@ -76,7 +74,7 @@ Link: </bill/53d88bdc-a37a-11ec-b909-0242ac120002>; rel="bill"
 Link: </email/356FF116-A362-11EC-B909-0242AC120002>; rel="email"
 ```
 
-### Explanation
+## Explanation
 
 - **POST /split-bill**: Creates a new instance of the split-bill process.
 - **Location header**: Returns the newly created resource identifier.

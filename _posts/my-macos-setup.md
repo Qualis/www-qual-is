@@ -10,8 +10,6 @@ ogImage:
   url: "/assets/blog/categories/engineering.png"
 ---
 
-## Make Your macOS Setup Testable and Repeatable
-
 For quite some time, I have been using [Ansible](https://www.ansible.com/) to manage my **macOS** setup. Automating your OS configuration ensures a **consistent, repeatable, and testable** environment, whether you're setting up a new Mac or maintaining an existing one. This guide walks you through my approach and how you can adapt it for your needs.
 
 ## Why Automate Your macOS Setup?

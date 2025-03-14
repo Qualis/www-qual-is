@@ -17,7 +17,9 @@ export function PostHeader({ title, coverImage, date }: Props) {
       </div>
       {date && (
         <div className="mb-8 md:mb-16 text-lg text-gray-600 dark:text-gray-400 text-center">
-          <p>Published on <DateFormatter dateString={date} /></p>
+          <p>
+            Published on <DateFormatter dateString={date} />
+          </p>
         </div>
       )}
     </div>

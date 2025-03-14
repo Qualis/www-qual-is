@@ -10,8 +10,6 @@ ogImage:
   url: "/assets/blog/categories/engineering.png"
 ---
 
-## Start Your Linux Command-Line Friendship
-
 A few years ago, I created a simple Vagrant setup to introduce beginners to the power and joy of the Linux command-line. If you're new to the command-line, this setup provides a structured way to explore and experiment with some useful tools.
 
 You can find the setup here:
@@ -20,7 +18,7 @@ You can find the setup here:
 
 This guide is intended for absolute beginners. If you're already a command-line wizard, feel free to move along-nothing new to see here. But if you're just getting started, these tools can help you build a solid foundation.
 
-### Tools Introduced
+## Tools Introduced
 
 Below is a list of essential command-line tools covered in this session, along with a brief explanation of their functionality.
 

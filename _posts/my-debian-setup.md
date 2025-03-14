@@ -10,8 +10,6 @@ ogImage:
   url: "/assets/blog/categories/engineering.png"
 ---
 
-## Make Your Debian Setup Testable and Repeatable
-
 For even longer than I have been using [Ansible](https://www.ansible.com/) to manage [my macOS setup](/posts/my-macos-setup), I have been leveraging the same process for **Debian** (which initially started with **Ubuntu** but later expanded to support both).
 
 Automating your OS setup ensures that your environment is **consistent, repeatable, and testable**, whether you're setting up a new machine or maintaining an existing one. This guide walks you through my approach and how you can adapt it for your needs.
