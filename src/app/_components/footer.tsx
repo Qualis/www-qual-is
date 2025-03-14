@@ -1,7 +1,7 @@
 import Container from "@/app/_components/container";
 import { ContactModal } from '@/app/_components/modal/contact-modal';
 
-export function Footer() {
+export default function Footer() {
   return (
     <footer className="bg-neutral-50 border-t border-neutral-200 dark:bg-slate-800">
       <Container>
@@ -30,5 +30,3 @@ export function Footer() {
     </footer>
   );
 }
-
-export default Footer;
