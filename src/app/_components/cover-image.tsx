@@ -23,7 +23,7 @@ const CoverImage = ({ title, src, slug, priority = false }: Props) => {
     />
   );
   return (
-    <div className="sm:mx-0">
+    <div className="sm:mx-0 md:max-w-5xl lg:max-w-4xl xl:max-w-3xl md:mx-auto">
       {slug ? (
         <Link href={`/posts/${slug}`} aria-label={title}>
           {image}
