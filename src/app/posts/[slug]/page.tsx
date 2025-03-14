@@ -23,10 +23,7 @@ export default async function Post(props: Params) {
       <Container>
         <Header />
         <article className="prose dark:prose-invert lg:prose-xl md:text-4xl items-center">
-          <PostHeader
-            title={post.title}
-            coverImage={post.coverImage}
-          />
+          <PostHeader title={post.title} coverImage={post.coverImage} />
           <PostBody content={content} />
         </article>
         <PostAuthor date={post.date} author={post.author} />

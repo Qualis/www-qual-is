@@ -14,7 +14,7 @@ export function Intro() {
         </div>
         <hr className="border-t border-gray-300 dark:border-gray-700 w-full" />
       </div>
-      
+
       <h2 className="text-xl md:text-3xl lg:text-4xl font-bold tracking-tighter leading-tight md:leading-none mb-10 text-center md:w-4/5 mx-auto">
         Software Development & Delivery Musings by Sean (SVO) Van Osselaer
       </h2>
