@@ -50,6 +50,7 @@ To get started:
 The following tools are included to facilitate different aspects of security testing:
 
 #### **Reconnaissance & Enumeration**
+
 - **nmap** - Port and IP scans/enumeration
 - **theHarvester** - User information harvesting
 - **arachni**, **skipfish**, **htcap**, **wapiti** - Web security reconnaissance
@@ -57,11 +58,13 @@ The following tools are included to facilitate different aspects of security tes
 - **dig** - DNS queries and information gathering
 
 #### **Exploitation & Attacks**
+
 - **ncrack** - Brute force authentication attack
 - **mitmproxy** - Man-in-the-middle attacks
 - **hping3**, **slowhttptest**, **ab** (Apache Bench), **mz** (Mausezahn) - Denial of service attacks
 
 #### **Practical Exercises**
+
 Each example script provides a step-by-step guide for performing security tests, such as:
 
 - Scanning for open ports and services

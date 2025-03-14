@@ -37,7 +37,7 @@ export function OptimizedImage({
         style={{
           width: width,
           height: height,
-          backgroundColor: "#f5f5f5"
+          backgroundColor: "#f5f5f5",
         }}
       />
     );

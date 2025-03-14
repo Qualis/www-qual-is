@@ -17,6 +17,7 @@ ogImage:
 ### When to Use This Technique
 
 This method is effective when:
+
 - Someone requests an action outside of the normal prioritization or decision-making process.
 - There are concerns about the request, such as misalignment with strategic goals, potential conflicts, or incomplete information.
 - You are put in a position where you are expected to make an immediate decision without proper evaluation.
@@ -28,6 +29,7 @@ When faced with an impromptu request, leaders can feel pressured to provide an i
 ### The Core Concept
 
 Rather than immediately rejecting or accepting a request, this technique involves:
+
 1. **Deflecting** responsibility to a broader audience or a more appropriate decision-making group.
 2. **Deferring** the decision to a later time, ensuring that it undergoes proper evaluation and prioritization.
 
@@ -36,11 +38,13 @@ This approach prevents emotional reactions, ensures that decisions are aligned w
 ### How to Implement Deflect and Defer
 
 1. **Deflect to the Right Stakeholders**
+
    - Identify who else should be involved in the decision and mention their role in the process.
    - Example: _“This sounds like something Bob and Jane should be across, so we should include them in the conversation before deciding.”_
    - By doing this, you remove yourself as the sole decision-maker while ensuring proper oversight.
 
 2. **Defer to Allow for Proper Evaluation**
+
    - Avoid committing to an immediate answer by setting a future discussion or review.
    - Example: _“Let’s bring this up in next week’s prioritization meeting to make sure we’re aligned with our goals.”_
    - This shifts the focus from an immediate response to a structured decision-making process.

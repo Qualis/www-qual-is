@@ -54,6 +54,7 @@ If you want to see what each role does, browse the **roles** directory and open 
 ```
 
 Here’s what these roles do:
+
 - **cli-tools** - Installs essential command-line utilities (e.g., **htop**, **curl**).
 - **development** - Sets up development tools like **git**, **docker**, and programming languages.
 
@@ -62,7 +63,7 @@ Here’s what these roles do:
 ## Customizing Your Setup
 
 1. **Fork the Repository** - Clone your own version and modify it as needed.
-2. **Modify **playbook.yml**** - Add or remove roles to fit your setup.
+2. **Modify **playbook.yml\*\*\*\* - Add or remove roles to fit your setup.
 3. **Customize Roles** - Edit task files under **roles/** to install specific packages or configurations.
 4. **Run the Playbook** - Execute the following command:
 

@@ -1,5 +1,5 @@
 import Container from "@/app/_components/container";
-import { ContactModal } from '@/app/_components/modal/contact-modal';
+import { ContactModal } from "@/app/_components/modal/contact-modal";
 
 export default function Footer() {
   return (

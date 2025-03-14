@@ -21,13 +21,13 @@ I utilize multiple AI tools, each serving a distinct role in my workflow:
 #### **AI-Assisted Coding & Refactoring**
 
 - **Tool:** [Codeium.vim](https://github.com/Exafunction/codeium.vim)
-- **Use Case:** When refactoring code, I act as the *driver* while AI serves as the *navigator*, suggesting autocompletions and improvements in real time.
+- **Use Case:** When refactoring code, I act as the _driver_ while AI serves as the _navigator_, suggesting autocompletions and improvements in real time.
 - **Benefits:** Faster and cleaner code refactoring with minimal disruptions to my thought process.
 
 #### **AI-Driven Implementation & Debugging**
 
 - **Tool:** [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview)
-- **Use Case:** When implementing new features or diagnosing issues, I act as the *navigator* while AI becomes the *driver*, generating functional code and pinpointing potential root causes of errors.
+- **Use Case:** When implementing new features or diagnosing issues, I act as the _navigator_ while AI becomes the _driver_, generating functional code and pinpointing potential root causes of errors.
 - **Benefits:** Speeds up feature development and simplifies complex debugging tasks.
 
 #### **Implementation Architecture Decision-Making**

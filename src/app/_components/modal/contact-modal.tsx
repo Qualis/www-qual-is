@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import React from 'react';
-import Iframe from 'react-iframe';
-import Modal from 'react-modal';
+import React from "react";
+import Iframe from "react-iframe";
+import Modal from "react-modal";
 
-Modal.setAppElement('#__next');
+Modal.setAppElement("#__next");
 
 const ContactModal = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -19,15 +19,21 @@ const ContactModal = () => {
 
   return (
     <div>
-      <button type="button" onClick={openModal} className="mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0">Contact</button>
+      <button
+        type="button"
+        onClick={openModal}
+        className="mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
+      >
+        Contact
+      </button>
       <Modal
         isOpen={isOpen}
         onRequestClose={closeModal}
         onAfterOpen={() => {
-          document.body.style.overflow = 'hidden';
+          document.body.style.overflow = "hidden";
         }}
         onAfterClose={() => {
-          document.body.style.overflow = 'unset';
+          document.body.style.overflow = "unset";
         }}
         className="modal-dialog"
         contentLabel="Contact"
@@ -40,7 +46,13 @@ const ContactModal = () => {
           position="relative"
           className="border-solid border-4 border-slate-500"
         />
-        <button type="button" onClick={closeModal} className="float-right focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900">Close</button>
+        <button
+          type="button"
+          onClick={closeModal}
+          className="float-right focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
+        >
+          Close
+        </button>
       </Modal>
     </div>
   );

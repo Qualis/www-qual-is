@@ -42,7 +42,7 @@ Ensuring you understand any budget constraints so you can make good decisions on
 2. I can track at least **90%** of our spend against our budget using a transparent reporting method.
 3. I have documented a budget utilization plan that aligns at least **80%** of spending with high-value initiatives.
 
-### Objective 4  We Have Engineering Function Objectives and Key Results
+### Objective 4 We Have Engineering Function Objectives and Key Results
 
 Plan for the future and build a language for talking about what you want to achieve as a business.
 

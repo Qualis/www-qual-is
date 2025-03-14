@@ -21,12 +21,14 @@ If you’d like to do the same, you can fork this [GitHub repository](https://gi
 #### Adjusting the Weightings
 
 To tailor the chart to your preferences, modify the weightings by updating the order in the **index.html** file. The list order determines how weightings are applied:
+
 - Higher index positions receive higher weightings.
 - These weightings are normalized and combined with the values you assign in the data.
 
 #### Updating the Data Values
 
 The next step is to update the data values to reflect:
+
 - What you personally prioritize in a job.
 - How well your current role aligns with those priorities.
 - How well the new job offer matches them.

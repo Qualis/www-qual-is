@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: `The quality of quality`,
   description: `Musings on software development and delivery, covering architecture, agile practices, and DevOps to empower your digital journey.`,
-  metadataBase: new URL('https://qual.is'),
+  metadataBase: new URL("https://qual.is"),
   openGraph: {
     images: [HOME_OG_IMAGE_URL],
   },
@@ -62,7 +62,9 @@ export default function RootLayout({
         className={cn(inter.className, "dark:bg-slate-900 dark:text-slate-400")}
       >
         <ThemeSwitcher />
-        <div id="__next" className="min-h-screen">{children}</div>
+        <div id="__next" className="min-h-screen">
+          {children}
+        </div>
         <Footer />
       </body>
     </html>
