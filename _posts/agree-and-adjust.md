@@ -1,6 +1,6 @@
 ---
-title: "Agree and adjust to promote collaboration and make balanced decisions"
-excerpt: "Agree and adjust is the name I give to a leadership technique I have found useful historically. It is a mechanism to promote collaboration and make balanced decisions."
+title: "Agree and Adjust: A Leadership Technique for Collaboration and Balanced Decisions"
+excerpt: "Agree and Adjust is a leadership technique that fosters collaboration by first finding common ground before guiding discussions toward balanced decisions. This method defuses tension, encourages open dialogue, and ensures reasoned outcomes, making it a powerful tool for constructive problem-solving in any setting."
 coverImage: "/assets/blog/categories/leadership.png"
 date: "2022-03-11"
 author:

@@ -1,6 +1,6 @@
 ---
-title: "Start your linux command-line friendship"
-excerpt: "A few years back I knocked together this quick Vagrant setup to introduce some peeps to the joy of the linux command-line. https://github.com/svo/command-line-tools-buzz-session"
+title: "Start Your Linux Command-Line Friendship"
+excerpt: "New to the Linux command-line? This simple Vagrant setup provides a hands-on way to explore essential tools like locate, tree, nmap, and more. Whether you're navigating files, managing processes, or analyzing networks, this guide helps you build confidence and efficiency."
 coverImage: "/assets/blog/categories/engineering.png"
 date: "2022-03-01"
 author:

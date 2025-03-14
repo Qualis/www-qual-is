@@ -1,6 +1,6 @@
 ---
-title: "Using the intent rather than the domain in your RESTful API"
-excerpt: "An alternate approach to using domain CRUD operations in your RESTful API, is to develop it around a resource that reflects a business process or domain event."
+title: "Using Intent Rather Than Domain in Your RESTful API"
+excerpt: "Designing RESTful APIs around user intent rather than domain entities leads to a more intuitive and maintainable system. Instead of CRUD operations on a bill entity, an intent-based split-bill resource encapsulates the entire process. This approach improves UX, supports event-driven architectures, enhances traceability, and keeps business logic encapsulated, making APIs more effective and scalable."
 coverImage: "/assets/blog/categories/engineering.png"
 date: "2022-03-15"
 author:
@@ -21,7 +21,7 @@ For example, instead of performing **CRUD** operations directly on a **bill** en
 1. **Encapsulation of Business Logic**: The **split-bill** resource abstracts internal domain details, preventing unnecessary exposure of domain entities to API consumers.
 2. **Improved UX and Maintainability**: Intent-driven APIs align closely with user workflows, making them more intuitive and easier to maintain.
 3. **Support for Event-Driven Architectures**: The **split-bill** resource can act as a command that triggers additional business processes, making it suitable for event-driven systems.
-4. **Enhanced Auditability**: Intent-based endpoints can naturally serve as audit logs by capturing user actions in a structured way.
+4. **Enhanced Traceability**: Intent-based endpoints can naturally serve as audit logs by capturing user actions in a structured way.
 5. **Better Hypermedia Support**: The response can return related resources using standard mechanisms like the [Link Header](https://www.w3.org/wiki/LinkHeader), improving discoverability and navigation.
 
 While it may not always be logical to support all **HTTP** methods for an intent-based route, nothing prevents additional operations if they are required.

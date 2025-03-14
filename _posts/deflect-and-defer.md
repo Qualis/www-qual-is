@@ -1,6 +1,6 @@
 ---
-title: "Deflect and defer to avoid conflict and achieve better results"
-excerpt: "Deflect and defer is the name I give to a leadership technique I have found useful historically. It is a mechanism to avoid conflict, and ensure the appropriate audience is involved in decision making."
+title: "Deflect and Defer: A Leadership Technique to Avoid Conflict and Achieve Better Results"
+excerpt: "Deflect and Defer is a leadership technique for managing requests without causing unnecessary conflict. Instead of making immediate decisions, it redirects discussions to the right stakeholders and allows time for proper evaluation. This approach ensures informed decision-making, protects prioritization processes, and fosters a collaborative leadership culture."
 coverImage: "/assets/blog/categories/leadership.png"
 date: "2022-02-27"
 author:
@@ -58,4 +58,4 @@ This approach prevents emotional reactions, ensures that decisions are aligned w
 
 ### Final Thoughts
 
-Deflect and Defer is an essential leadership tool that helps manage spontaneous requests without causing friction. By redirecting decisions to the right people and allowing time for proper evaluation, leaders can maintain alignment with strategic goals while fostering a collaborative and well-structured decision-making culture. Rather than making rushed choices or engaging in unnecessary conflict, this approach ensures that decisions are made with clarity, purpose, and the right level of oversight.
+Deflect and Defer is an essential leadership tool that helps manage requests without causing friction. By redirecting decisions to the right people and allowing time for proper evaluation, leaders can maintain alignment with strategic goals while fostering a collaborative and well-structured decision-making culture. Rather than making rushed choices or engaging in unnecessary conflict, this approach ensures that decisions are made with clarity, purpose, and the right level of oversight.

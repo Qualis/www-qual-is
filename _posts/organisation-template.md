@@ -1,6 +1,6 @@
 ---
-title: "Organise your teams for combined health, happiness and success"
-excerpt: "I have been working on some things to help you and your organisation."
+title: "Organise Your Teams for Combined Health, Happiness, and Success"
+excerpt: "Create a thriving organisation with this Organisation Template, a structured framework for defining teams, decision-making, and governance. Whether you're scaling a startup or refining an existing structure, this template provides a sample set of best practices."
 coverImage: "/assets/blog/categories/management.png"
 date: "2022-02-20"
 author:

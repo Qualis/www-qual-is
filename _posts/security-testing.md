@@ -1,6 +1,6 @@
 ---
-title: "Learn about black hats by putting on a white one"
-excerpt: "I am in no way an expert in this field, but I thought it might prove interesting to setup a small project for developers to use a “learning by doing” approach to understanding cyber security. https://github.com/svo/security-testing"
+title: "Learn About Black Hats by Putting on a White One"
+excerpt: "Learn cybersecurity by doing with this hands-on security testing project. Using Vagrant and Docker, you'll explore real-world attack scenarios in a controlled environment. Test vulnerabilities, run reconnaissance, and strengthen your security skills."
 coverImage: "/assets/blog/categories/engineering.png"
 date: "2022-02-26"
 author:
@@ -10,24 +10,24 @@ ogImage:
   url: "/assets/blog/categories/engineering.png"
 ---
 
-# Learn About Black Hats by Putting on a White One
+## Learn About Black Hats by Putting on a White One
 
 Cybersecurity is a critical skill for modern developers, yet it often remains a theoretical subject. This project aims to change that by providing a practical, "learning by doing" approach to understanding security vulnerabilities, attacks, and mitigation strategies.
 
 [GitHub Repository: Security Testing](https://github.com/svo/security-testing)
 
-## Project Overview
+### Project Overview
 
 This repository provides a hands-on environment for learning cybersecurity concepts through practical exercises. It uses [Vagrant](https://www.vagrantup.com/) to automate the setup of two [Docker](https://www.docker.com/) containers:
 
 1. **Attack Container**: Preloaded with common security testing tools to identify and exploit vulnerabilities.
 2. **Victim Container**: Configured with known vulnerabilities that can be targeted by the Attack Container.
 
-## How It Works
+### How It Works
 
 The repository contains a set of [examples](https://github.com/svo/security-testing/tree/main/examples) demonstrating various security concepts. These examples include scripts executed on either the Attack Container or the Victim Container to simulate real-world security scenarios.
 
-### Setting Up the Environment
+#### Setting Up the Environment
 
 To get started:
 
@@ -45,23 +45,23 @@ To get started:
    - Attack Container: **vagrant ssh**
    - Victim Container: **vagrant ssh victim**
 
-## Security Tools Introduced
+### Security Tools Introduced
 
 The following tools are included to facilitate different aspects of security testing:
 
-### **Reconnaissance & Enumeration**
+#### **Reconnaissance & Enumeration**
 - **nmap** - Port and IP scans/enumeration
 - **theHarvester** - User information harvesting
 - **arachni**, **skipfish**, **htcap**, **wapiti** - Web security reconnaissance
 - **dnsmap**, **dnsrecon** - Domain name discovery
 - **dig** - DNS queries and information gathering
 
-### **Exploitation & Attacks**
+#### **Exploitation & Attacks**
 - **ncrack** - Brute force authentication attack
 - **mitmproxy** - Man-in-the-middle attacks
 - **hping3**, **slowhttptest**, **ab** (Apache Bench), **mz** (Mausezahn) - Denial of service attacks
 
-### **Practical Exercises**
+#### **Practical Exercises**
 Each example script provides a step-by-step guide for performing security tests, such as:
 
 - Scanning for open ports and services
@@ -71,7 +71,7 @@ Each example script provides a step-by-step guide for performing security tests,
 - Performing MITM attacks
 - Harvesting information about users and networks
 
-## Important Considerations
+### Important Considerations
 
 - This project is intended for **educational purposes only**. Unauthorized use of security testing tools on systems without permission is illegal and unethical.
 - Always use these tools in a controlled environment, such as the containers provided.

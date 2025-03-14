@@ -1,6 +1,6 @@
 ---
-title: "Helping you understand if a job on offer is the right one"
-excerpt: "I recently had an offer of a job and was on the fence as to whether it was the right next opportunity for me. I decided to quickly put together a Radar Chart to help me understand what was important to me, and how that married up with my existing and the new role on offer."
+title: "Helping You Determine if a Job Offer is the Right Fit"
+excerpt: "Uncertain about a job offer? A Radar Chart can help you compare key factors between your current role and the new opportunity. By assigning weightings and scores, you can visualize which job aligns better with your priorities."
 coverImage: "/assets/blog/categories/career.png"
 date: "2022-03-10"
 author:

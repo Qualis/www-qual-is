@@ -1,6 +1,6 @@
 ---
-title: "Make your Debian setup testable and repeatable"
-excerpt: "For quite some time I have been using Ansible to manage my OS X / Debian setup."
+title: "Make Your Debian Setup Testable and Repeatable"
+excerpt: "Automate your Debian setup with Ansible to ensure a consistent, repeatable, and testable system configuration. This approach saves time, reduces errors, and keeps your setup version-controlled."
 coverImage: "/assets/blog/categories/engineering.png"
 date: "2022-03-13"
 author:
