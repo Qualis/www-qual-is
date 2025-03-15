@@ -9,6 +9,10 @@
   @apply my-6;
 }
 
+.markdown img {
+  @apply mx-auto;
+}
+
 .markdown h2 {
   @apply text-lg md:text-xl lg:text-2xl mt-12 mb-4 leading-snug;
 }
