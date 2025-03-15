@@ -21,8 +21,10 @@ export function PostPreview({
   slug,
 }: Props) {
   return (
-    <div>
-      <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+    <div className="flex flex-col h-full">
+      <div className="flex-grow">
+        <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+      </div>
       <div className="mb-2">
         <CoverImageWithTitle slug={slug} title={title} src={coverImage} />
       </div>
