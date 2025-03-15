@@ -26,7 +26,7 @@ export function PostPreview({
       <div className="mb-2">
         <CoverImageWithTitle slug={slug} title={title} src={coverImage} />
       </div>
-      <div className="text-lg text-gray-600 dark:text-gray-400 mt-2 mb-4">
+      <div className="text-lg text-gray-600 dark:text-gray-400 mt-2 mb-4 text-center">
         <DateFormatter dateString={date} />
       </div>
     </div>
