@@ -28,6 +28,10 @@ Epics should be kept lightweight, focusing on a single **Objective** and set of 
 - Ensure the **objective is well-articulated** and concise.
 - Key results should be **measurable and objectively verifiable**.
 
+### Example
+
+![Epic](/assets/blog/epic-task-and-bug-templates/epic.png "Epic")
+
 ---
 
 ## Tasks
@@ -51,6 +55,10 @@ Tasks provide detailed, actionable steps for team members. They should be struct
   - A micro-sliced list of actions required to complete the task, created before work begins.
   - Based on the **Elephant Carpaccio** technique [(see more here)](https://medium.com/@olivercecilspann/elephant-carpaccio-exercise-an-experience-report-207f0cc79c34).
   - Helps ensure continuity if another engineer needs to take over the task.
+
+### Example
+
+![Task](/assets/blog/epic-task-and-bug-templates/task.png "Task")
 
 ---
 
@@ -77,6 +85,10 @@ Bug reports should provide clear and reproducible information to aid efficient r
 
 - **Activity Checklist:**
   - Same format as tasks, providing a clear outline of steps needed to address the bug.
+
+### Example
+
+![Bug](/assets/blog/epic-task-and-bug-templates/bug.png "Bug")
 
 ---
 
