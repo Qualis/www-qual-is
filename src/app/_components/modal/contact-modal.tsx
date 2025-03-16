@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Iframe from "react-iframe";
 import Modal from "react-modal";
 
 Modal.setAppElement("#__next");
@@ -37,22 +36,75 @@ const ContactModal = () => {
         }}
         className="modal-dialog"
         contentLabel="Contact"
+        overlayClassName="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50"
       >
-        <Iframe
-          url="https://docs.google.com/forms/d/e/1FAIpQLScJBVr6_vCYt0Nz4jgNBJ6f6-qpcRLM6jFtNtOoqVWhmvf7ng/viewform?embedded=true"
-          width="100%"
-          height="600"
-          display="block"
-          position="relative"
-          className="border-solid border-4 border-primary"
-        />
-        <button
-          type="button"
-          onClick={closeModal}
-          className="float-right focus:outline-none text-white bg-highlight hover:bg-red-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-red-900"
-        >
-          Close
-        </button>
+        <div className="p-6 rounded-lg bg-accent-1 dark:bg-accent-3 shadow-xl w-full">
+          <div className="flex justify-between items-center mb-6">
+            <h2 className="text-2xl font-bold text-primary dark:text-accent-1">Contact</h2>
+            <button
+              type="button"
+              onClick={closeModal}
+              className="text-accent-3 dark:text-accent-1 hover:text-highlight bg-transparent rounded-full p-1"
+              aria-label="Close"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          <div className="space-y-6">
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-lg border border-primary">
+              <h3 className="text-lg font-semibold text-primary dark:text-accent-1 mb-4">Get in touch</h3>
+
+              <div className="grid gap-4">
+                <a
+                  href="mailto:svo@qual.is"
+                  className="flex items-center text-accent-3 dark:text-accent-1 hover:text-primary px-4 py-3 rounded-md border border-gray-200 dark:border-gray-700 hover:border-primary transition-colors"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  Email: svo@qual.is
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/5v0/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center text-accent-3 dark:text-accent-1 hover:text-primary px-4 py-3 rounded-md border border-gray-200 dark:border-gray-700 hover:border-primary transition-colors"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-3" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                  LinkedIn: Connect with Sean
+                </a>
+
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScJBVr6_vCYt0Nz4jgNBJ6f6-qpcRLM6jFtNtOoqVWhmvf7ng/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center text-accent-3 dark:text-accent-1 hover:text-primary px-4 py-3 rounded-md border border-gray-200 dark:border-gray-700 hover:border-primary transition-colors"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  Contact Form: Open in new tab
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-6 flex justify-end">
+            <button
+              type="button"
+              onClick={closeModal}
+              className="bg-primary hover:bg-accent-1 hover:text-primary text-white font-medium py-2 px-6 rounded-lg border border-primary transition-colors"
+            >
+              Close
+            </button>
+          </div>
+        </div>
       </Modal>
     </div>
   );

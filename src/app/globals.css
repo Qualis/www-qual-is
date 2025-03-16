@@ -3,19 +3,39 @@
 @tailwind utilities;
 
 .modal-dialog {
-  position: "absolute";
-  max-width: 50%;
-  max-height: 50%;
-  background-color: white;
-  margin: 0 25% 0 25%;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
   outline: none;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
 
-@media (max-width: 1024px) {
+/* Custom scrollbar for modern browsers */
+.modal-dialog::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-dialog::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+
+.modal-dialog::-webkit-scrollbar-thumb {
+  background: rgba(92, 122, 153, 0.5);
+  border-radius: 12px;
+}
+
+.modal-dialog::-webkit-scrollbar-thumb:hover {
+  background: rgba(92, 122, 153, 0.7);
+}
+
+@media (max-width: 640px) {
   .modal-dialog {
-    max-width: 100%;
-    max-height: 100%;
-    margin: 0 0 0 0;
+    max-width: 90%;
+    max-height: 80vh;
   }
 }
