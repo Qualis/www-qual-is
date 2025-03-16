@@ -8,7 +8,7 @@ type Props = {
 export function MoreStories({ posts }: Props) {
   return (
     <section>
-      <h2 className="mb-8 text-xl md:text-3xl lg:text-4xl font-bold tracking-tighter leading-tight text-center">
+      <h2 className="text-primary mb-8 text-xl md:text-3xl lg:text-4xl font-bold tracking-tighter leading-tight text-center">
         More Musings
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-10 md:gap-y-16 mb-20">

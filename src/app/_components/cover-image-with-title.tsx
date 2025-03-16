@@ -35,7 +35,7 @@ const CoverImageWithTitle = ({ title, src, slug, priority = false }: Props) => {
           {title}
           {slug && (
             <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <span className="bg-white text-black text-sm py-1 px-3 rounded-full inline-flex items-center">
+              <span className="bg-primary text-sm py-1 px-3 rounded-full inline-flex items-center">
                 👀
               </span>
             </div>

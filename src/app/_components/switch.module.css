@@ -2,7 +2,7 @@
   all: unset;
   position: relative;
   display: inline-block;
-  color: currentColor;
+  color: #5C7A99;
   border-radius: 50%;
   border: 1px dashed currentColor;
   cursor: pointer;

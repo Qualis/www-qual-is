@@ -8,12 +8,12 @@ const Header = () => {
         <h2 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight flex items-center">
           <Link
             href="/"
-            className="flex items-center transition-all duration-200 hover:text-gray-800 dark:hover:text-gray-200 relative group"
+            className="text-accent-3 dark:text-accent-1 flex items-center transition-all duration-200 hover:text-primary dark:hover:text-primary relative group"
           >
             <span className="mr-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 md:h-6 md:w-6 text-gray-600 dark:text-gray-400"
+                className="h-5 w-5 md:h-6 md:w-6 text-primary dark:text-primary"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -27,14 +27,14 @@ const Header = () => {
               </svg>
             </span>
             qual.is
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gray-600 dark:bg-gray-400 transition-all duration-200 group-hover:w-full"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary dark:bg-primary transition-all duration-200 group-hover:w-full"></span>
           </Link>
         </h2>
         <div className="theme-switcher-container relative">
           <ThemeSwitcher />
         </div>
       </div>
-      <hr className="border-t border-gray-300 dark:border-gray-700 w-full" />
+      <hr className="border-t border-primary dark:border-primary w-full" />
     </div>
   );
 };

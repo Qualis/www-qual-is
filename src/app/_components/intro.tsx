@@ -5,11 +5,11 @@ export function Intro() {
     <div>
       <div className="mb-6">
         <div className="flex justify-between items-center mt-8 mb-6">
-          <h1 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight flex items-center">
+          <h1 className="text-primary text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight flex items-center">
             <span className="mr-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 md:h-6 md:w-6 text-gray-600 dark:text-gray-400"
+                className="h-5 w-5 md:h-6 md:w-6 text-primary dark:text-primary"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -28,10 +28,10 @@ export function Intro() {
             <ThemeSwitcher />
           </div>
         </div>
-        <hr className="border-t border-gray-300 dark:border-gray-700 w-full" />
+        <hr className="border-t border-primary dark:border-primary w-full" />
       </div>
 
-      <h2 className="text-xl md:text-3xl lg:text-4xl font-bold tracking-tighter leading-tight md:leading-none mb-10 text-center md:w-4/5 mx-auto">
+      <h2 className="text-primary text-xl md:text-3xl lg:text-4xl font-bold tracking-tighter leading-tight md:leading-none mb-10 text-center md:w-4/5 mx-auto">
         Code, People & Strategy - Musings by SVO
       </h2>
     </div>

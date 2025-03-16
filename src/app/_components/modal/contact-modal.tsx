@@ -22,7 +22,7 @@ const ContactModal = () => {
       <button
         type="button"
         onClick={openModal}
-        className="mx-2 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-2 px-8 lg:px-6 duration-200 transition-colors mb-4 lg:mb-0"
+        className="mx-2 bg-primary hover:bg-accent-1 hover:text-primary border border-primary text-white font-bold py-2 px-8 lg:px-6 duration-200 transition-colors mb-4 lg:mb-0"
       >
         Contact
       </button>
@@ -44,12 +44,12 @@ const ContactModal = () => {
           height="600"
           display="block"
           position="relative"
-          className="border-solid border-4 border-slate-500"
+          className="border-solid border-4 border-primary"
         />
         <button
           type="button"
           onClick={closeModal}
-          className="float-right focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
+          className="float-right focus:outline-none text-white bg-highlight hover:bg-red-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-red-900"
         >
           Close
         </button>

@@ -30,7 +30,7 @@ export function HeroPost({
           slug={slug}
           priority={true}
         />
-        <div className="mt-3 text-lg text-gray-600 dark:text-gray-400 text-center md:mx-auto">
+        <div className="mt-3 text-lg text-accent-3 dark:text-accent-1 text-center md:mx-auto">
           <DateFormatter dateString={date} />
         </div>
       </div>
