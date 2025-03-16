@@ -55,8 +55,6 @@ const ContactModal = () => {
 
           <div className="space-y-6">
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg border border-primary">
-              <h3 className="text-lg font-semibold text-primary dark:text-accent-1 mb-4">Get in touch</h3>
-
               <div className="grid gap-4">
                 <a
                   href="mailto:svo@qual.is"
