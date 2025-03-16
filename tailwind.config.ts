@@ -15,7 +15,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        "accent-1": "#EEF3F8",
+        "accent-1": "#FCFDFE",
         "accent-2": "#EAEAEA",
         "accent-3": "#1A222B",
         primary: "#5C7A99",
@@ -41,7 +41,6 @@ const config: Config = {
   },
   plugins: [
     require('@tailwindcss/typography'),
-
   ],
 };
 export default config;
