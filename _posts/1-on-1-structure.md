@@ -16,7 +16,7 @@ The approach detailed here incorporates several key mechanisms:
 
 - **Objectives and Key Results (OKR)** are used to track expected work and ensure alignment with broader team and business goals. These provide a mix of committed and aspirational goals, ensuring both accountability and ambition (see [Example OKR](engineering-manager-first-90-day-okr.md)).
 - **A development plan** is included to create space for learning and innovation beyond the immediate job responsibilities. By setting aside dedicated time, employees can explore new skills and approaches that may benefit the business in the long run.
-- **A happiness retrospective** allows for structured feedback on work satisfaction, helping managers identify what’s working well and what needs improvement. Using a **Likert** scale as a lead indicator helps track engagement trends over time.
+- **A happiness retrospective** allows for structured feedback on work satisfaction, helping managers identify what’s working well and what needs improvement. Using a **Discrete Visual Analog** scale as a lead indicator helps track engagement trends over time.
 - **A performance conversation** ensures clarity on expectations, offering both the manager’s and direct report’s perspectives. This structured evaluation helps maintain transparency and drive growth discussions.
 
 By incorporating these elements, this 1:1 meeting structure fosters alignment, encourages continuous improvement, and strengthens the manager-direct report relationship. Below is a detailed breakdown of the approach structured using the PODS framework (Purpose, Outcome, Decisions, Structure).
@@ -69,7 +69,7 @@ A structured approach to understanding employee satisfaction and engagement.
 - **:-) (Happy)** – Maintain these aspects.
 - **:-( (Sad)** – Address and work to resolve these.
 - **:-/ (Confused)** – Discuss and clarify, as these can become future happy or sad moments.
-- Overall happiness rating on a **Likert** scale (1-5):
+- Overall happiness rating on a **Discrete Visual Analog** scale (1-5):
   - 1: Sad
   - 3: Neutral
   - 5: Happy
@@ -79,7 +79,7 @@ A structured approach to understanding employee satisfaction and engagement.
 
 A structured conversation for performance evaluation.
 
-- Uses a **Likert** scale from 1 to 5:
+- Uses a **Discrete Visual Analog** scale from 1 to 5:
   - **1:** Should no longer be in the business due to consistently failing to meet expectations.
   - **2:** Needs improvement to meet expectations.
   - **3:** Performing well in the current role (a good result if they want to stay in the role).
