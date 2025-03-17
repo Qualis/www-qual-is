@@ -78,7 +78,7 @@ Bug reports should provide clear and reproducible information to aid efficient r
     - Environment (DEV/TEST/PROD)
     - Time
     - User
-    - Note
+    - Comment
   - **Encouragement to attach screenshots and/or screen recordings.**
 
 ### In-Progress/Working Section

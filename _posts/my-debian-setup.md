@@ -63,7 +63,7 @@ Here’s what these roles do:
 ## Customizing Your Setup
 
 1. **Fork the Repository** - Clone your own version and modify as needed.
-2. **Modify **playbook.yml\*\*\*\* - Add or remove roles to fit your setup.
+2. **Modify playbook.yml** - Add or remove roles to fit your setup.
 3. **Customize Roles** - Edit task files under **roles/** to install specific packages or configurations.
 4. **Run the Playbook** - Execute the following command:
 
