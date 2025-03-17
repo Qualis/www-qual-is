@@ -58,7 +58,10 @@ export default function RootLayout({
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
       <body
-        className={cn(inter.className, "bg-accent-1 text-accent-3 dark:bg-accent-3 dark:text-accent-1")}
+        className={cn(
+          inter.className,
+          "bg-accent-1 text-accent-3 dark:bg-accent-3 dark:text-accent-1"
+        )}
       >
         <div id="__next" className="min-h-screen">
           {children}
