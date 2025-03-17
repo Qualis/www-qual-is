@@ -16,6 +16,12 @@ In my work as a **Head of Engineering**, I rely on **generative AI** to improve 
 
 I utilize multiple AI tools, each serving a distinct role in my workflow:
 
+### Example
+
+#### Codeium.vim and Claude Code
+
+![codeium.vim and claude code](/assets/blog/generative-ai-for-research-development-and-documentation/tmux-vim-example.png "Codeium.vim and Claude Code")
+
 ### **AI-Assisted Coding & Refactoring**
 
 - **Tool:** [Codeium.vim](https://github.com/Exafunction/codeium.vim)
