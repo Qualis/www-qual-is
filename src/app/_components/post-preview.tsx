@@ -10,6 +10,7 @@ type Props = {
   excerpt: string;
   author: Author;
   slug: string;
+  topic: string;
 };
 
 export function PostPreview({
@@ -19,6 +20,7 @@ export function PostPreview({
   excerpt,
   author,
   slug,
+  topic,
 }: Props) {
   return (
     <div className="flex flex-col h-full">
@@ -28,7 +30,10 @@ export function PostPreview({
       <div className="mb-2">
         <CoverImageWithTitle slug={slug} title={title} src={coverImage} />
       </div>
-      <div className="text-accent-3 dark:text-accent-1 text-lg mt-2 mb-4 text-center">
+      <div className="text-accent-3 dark:text-accent-1 text-lg mb-1 text-center">
+        <span className="capitalize">{topic}</span>
+      </div>
+      <div className="text-accent-3 dark:text-accent-1 text-lg mb-4 text-center">
         <DateFormatter dateString={date} />
       </div>
     </div>

@@ -1,13 +1,11 @@
 ---
 title: "Helping You Determine if a Job Offer is the Right Fit"
 excerpt: "Uncertain about a job offer? A Radar Chart can help you compare key factors between your current role and the new opportunity. By assigning weightings and scores, you can visualize which job aligns better with your priorities."
-coverImage: "/assets/blog/categories/career.png"
+topic: "career"
 date: "2022-03-10"
 author:
   name: SVO
   picture: "/assets/blog/authors/svo.png"
-ogImage:
-  url: "/assets/blog/categories/career.png"
 ---
 
 When I recently received a job offer, I found myself uncertain about whether it was the right opportunity. To better assess the decision, I created a [Radar Chart](https://en.wikipedia.org/wiki/Radar_chart) to compare key factors that matter to me in a job, evaluating both my existing role and the new opportunity side by side.

@@ -1,13 +1,11 @@
 ---
 title: "Structuring Effective 1:1 Meetings for Growth and Alignment"
 excerpt: "Improve your 1:1 with a structured approach that combines Objectives and Key Results, personal development plans, happiness retrospectives, and transparent performance discussions-driving alignment, growth, and stronger communication."
-coverImage: "/assets/blog/categories/management.png"
+topic: "management"
 date: "2024-01-12"
 author:
   name: SVO
   picture: "/assets/blog/authors/svo.png"
-ogImage:
-  url: "/assets/blog/categories/management.png"
 ---
 
 1:1 meetings are a critical component of effective management. They provide an opportunity to align on priorities, raise concerns, discuss progress, and facilitate personal and professional growth. However, to ensure these meetings are meaningful and actionable, a structured approach is preferable. This structure should balance business needs with personal development, provide space for both expected work and growth opportunities, and enable open and honest conversations about performance and engagement.

@@ -1,13 +1,11 @@
 ---
 title: "Using Intent Rather Than Domain in Your RESTful API"
 excerpt: "Designing RESTful APIs around user intent rather than domain entities leads to a more intuitive and maintainable system. Instead of CRUD operations on a bill entity, an intent-based split-bill resource encapsulates the entire process. This approach improves UX, supports event-driven architectures, enhances traceability, and keeps business logic encapsulated, making APIs more effective and scalable."
-coverImage: "/assets/blog/categories/engineering.png"
+topic: "engineering"
 date: "2022-03-15"
 author:
   name: SVO
   picture: "/assets/blog/authors/svo.png"
-ogImage:
-  url: "/assets/blog/categories/engineering.png"
 ---
 
 A more effective alternative to designing your **RESTful** API around domain-specific **CRUD** operations is to structure it around **resources** that represent business processes or domain events. This approach ensures that your API models user intent rather than just exposing internal domain entities.

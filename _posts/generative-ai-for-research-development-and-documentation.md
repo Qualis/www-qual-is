@@ -1,13 +1,11 @@
 ---
 title: "Leveraging Generative AI for Research, Development, and Documentation"
 excerpt: "Enhance productivity with generative AI in research, development, and documentation. From AI-assisted coding and debugging to architectural decisions and sprint planning, this structured approach streamlines workflows and improves efficiency."
-coverImage: "/assets/blog/categories/engineering.png"
+topic: "engineering"
 date: "2025-03-14"
 author:
   name: SVO
   picture: "/assets/blog/authors/svo.png"
-ogImage:
-  url: "/assets/blog/categories/engineering.png"
 ---
 
 In my work as a **Head of Engineering**, I rely on **generative AI** to improve productivity and quality across **research, development, support, and documentation**. My role spans **architecture, technical leadership, people management, work management, and hands-on engineering**. By integrating AI-driven tools into my workflow, I optimize coding efficiency, enhance debugging, streamline knowledge management, accelerate research, planning, and sprint zero activities.

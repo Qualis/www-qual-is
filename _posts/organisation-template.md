@@ -1,13 +1,11 @@
 ---
 title: "Organise Your Teams for Combined Health, Happiness, and Success"
 excerpt: "Create a thriving organisation with this Organisation Template, a structured framework for defining teams, decision-making, and governance. Whether you're scaling a startup or refining an existing structure, this template provides a sample set of best practices."
-coverImage: "/assets/blog/categories/management.png"
+topic: "management"
 date: "2022-02-20"
 author:
   name: SVO
   picture: "/assets/blog/authors/svo.png"
-ogImage:
-  url: "/assets/blog/categories/management.png"
 ---
 
 I've been working on a framework to help you and your organisation thrive. Whether you're leading an engineering team, scaling a startup, or refining an established organisation's structure, this **Organisation Template** provides a structured approach to defining, communicating, and evolving your teams for long-term success.

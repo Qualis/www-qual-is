@@ -1,13 +1,11 @@
 ---
 title: "Make Your Debian Setup Testable and Repeatable"
 excerpt: "Automate your Debian setup with Ansible to ensure a consistent, repeatable, and testable system configuration. This approach saves time, reduces errors, and keeps your setup version-controlled."
-coverImage: "/assets/blog/categories/engineering.png"
+topic: "engineering"
 date: "2022-03-13"
 author:
   name: SVO
   picture: "/assets/blog/authors/svo.png"
-ogImage:
-  url: "/assets/blog/categories/engineering.png"
 ---
 
 For even longer than I have been using [Ansible](https://www.ansible.com/) to manage [my macOS setup](/posts/my-macos-setup), I have been leveraging the same process for **Debian** (which initially started with **Ubuntu** but later expanded to support both).

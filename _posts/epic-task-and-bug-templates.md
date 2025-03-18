@@ -1,13 +1,11 @@
 ---
 title: "Epic, Task, and Bug Templates for Task Management Software"
 excerpt: "Create a streamlined and efficient task management workflow with this Epic, Task, and Bug Template. Whether you're leading a development team, managing a project, or improving an existing workflow, this structured approach helps teams maintain clarity, reduce friction, and improve collaboration across all work items."
-coverImage: "/assets/blog/categories/management.png"
+topic: "management"
 date: "2025-01-17"
 author:
   name: SVO
   picture: "/assets/blog/authors/svo.png"
-ogImage:
-  url: "/assets/blog/categories/management.png"
 ---
 
 A well-structured Epic, Task, and Bug template improves clarity, ensures alignment across teams, and reduces friction in execution. Below is a practical framework for structuring these key work items in your task management system.

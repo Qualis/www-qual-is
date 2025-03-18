@@ -1,13 +1,11 @@
 ---
 title: "Running a Successful Post-Incident Review (PIR)"
 excerpt: "Run effective and blameless Post-Incident Reviews (PIRs) with this structured approach using the PODS framework. This guide helps teams identify root causes, align on a shared timeline, and develop actionable solutions to prevent recurrence. By fostering a culture of transparency and collaboration, teams can turn incidents into learning opportunities, improve system reliability, and drive continuous improvement."
-coverImage: "/assets/blog/categories/management.png"
+topic: "management"
 date: "2023-12-16"
 author:
   name: SVO
   picture: "/assets/blog/authors/svo.png"
-ogImage:
-  url: "/assets/blog/categories/management.png"
 ---
 
 ## Introduction

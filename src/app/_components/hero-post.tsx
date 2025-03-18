@@ -10,6 +10,7 @@ type Props = {
   excerpt: string;
   author: Author;
   slug: string;
+  topic: string;
 };
 
 export function HeroPost({
@@ -19,6 +20,7 @@ export function HeroPost({
   excerpt,
   author,
   slug,
+  topic,
 }: Props) {
   return (
     <section>
@@ -31,6 +33,9 @@ export function HeroPost({
           priority={true}
         />
         <div className="mt-3 text-lg text-accent-3 dark:text-accent-1 text-center md:mx-auto">
+          <span className="capitalize">{topic}</span>
+        </div>
+        <div className="mt-1 text-lg text-accent-3 dark:text-accent-1 text-center md:mx-auto">
           <DateFormatter dateString={date} />
         </div>
       </div>
