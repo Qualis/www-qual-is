@@ -1,6 +1,6 @@
 ---
-title: "Epic, Task, and Bug Templates for Task Management Software"
-excerpt: "Create a streamlined and efficient task management workflow with this Epic, Task, and Bug Template. Whether you're leading a development team, managing a project, or improving an existing workflow, this structured approach helps teams maintain clarity, reduce friction, and improve collaboration across all work items."
+title: "Epic, Story, and Bug Templates for Task Management Software"
+excerpt: "Create a streamlined and efficient task management workflow with this Epic, Story, and Bug Template. Whether you're leading a development team, managing a project, or improving an existing workflow, this structured approach helps teams maintain clarity, reduce friction, and improve collaboration across all work items."
 topic: "management"
 date: "2025-01-17"
 author:
@@ -8,7 +8,7 @@ author:
   picture: "/assets/blog/authors/svo.png"
 ---
 
-A well-structured Epic, Task, and Bug template improves clarity, ensures alignment across teams, and reduces friction in execution. Below is a practical framework for structuring these key work items in your task management system.
+A well-structured Epic, Story, and Bug template improves clarity, ensures alignment across teams, and reduces friction in execution. Below is a practical framework for structuring these key work items in your task management system.
 
 ---
 
@@ -28,13 +28,13 @@ Epics should be kept lightweight, focusing on a single **Objective** and set of 
 
 ### Example
 
-![Epic](/assets/blog/epic-task-and-bug-templates/epic.png "Epic")
+![Epic](/assets/blog/epic-story-and-bug-templates/epic.png "Epic")
 
 ---
 
-## Tasks
+## Stories
 
-Tasks provide detailed, actionable steps for team members. They should be structured to clearly communicate the persona, the need, and the reason behind the need.
+Stories provide detailed, actionable steps for team members. They should be structured to clearly communicate the persona, the need, and the reason behind the need.
 
 ### Structure
 
@@ -50,13 +50,13 @@ Tasks provide detailed, actionable steps for team members. They should be struct
 ### In-Progress/Working Section
 
 - **Activity Checklist:**
-  - A micro-sliced list of actions required to complete the task, created before work begins.
+  - A micro-sliced list of actions required to complete the story, created before work begins.
   - Based on the **Elephant Carpaccio** technique [(see more here)](https://medium.com/@olivercecilspann/elephant-carpaccio-exercise-an-experience-report-207f0cc79c34).
-  - Helps ensure continuity if another engineer needs to take over the task.
+  - Helps ensure continuity if another engineer needs to take over the story.
 
 ### Example
 
-![Task](/assets/blog/epic-task-and-bug-templates/task.png "Task")
+![Story](/assets/blog/epic-story-and-bug-templates/story.png "Story")
 
 ---
 
@@ -82,11 +82,11 @@ Bug reports should provide clear and reproducible information to aid efficient r
 ### In-Progress/Working Section
 
 - **Activity Checklist:**
-  - Same format as tasks, providing a clear outline of steps needed to address the bug.
+  - Same format as stories, providing a clear outline of steps needed to address the bug.
 
 ### Example
 
-![Bug](/assets/blog/epic-task-and-bug-templates/bug.png "Bug")
+![Bug](/assets/blog/epic-story-and-bug-templates/bug.png "Bug")
 
 ---
 
