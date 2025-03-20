@@ -14,23 +14,29 @@ In my work as a **Head of Engineering**, I rely on **generative AI** to improve 
 
 I utilize multiple AI tools, each serving a distinct role in my workflow:
 
-### Example
+---
 
-#### Codeium.vim and Claude Code
+### Agentic Code Generation
+
+#### Example
+
+##### Codeium.vim and Claude Code
 
 ![codeium.vim and claude code](/assets/blog/generative-ai-for-research-development-and-documentation/tmux-vim-example.png "Codeium.vim and Claude Code")
 
-### **AI-Assisted Coding & Refactoring**
+#### **AI-Assisted Coding & Refactoring**
 
 - **Tool:** [Codeium.vim](https://github.com/Exafunction/codeium.vim)
 - **Use Case:** When refactoring code, I act as the _driver_ while AI serves as the _navigator_, suggesting autocompletions and improvements in real time.
 - **Benefits:** Faster and cleaner code refactoring with minimal disruptions to my thought process.
 
-### **AI-Driven Implementation & Debugging**
+#### **AI-Driven Implementation & Debugging**
 
 - **Tool:** [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview)
 - **Use Case:** When implementing new features or diagnosing issues, I act as the _navigator_ while AI becomes the _driver_, generating functional code and pinpointing potential root causes of errors.
 - **Benefits:** Speeds up feature development and simplifies complex debugging tasks.
+
+---
 
 ### **Implementation Architecture Decision-Making**
 
@@ -58,7 +64,7 @@ I utilize multiple AI tools, each serving a distinct role in my workflow:
 
 ### **Work Management & Technical Leadership**
 
-- **Tool:** ChatGPT - 4o & Claude Code
+- **Tool:** [ChatGPT - 4o](https://openai.com/index/chatgpt/) & [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview)
 - **Use Case:** Managing engineering workflows, generating project plans, refining sprint planning strategies, and automating technical documentation.
 - **Benefits:** AI helps break down high-level objectives into actionable steps, facilitates backlog grooming, and assists in creating clearer roadmaps for both engineers and stakeholders.
 
