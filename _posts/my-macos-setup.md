@@ -33,11 +33,7 @@ The setup consists of **roles**, each defining a specific aspect of system confi
 
 To exclude certain roles, simply remove the corresponding entry in the **roles** section of the **playbook.yml** file.
 
-![Roles](/assets/blog/my-macos-setup/roles.png "Roles")
-
 If you want to see what each role does, browse the **roles** directory and open the corresponding **tasks/main.yml** file.
-
-![Roles Directory](/assets/blog/my-macos-setup/roles-directory.png "Roles directory")
 
 ### Example Playbook Structure
 
