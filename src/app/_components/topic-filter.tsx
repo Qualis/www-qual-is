@@ -69,8 +69,8 @@ export function TopicFilter({ topics, allPosts }: TopicFilterProps) {
   return (
     <>
       <div className="mb-8">
-        <h2 className="text-primary mb-4 text-lg md:text-xl font-bold tracking-tighter leading-tight text-center">
-          Filter by Topic
+        <h2 className="text-primary mb-6 text-lg md:text-2xl font-bold tracking-tighter leading-tight text-center">
+          Browse by Topic
         </h2>
         <div className="flex flex-wrap justify-center gap-3" ref={containerRef}>
           {topics.map((topic) => (
@@ -78,7 +78,7 @@ export function TopicFilter({ topics, allPosts }: TopicFilterProps) {
               key={topic}
               onClick={() => handleTopicToggle(topic)}
               className={`
-                border transition-colors duration-200 font-bold py-2 px-4 capitalize
+                border transition-colors duration-200 font-bold py-2 px-5 capitalize rounded-md
                 ${styles.topicButton}
                 ${!selectedTopics.includes(topic) ? styles.disabled : ""}
                 ${
