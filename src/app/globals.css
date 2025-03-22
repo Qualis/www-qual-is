@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Override Next.js Image default margins */
+.post-banner-image img {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Remove bottom margin from post title */
+.post-title-wrapper h1 {
+  margin-bottom: 0 !important;
+}
+
 .modal-dialog {
   position: relative;
   width: 100%;

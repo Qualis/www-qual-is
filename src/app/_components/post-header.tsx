@@ -1,6 +1,7 @@
 import CoverImage from "./cover-image";
 import { PostTitle } from "@/app/_components/post-title";
 import DateFormatter from "./date-formatter";
+import { OptimizedImage } from "./optimized-image";
 
 type Props = {
   title: string;
@@ -10,6 +11,8 @@ type Props = {
 };
 
 export function PostHeader({ title, coverImage, date, topic }: Props) {
+  const bannerImage = topic ? `/assets/blog/categories/${topic}-banner.png` : null;
+
   return (
     <div className="w-full">
       {date && (
@@ -19,12 +22,23 @@ export function PostHeader({ title, coverImage, date, topic }: Props) {
           </p>
         </div>
       )}
-      <PostTitle>{title}</PostTitle>
-      {topic && (
-        <div className="mb-2 md:mb-4 text-center">
-          <span className="inline-block capitalize px-3 py-1 text-primary dark:text-primary font-medium border border-primary rounded-md">{topic}</span>
+      <div className="flex flex-col items-center w-full">
+        <div className="post-title-wrapper w-full">
+          <PostTitle>{title}</PostTitle>
         </div>
-      )}
+        {bannerImage && (
+          <div className="-mt-[5px] mb-10 md:mb-16 bg-black post-banner-image w-full">
+            <OptimizedImage
+              src={bannerImage}
+              alt={`${topic} banner`}
+              width={1920}
+              height={400}
+              priority={true}
+              className="block rounded-b-lg"
+            />
+          </div>
+        )}
+      </div>
     </div>
   );
 }
