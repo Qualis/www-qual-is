@@ -24,19 +24,19 @@ export function PostPreview({
 }: Props) {
   return (
     <div className="flex flex-col h-full">
-      <div className="flex-grow">
-        <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+      <div className="mb-1 text-center">
+        <span className="inline-block capitalize px-2 py-0.5 text-primary dark:text-primary font-medium border border-primary rounded-md">
+          {topic}
+        </span>
+      </div>
+      <div className="text-accent-3 dark:text-accent-1 text-sm mt-1 mb-2 text-center">
+        <DateFormatter dateString={date} />
       </div>
       <div className="mb-2">
         <CoverImageWithTitle slug={slug} title={title} src={coverImage} />
       </div>
-      <div className="mb-1 text-center">
-        <span className="inline-block capitalize px-2 py-0.5 text-sm text-primary dark:text-primary font-medium border border-primary rounded-md">
-          {topic}
-        </span>
-      </div>
-      <div className="text-accent-3 dark:text-accent-1 text-lg mb-4 text-center">
-        <DateFormatter dateString={date} />
+      <div className="flex-grow">
+        <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
       </div>
     </div>
   );
