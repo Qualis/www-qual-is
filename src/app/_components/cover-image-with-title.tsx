@@ -27,12 +27,12 @@ const CoverImageWithTitle = ({ title, src, slug, priority = false }: Props) => {
       />
       <div
         className={cn(
-          "absolute inset-0 bg-primary bg-opacity-80 flex items-center justify-center transition-all duration-300",
-          { "group-hover:bg-opacity-90": slug }
+          "absolute inset-0 flex items-center justify-center transition-all duration-300",
+          { "group-hover:shadow-inner": slug }
         )}
       >
         <div className="relative flex flex-col items-center justify-center w-full text-center">
-          <h3 className="text-lg md:text-xl lg:text-2xl text-accent-1 font-bold text-center px-4 max-w-[90%]">
+          <h3 className="text-lg md:text-xl lg:text-2xl text-accent-1 font-bold text-center px-4 max-w-[90%] drop-shadow-lg">
             {title}
           </h3>
           {slug && (
