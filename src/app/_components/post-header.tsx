@@ -27,14 +27,14 @@ export function PostHeader({ title, coverImage, date, topic }: Props) {
           <PostTitle>{title}</PostTitle>
         </div>
         {bannerImage && (
-          <div className="-mt-[5px] mb-10 md:mb-16 bg-black post-banner-image w-full">
+          <div className="mb-10 md:mb-16 bg-black post-banner-image w-full">
             <OptimizedImage
               src={bannerImage}
               alt={`${topic} banner`}
               width={1920}
               height={400}
               priority={true}
-              className="block rounded-b-lg"
+              className="block"
             />
           </div>
         )}
