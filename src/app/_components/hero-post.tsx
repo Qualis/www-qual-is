@@ -33,7 +33,9 @@ export function HeroPost({
           priority={true}
         />
         <div className="mt-3 text-center md:mx-auto">
-          <span className="inline-block capitalize px-3 py-1 text-primary dark:text-primary font-medium border border-primary rounded-md">{topic}</span>
+          <span className="inline-block capitalize px-3 py-1 text-primary dark:text-primary font-medium border border-primary rounded-md">
+            {topic}
+          </span>
         </div>
         <div className="mt-1 text-lg text-accent-3 dark:text-accent-1 text-center md:mx-auto">
           <DateFormatter dateString={date} />

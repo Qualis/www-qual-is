@@ -11,7 +11,9 @@ type Props = {
 };
 
 export function PostHeader({ title, coverImage, date, topic }: Props) {
-  const bannerImage = topic ? `/assets/blog/categories/${topic}-banner.png` : null;
+  const bannerImage = topic
+    ? `/assets/blog/categories/${topic}-banner.png`
+    : null;
 
   return (
     <div className="w-full">

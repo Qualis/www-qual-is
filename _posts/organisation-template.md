@@ -72,9 +72,11 @@ To help teams understand their roles and interactions, the template includes **P
 ### Examples
 
 #### **Legend for interpreting the diagrams:**
+
 ![Legend](/assets/blog/organisation-template/organisation-template-legend.png "Legend")
 
 #### **Example: Role-to-Function Distribution**
+
 ![Role Distribution](/assets/blog/organisation-template/organisation-template-role-distribution.png "Role Distribution")
 
 ---
