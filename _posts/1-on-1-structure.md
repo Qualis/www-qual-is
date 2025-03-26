@@ -12,7 +12,7 @@ author:
 
 The approach detailed here incorporates several key mechanisms:
 
-- **Objectives and Key Results (OKR)** are used to track expected work and ensure alignment with broader team and business goals. These provide a mix of committed and aspirational goals, ensuring both accountability and ambition (see [Example OKR](engineering-manager-first-90-day-okr.md)).
+- **Objectives and Key Results (OKR)** are used to track expected work and ensure alignment with broader team and business goals. These provide a mix of committed and aspirational goals, ensuring both accountability and ambition (see [Example OKR](engineering-manager-first-90-day-okr)).
 - **A development plan** is included to create space for learning and innovation beyond the immediate job responsibilities. By setting aside dedicated time, employees can explore new skills and approaches that may benefit the business in the long run.
 - **A happiness retrospective** allows for structured feedback on work satisfaction, helping managers identify what’s working well and what needs improvement. Using a **Discrete Visual Analog** scale as a lead indicator helps track engagement trends over time.
 - **A performance conversation** ensures clarity on expectations, offering both the manager’s and direct report’s perspectives. This structured evaluation helps maintain transparency and drive growth discussions.
