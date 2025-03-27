@@ -88,7 +88,7 @@ export function TopicFilter({ topics, allPosts }: TopicFilterProps) {
                 }
               `}
             >
-              {topic}
+              {selectedTopics.includes(topic) ? '🔘 ' : '⚪️ '}{topic}
             </button>
           ))}
         </div>
