@@ -72,7 +72,7 @@ export function TopicFilter({ topics, allPosts }: TopicFilterProps) {
         <h2 className="text-primary mb-6 text-lg md:text-2xl font-bold tracking-tighter leading-tight text-center">
           Topic Filters
         </h2>
-        <div className="flex flex-wrap justify-center gap-3" ref={containerRef}>
+        <div className="flex flex-wrap justify-center gap-3 text-sm" ref={containerRef}>
           {topics.map((topic) => (
             <button
               key={topic}
