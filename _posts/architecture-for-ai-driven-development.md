@@ -55,7 +55,7 @@ I'm currently working on a [Python](https://www.python.org/) version of the Spri
 - Performing Consumer Driven Contract Testing with [**schemathesis**](https://pypi.org/project/schemathesis/) ensures robust and accurate integrations by validating **API** behavior against **OpenAPI** specifications, significantly reducing integration issues and enabling the creation of external mocks.
 - Using [**xenon**](https://pypi.org/project/xenon/) to enforce complexity limits ensures high maintainability, reducing cognitive load and simplifying future enhancements.
 - Employing [**semgrep**](https://pypi.org/project/semgrep/) for static analysis detects problematic patterns and potential security flaws early, minimizing security risks.
-- Integrating [**dependency-check**](https://jeremylong.github.io/DependencyCheck/) scans project dependencies for known vulnerabilities, preventing potential security breaches and improving reliability.
+- Integrating [**pip-audit**](https://github.com/pypa/pip-audit) scans project dependencies for known vulnerabilities, preventing potential security breaches and improving reliability.
 
 You can follow along with the implementation progress on the [Python Sprint Zero](https://github.com/svo/python-sprint-zero) project. I'm actively working on the content and will be publishing an initial implementation shortly.
 
