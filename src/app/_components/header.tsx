@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ThemeSwitcher } from "./theme-switcher";
+import SocialLinks from "./social-links";
 
 const Header = () => {
   return (
@@ -30,8 +31,11 @@ const Header = () => {
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary dark:bg-primary transition-all duration-200 group-hover:w-full"></span>
           </Link>
         </h2>
-        <div className="theme-switcher-container relative">
-          <ThemeSwitcher />
+        <div className="flex items-center space-x-4">
+          <SocialLinks />
+          <div className="theme-switcher-container relative">
+            <ThemeSwitcher />
+          </div>
         </div>
       </div>
       <hr className="border-t border-primary dark:border-primary w-full" />

@@ -1,4 +1,5 @@
 import { ThemeSwitcher } from "./theme-switcher";
+import SocialLinks from "./social-links";
 
 export function Intro() {
   return (
@@ -24,8 +25,11 @@ export function Intro() {
             </span>
             qual.is
           </h1>
-          <div className="theme-switcher-container relative flex-shrink-0">
-            <ThemeSwitcher />
+          <div className="flex items-center space-x-4">
+            <SocialLinks />
+            <div className="theme-switcher-container relative flex-shrink-0">
+              <ThemeSwitcher />
+            </div>
           </div>
         </div>
         <hr className="border-t border-primary dark:border-primary w-full" />
