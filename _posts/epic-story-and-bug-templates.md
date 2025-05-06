@@ -66,7 +66,7 @@ A Discrete Visual Analog Scale representing business value:
 
 - **Tactical:** Often short-term efforts representing a **side quest** that can be deprioritized unless the effort is low. Tactical items may provide incremental value but should be assessed carefully to avoid distracting from strategic goals.
 - **Strategic:** Often medium-term efforts focused on **committed OKR**. These are objectives that must be achieved within the defined period, aligning with key business priorities.
-- **Transformational:** Often long-term efforts focused on **aspirational OKR**. Transformational efforts should be evaluated carefully to avoid a **YAGNI (You Ain’t Gonna Need It)** moments, where premature optimization leads to wasted effort. If a transformational task is not clearly tied to long-term value, it may not be worth prioritizing.
+- **Transformational:** Often long-term efforts focused on **aspirational OKR**. Transformational efforts should be evaluated carefully to avoid a **YAGNI (You Ain't Gonna Need It)** moments, where premature optimization leads to wasted effort. If a transformational task is not clearly tied to long-term value, it may not be worth prioritizing.
 
 ### Delivery Effort
 

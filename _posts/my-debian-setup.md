@@ -47,7 +47,7 @@ If you want to inspect what each role does, you can browse the **roles** directo
     - development
 ```
 
-Here’s what these roles do:
+Here's what these roles do:
 
 - **cli-tools** - Installs command-line utilities (e.g., **htop**, **curl**).
 - **development** - Sets up development tools like **git**, **docker**, and programming languages.

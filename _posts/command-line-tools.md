@@ -40,4 +40,4 @@ Below is a list of essential command-line tools covered in this session, along w
 - **wondershaper** - A bandwidth-limiting tool that allows you to shape network traffic.
 - **jq** - A lightweight and flexible command-line JSON processor.
 
-These tools help users navigate, manage, and analyze systems efficiently. If you’re looking to improve your Linux skills, experimenting with these commands is a great place to start.
+These tools help users navigate, manage, and analyze systems efficiently. If you're looking to improve your Linux skills, experimenting with these commands is a great place to start.

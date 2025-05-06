@@ -45,7 +45,7 @@ If you want to see what each role does, browse the **roles** directory and open 
     - development
 ```
 
-Here’s what these roles do:
+Here's what these roles do:
 
 - **cli-tools** - Installs essential command-line utilities (e.g., **htop**, **curl**).
 - **development** - Sets up development tools like **git**, **docker**, and programming languages.

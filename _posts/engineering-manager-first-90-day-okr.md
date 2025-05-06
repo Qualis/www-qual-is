@@ -18,7 +18,7 @@ The priority order and/or relevance will depend on you and the business.
 
 ## Committed and Aspirational OKR
 
-When setting **OKR**, it’s important to distinguish between **committed** and **aspirational** **OKR**. This distinction helps ensure clarity in expectations and alignment with business goals.
+When setting **OKR**, it's important to distinguish between **committed** and **aspirational** **OKR**. This distinction helps ensure clarity in expectations and alignment with business goals.
 
 - **Committed OKR**: These are objectives that **must be achieved** within the defined period of time. They are closely tied to key business priorities, and their successful completion is expected. Missing a committed **OKR** signals a gap in execution that needs to be addressed.
 - **Aspirational OKR**: These are ambitious goals that **push beyond current capabilities** and aim for breakthrough performance. They are often long-term and may not be fully achieved within a single cycle. Aspirational **OKR** inspire innovation and drive significant progress.
@@ -27,7 +27,7 @@ When setting **OKR**, it’s important to distinguish between **committed** and 
 
 - Some **OKR** in the examples below, such as **"We Have a Budget Plan"**, are **committed OKR**, meaning they need to be completed.
 - Others, such as **"We Have a Defined Set of Cultural Norms and Values"**, may be **aspirational OKR**, aiming for deeper cultural alignment over time.
-- It’s critical to align expectations with your manager and peers to determine which **OKR** are committed and which are aspirational.
+- It's critical to align expectations with your manager and peers to determine which **OKR** are committed and which are aspirational.
 
 ## Example
 
@@ -84,7 +84,7 @@ Understand how your new peers work and live their lives so you can align, build 
 3. I have documented and shared at least **1** version of a vision statement for the engineering function.
 4. I have documented and communicated at least **1** version of our engineering function core values that align with **100%** of our business objectives.
 5. I have documented and circulated at least **1** version of a cultural norms guide within the organization.
-6. I have made our engineering function’s cultural norms and values publicly visible to the broader business through at least **1** internal communication channel.
+6. I have made our engineering function's cultural norms and values publicly visible to the broader business through at least **1** internal communication channel.
 
 ### Objective 7 - We Understand the Architecture and Technology to Utilize to Meet Our Objectives
 

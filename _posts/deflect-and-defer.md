@@ -42,12 +42,12 @@ This approach prevents emotional reactions, ensures that decisions are aligned w
 2. **Defer to Allow for Proper Evaluation**
 
    - Avoid committing to an immediate answer by setting a future discussion or review.
-   - Example: _“Let’s bring this up in next week’s prioritization meeting to make sure we’re aligned with our goals.”_
+   - Example: _“Let's bring this up in next week's prioritization meeting to make sure we're aligned with our goals.”_
    - This shifts the focus from an immediate response to a structured decision-making process.
 
 3. **Ensure Follow-Through**
    - If deflecting and deferring, it is important to track the request and ensure it is revisited at the right time.
-   - Acknowledge the person’s request and provide a clear next step so they feel heard rather than dismissed.
+   - Acknowledge the person's request and provide a clear next step so they feel heard rather than dismissed.
 
 ## The Benefits of Deflect and Defer
 

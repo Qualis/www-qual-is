@@ -47,7 +47,7 @@ I utilize multiple AI tools, each serving a distinct role in my workflow:
 ### **Root Cause Analysis**
 
 - **Tool:** [ChatGPT - o3-mini-high](https://openai.com/index/chatgpt/)
-- **Use Case:** Investigating infrastructure exceptions and errors when there’s no obvious root cause.
+- **Use Case:** Investigating infrastructure exceptions and errors when there's no obvious root cause.
 - **Benefits:** Faster resolution of complex infrastructure issues.
 
 ### **Researching Emerging Technologies & Sprint Zero Activities**
@@ -75,7 +75,7 @@ I utilize multiple AI tools, each serving a distinct role in my workflow:
 By integrating **generative AI** into my workflow, I have:
 
 - **Increased productivity** by automating repetitive tasks and reducing cognitive load.
-- **Improved code quality** by leveraging AI’s suggestions for cleaner, more efficient code.
+- **Improved code quality** by leveraging AI's suggestions for cleaner, more efficient code.
 - **Accelerated debugging** with AI-powered root-cause analysis.
 - **Enhanced decision-making** through AI-assisted architectural evaluations.
 - **Optimized documentation** with AI-driven summarization and correction.

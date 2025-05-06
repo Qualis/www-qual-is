@@ -12,7 +12,7 @@ When I recently received a job offer, I found myself uncertain about whether it 
 
 ## How to Use the Radar Chart for Your Own Decision-Making
 
-If you’d like to do the same, you can fork this [GitHub repository](https://github.com/svo/accept-new-job-guidance) and customize it to reflect your own priorities.
+If you'd like to do the same, you can fork this [GitHub repository](https://github.com/svo/accept-new-job-guidance) and customize it to reflect your own priorities.
 
 ### Adjusting the Weightings
 
@@ -37,6 +37,6 @@ This repository utilizes [D3.js](https://d3js.org/) for data visualization and s
 
 ## My Example
 
-If you’d like to see what my final visualization looked like, you can check it out [here](https://raw.githack.com/svo/accept-new-job-guidance/main/index.html)
+If you'd like to see what my final visualization looked like, you can check it out [here](https://raw.githack.com/svo/accept-new-job-guidance/main/index.html)
 
 ![Example](/assets/blog/job-on-offer-is-the-right-one/example.png "Example")

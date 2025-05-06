@@ -40,7 +40,7 @@ This agenda is structured using the PODS framework (Purpose, Outcome, Decisions,
 ### Structure
 
 1. **Introduction to the Ceremony (1 min)**
-   Set the tone, reinforce blameless culture, and outline the session’s purpose.
+   Set the tone, reinforce blameless culture, and outline the session's purpose.
 
 2. **Explain the Expectation (2 min)**
    Review what was expected to happen (normal operation, expected behavior, or standard procedure).
