@@ -1,7 +1,7 @@
 ---
 title: "The Industrial Revolution of Software: How Generative AI Continues a Long Arc of Automation"
 excerpt: "Generative AI is transforming the role of software engineers, much like the industrial revolution transformed automotive mechanics and craftsmen, moving the work from manual creation to automation and oversight. This post explores parallels in automation, workforce impact, and the evolving role of the engineer."
-topic: "engineering"
+topic: "progression"
 date: "2025-05-06"
 author:
   name: SVO
