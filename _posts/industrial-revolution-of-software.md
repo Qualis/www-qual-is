@@ -70,8 +70,6 @@ History shows that when industries undergo automation, workforce structures shif
 * Over time, further automation (like **robotic welding and painting in the 1970s-80s**) reduced the need for human labor in some roles, but increased demand in others - particularly in robotics maintenance, automation programming, and industrial design.
 * More recently, the rise of **autonomous vehicles and electric drivetrains** has shifted focus again, pushing automotive marques to invest in software engineering, data analysis, and battery technology.
 
-The key pattern: automation doesn't eliminate jobs; it **reshapes** the nature of work, moving labor toward new areas of demand.
-
 Will generative AI do something similar for software engineering?
 
 I suspect we will still see **growth in the number of software engineers**, even as automation rises.
