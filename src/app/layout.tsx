@@ -28,8 +28,19 @@ export default function RootLayout({
         <script defer src="https://cloud.umami.is/script.js" data-website-id="dd0b2581-9ffc-4bcb-8423-6973b138c1e4"></script>
         <link
           rel="apple-touch-icon"
+          sizes="152x152"
+          href="/favicon/apple-icon-152x152.png"
+        />
+        <link
+          rel="apple-touch-icon"
           sizes="180x180"
-          href="/favicon/apple-touch-icon.png"
+          href="/favicon/apple-icon-180x180.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="/favicon/android-icon-192x192.png"
         />
         <link
           rel="icon"
@@ -40,15 +51,16 @@ export default function RootLayout({
         <link
           rel="icon"
           type="image/png"
+          sizes="96x96"
+          href="/favicon/favicon-96x96.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
           sizes="16x16"
           href="/favicon/favicon-16x16.png"
         />
         <link rel="manifest" href="/favicon/site.webmanifest" />
-        <link
-          rel="mask-icon"
-          href="/favicon/safari-pinned-tab.svg"
-          color="#000000"
-        />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
         <meta name="msapplication-TileColor" content="#005FCC" />
         <meta
