@@ -66,6 +66,7 @@ I have given thought to risks around e.g. **security, privacy, and safety** i.e.
 History shows that when industries undergo automation, workforce structures shift dramatically.
 
 * In the early 1900s, car assembly was slow and largely done by skilled craftsmen, building vehicles piece by piece. With the introduction of the **assembly line by Henry Ford in 1913**, production times plummeted, and output increased - the time to build a **Model T** dropped from [over 12 hours to about 1.5 hours](https://www.history.com/this-day-in-history/december-1/fords-assembly-line-starts-rolling).
+* By 1917, the automotive sector in Detroit had expanded, with over [90,000 individuals employed in car assembly plants and an additional 44,000 working for parts suppliers](https://www.motorcities.org/southwest-detroit-auto-heritage-guide/early-auto-boom).
 * This didn't eliminate jobs but **reshaped them**: skilled artisans gave way to assembly line workers, and thousands of new factory jobs emerged, albeit with more repetitive tasks.
 * Over time, further automation (like **robotic welding and painting in the 1970s-80s**) reduced the need for human labor in some roles, but increased demand in others - particularly in robotics maintenance, automation programming, and industrial design.
 * More recently, the rise of **autonomous vehicles and electric drivetrains** has shifted focus again, pushing automotive marques to invest in software engineering, data analysis, and battery technology.
