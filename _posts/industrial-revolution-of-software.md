@@ -63,12 +63,16 @@ I have given thought to risks around e.g. **security, privacy, and safety** i.e.
 
 ### Workforce
 
-The industrial revolution reduced manual trades:
+History shows that when industries undergo automation, workforce structures shift dramatically.
 
-* In the UK, [handloom weavers](https://ruralhandmade.com/blog/what-is-the-handloom-weaving-technique) fell from 250,000 in 1820 to under 10,000 by 1860 – [cottontimes](https://www.cottontimes.co.uk/workers/).
-* By 1900, agricultural employment dropped below 40% in many European countries – [ourworldindata](https://ourworldindata.org/data-insights/in-the-past-most-people-worked-in-agriculture-in-todays-rich-countries-only-a-small-share-do).
+* In the early 1900s, car assembly was slow and largely done by skilled craftsmen, building vehicles piece by piece. With the introduction of the **assembly line by Henry Ford in 1913**, production times plummeted, and output increased - the time to build a **Model T** dropped from [over 12 hours to about 1.5 hours](https://www.history.com/this-day-in-history/december-1/fords-assembly-line-starts-rolling).
+* This didn't eliminate jobs but **reshaped them**: skilled artisans gave way to assembly line workers, and thousands of new factory jobs emerged, albeit with more repetitive tasks.
+* Over time, further automation (like **robotic welding and painting in the 1970s-80s**) reduced the need for human labor in some roles, but increased demand in others - particularly in robotics maintenance, automation programming, and industrial design.
+* More recently, the rise of **autonomous vehicles and electric drivetrains** has shifted focus again, pushing automotive marques to invest in software engineering, data analysis, and battery technology.
 
-Will generative AI do the same for software engineers?
+The key pattern: automation doesn't eliminate jobs; it **reshapes** the nature of work, moving labor toward new areas of demand.
+
+Will generative AI do something similar for software engineering?
 
 I suspect we will still see **growth in the number of software engineers**, even as automation rises.
 
