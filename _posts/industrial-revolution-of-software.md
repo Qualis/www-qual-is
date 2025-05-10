@@ -83,6 +83,12 @@ What I envision based on the numbers before us is something like:
 
 Generative AI doesn't just automate code; it increases the total **volume of software produced**. With faster development comes more systems needing maintenance, reviews, and evolution.
 
+Looking at the impact on **automotive industry production** offers valuable parallels. Before the assembly line, annual car production numbers were small - Ford produced only around 10,000 Model Ts in 1909. But by 1925, Ford was producing over 2 million vehicles a year, a massive scale-up enabled by automation and standardization. ([MODEL T FORD PRODUCTION](https://www.mtfca.com/encyclo/fdprod.htm))
+
+This growth didn't just increase vehicle numbers - it also led to the rise of multiple **automotive marques** (brands) worldwide. From a few early manufacturers, the market expanded to dozens of companies across Europe, North America, and later Asia, each utilizing mass production to build recognizable brands and global reach.
+
+If we apply this lens to generative AI, we might anticipate a similar impact: not just more software, but an explosion of diverse software solutions, tools, and platforms - each optimized, branded, and scaled up for niche and global markets alike.
+
 What I envision based on the numbers before us is something like:
 
 ![Estimated Volume of Software (1980–2040)](/assets/blog/industrial-revolution-of-software/amount-of-software.png)
