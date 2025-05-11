@@ -1,6 +1,7 @@
 import { ThemeSwitcher } from "./theme-switcher";
 import SocialLinks from "./social-links";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Intro() {
   return (
@@ -51,9 +52,20 @@ export function Intro() {
         <hr className="border-t border-primary dark:border-primary w-full" />
       </div>
 
-      <h2 className="text-primary text-xl md:text-3xl lg:text-4xl font-bold tracking-tighter leading-tight md:leading-none mb-10 text-center md:w-4/5 mx-auto">
-        Code, People & Strategy - Musings by SVO
-      </h2>
+      <div className="flex justify-center mb-6 w-full">
+        <Image
+          src="/assets/banner.png"
+          alt="Code, People & Strategy - Musings by SVO"
+          width={1200}
+          height={300}
+          className="w-full h-auto"
+          priority
+        />
+      </div>
+
+      <p className="text-accent-3 dark:text-accent-1 text-lg leading-relaxed mb-10 text-center max-w-4xl mx-auto">
+        Insights on technical architecture, leadership strategies, process improvement, and hands-on software engineering practices; complete with working code and real-world examples. You'll find posts on decision frameworks, team scaling, cloud-native architectures, and more.
+      </p>
     </div>
   );
 }

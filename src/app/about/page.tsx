@@ -49,7 +49,7 @@ export default function AboutPage() {
             </p>
 
             <p>
-              This site is my platform for sharing insights on technical architecture, leadership strategies, process improvement, and hands-on software engineering practices; complete with working code and real-world examples. You'll find posts on decision frameworks, team scaling, cloud-native architectures, and more.
+              This site is for sharing insights on technical architecture, leadership strategies, process improvement, and hands-on software engineering practices; complete with working code and real-world examples. You'll find posts on decision frameworks, team scaling, cloud-native architectures, and more.
             </p>
 
             <h2 className="text-2xl font-bold mt-8 mb-4 text-center">Expertise</h2>
