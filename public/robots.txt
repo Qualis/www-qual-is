@@ -1,19 +1,13 @@
 User-agent: *
 Allow: /
 
-User-agent: ChatGPT-User
-Allow: /
 User-agent: GPTBot
-Allow: /
-User-agent: Googlebot
-Allow: /
-User-agent: Bingbot
-Allow: /
-User-agent: Baiduspider
-Allow: /
+Crawl-delay: 5
+
 User-agent: ClaudeBot
-Allow: /
+Crawl-delay: 5
+
 User-agent: Anthropic-AI
-Allow: /
+Crawl-delay: 5
 
 Sitemap: https://qual.is/sitemap.xml
