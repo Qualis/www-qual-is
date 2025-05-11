@@ -7,9 +7,12 @@ type Props = {
 export function PostBody({ content }: Props) {
   return (
     <div className="w-full">
-      <div
+      <section
+        aria-label="Article content"
         className={markdownStyles["markdown"]}
         dangerouslySetInnerHTML={{ __html: content }}
+        itemScope
+        itemType="https://schema.org/Article"
       />
     </div>
   );
