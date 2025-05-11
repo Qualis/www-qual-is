@@ -191,7 +191,7 @@ Continue current practices without introducing any formal mechanism for recordin
 
 ### Option 2: Document in a Wiki
 
-Use an internal wiki (e.g., Confluence, Notion) to record decisions, leveraging the platform’s built-in editing, search, and notification features.
+Use an internal wiki (e.g., Confluence, Notion) to record decisions, leveraging the platform's built-in editing, search, and notification features.
 
 ##### +
 
