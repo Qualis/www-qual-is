@@ -14,7 +14,7 @@ export default function Footer() {
               className="hover:text-accent-3 dark:hover:text-accent-1 transition-colors"
               aria-label="About Sean Van Osselaer"
             >
-              Sean (SVO) Van Osselaer
+              Sean Van Osselaer (SVO)
             </Link>
           </h3>
           <div className="flex flex-col lg:flex-row justify-end items-center space-y-4 lg:space-y-0 lg:space-x-4 lg:pl-4 lg:w-1/2">
