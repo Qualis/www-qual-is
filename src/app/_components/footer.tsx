@@ -12,7 +12,7 @@ export default function Footer() {
             <Link
               href="/about"
               className="hover:text-accent-3 dark:hover:text-accent-1 transition-colors"
-              aria-label="About Sean Van Osselaer"
+              aria-label="Sean Van Osselaer"
             >
               Sean Van Osselaer (SVO)
             </Link>
