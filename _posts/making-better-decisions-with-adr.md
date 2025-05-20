@@ -9,7 +9,7 @@ author:
   picture: "/assets/blog/authors/svo.png"
 ---------------------------------------
 
-Over several year now, I have been refining a structured approach for decision-making that helps teams move faster, stay aligned, and reduce decision fatigue. Whether you're experimenting in a lean start-up or steering an established engineering organisation, this **ADR-driven approach** provides a systematic way to explore, evaluate, and record solution options.
+For some time now I have been refining a structured approach for decision-making that helps teams move faster, stay aligned, and reduce decision fatigue. Whether you're experimenting in a lean start-up or steering an established engineering organisation, this **ADR-driven approach** provides a systematic way to explore, evaluate, and record solution options.
 
 ## What is an Architecture Decision Record (ADR)?
 
