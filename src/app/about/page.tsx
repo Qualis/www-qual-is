@@ -45,10 +45,6 @@ export default function AboutPage() {
             </p>
 
             <p>
-              <a href="/resume-svo-2025.pdf" download>Download my résumé (PDF)</a> for a detailed overview of my background, skills, and accomplishments.
-            </p>
-
-            <p>
               This site is for sharing insights on technical architecture, leadership strategies, process improvement, and hands-on software engineering practices; complete with working code and real-world examples. You'll find posts on decision frameworks, team scaling, cloud-native architectures, and more.
             </p>
 
