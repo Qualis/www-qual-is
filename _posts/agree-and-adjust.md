@@ -32,12 +32,12 @@ The essence of this approach lies in finding and acknowledging common ground bef
 2. **Express Agreement Openly**
 
    - Verbally affirm the commonality to create a sense of alignment.
-   - For example, if two individuals are debating the colour of a room-whether it should be painted grey or blue-one could say: _“We both seem to agree that black is not the right colour for this room.”_
+   - For example, if two individuals are debating the colour of a room-whether it should be painted grey or blue-one could say: _"We both seem to agree that black is not the right colour for this room."_
 
 3. **Gradually Introduce Adjustments**
 
    - Once agreement is established, gently guide the conversation toward broader possibilities.
-   - Using the same example: _“Since we both agree black is not ideal, do you think the new colour should be a shade (grey) or a hue (blue)?”_
+   - Using the same example: _"Since we both agree black is not ideal, do you think the new colour should be a shade (grey) or a hue (blue)?"_
    - This encourages the other party to engage in a more flexible discussion, reducing defensiveness and opening the door for compromise.
 
 4. **Encourage Collaborative Decision-Making**

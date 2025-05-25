@@ -20,7 +20,7 @@ This method is effective when:
 
 ## Why It Matters
 
-When faced with an impromptu request, leaders can feel pressured to provide an immediate response. However, saying “no” outright can create unnecessary conflict, particularly if the request holds value to the individual making it. Conversely, saying “yes” without full consideration can lead to misaligned priorities, improper resource allocation, and unintended consequences. The Deflect and Defer technique helps navigate these challenges by creating space for thoughtful decision-making.
+When faced with an impromptu request, leaders can feel pressured to provide an immediate response. However, saying "no" outright can create unnecessary conflict, particularly if the request holds value to the individual making it. Conversely, saying "yes" without full consideration can lead to misaligned priorities, improper resource allocation, and unintended consequences. The Deflect and Defer technique helps navigate these challenges by creating space for thoughtful decision-making.
 
 ## The Core Concept
 
@@ -36,13 +36,13 @@ This approach prevents emotional reactions, ensures that decisions are aligned w
 1. **Deflect to the Right Stakeholders**
 
    - Identify who else should be involved in the decision and mention their role in the process.
-   - Example: _“This sounds like something Bob and Jane should be across, so we should include them in the conversation before deciding.”_
+   - Example: _"This sounds like something Bob and Jane should be across, so we should include them in the conversation before deciding."_
    - By doing this, you remove yourself as the sole decision-maker while ensuring proper oversight.
 
 2. **Defer to Allow for Proper Evaluation**
 
    - Avoid committing to an immediate answer by setting a future discussion or review.
-   - Example: _“Let's bring this up in next week's prioritization meeting to make sure we're aligned with our goals.”_
+   - Example: _"Let's bring this up in next week's prioritization meeting to make sure we're aligned with our goals."_
    - This shifts the focus from an immediate response to a structured decision-making process.
 
 3. **Ensure Follow-Through**
