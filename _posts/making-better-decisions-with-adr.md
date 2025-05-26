@@ -1,5 +1,4 @@
 ---
-
 title: "Making Better Decisions with ADR: Structure, Speed, and Clarity"
 excerpt: "Use Architecture Decision Records (ADR) to navigate solution options and drive confident decisions. This guide provides a structured approach for documenting, evaluating, and sharing decisions across your organisation; boosting traceability, clarity, and alignment."
 topic: "management"
@@ -7,13 +6,13 @@ date: "2025-05-10"
 author:
   name: SVO
   picture: "/assets/blog/authors/svo.png"
----------------------------------------
+---
 
 For some time now I have been refining a structured approach for decision-making that helps teams move faster, stay aligned, and reduce decision fatigue. Whether you're experimenting in a lean start-up or steering an established engineering organisation, this **ADR-driven approach** provides a systematic way to explore, evaluate, and record solution options.
 
 ## What is an Architecture Decision Record (ADR)?
 
-An **Architecture Decision Record (ADR)** is a lightweight, structured document used to capture key decisions around people, processes, data, and technology. It formalises the *why*, *what*, and *how* behind decisions, giving teams a traceable reference point and aligning stakeholders on the journey forward.
+An **Architecture Decision Record (ADR)** is a lightweight, structured document used to capture key decisions around people, processes, data, and technology. It formalises the _why_, _what_, and _how_ behind decisions, giving teams a traceable reference point and aligning stakeholders on the journey forward.
 
 This approach is partially explored in [Organise Your Teams for Combined Health, Happiness, and Success](https://www.qual.is/posts/organisation-template), and focuses on a decision making process that supports long-term organisational health.
 
@@ -25,9 +24,9 @@ For tooling, I personally use [adr-tools](https://github.com/npryce/adr-tools) a
 
 By using **ADR**, you:
 
-* Create a repeatable framework for capturing and communicating decisions.
-* Reduce bias by applying equal attention (or surfacing when it isn't) to all considered options.
-* Make decisions transparent and traceable across teams and time.
+- Create a repeatable framework for capturing and communicating decisions.
+- Reduce bias by applying equal attention (or surfacing when it isn't) to all considered options.
+- Make decisions transparent and traceable across teams and time.
 
 A note here is that good decision-making isn't about finding the right answer; it's about selecting an option that most likely delivers the desired outcome without precluding your best future.
 
@@ -45,16 +44,16 @@ The **Status** field tracks the life-cycle of the decision. It answers **where t
 
 Typical values include:
 
-* **Proposed** - A draft decision that is open for review and discussion.
-* **Accepted** - A decision that has been agreed upon and is ready to implement.
-* **Deprecated** - A decision that is no longer valid, often because it was replaced by a newer **ADR**.
+- **Proposed** - A draft decision that is open for review and discussion.
+- **Accepted** - A decision that has been agreed upon and is ready to implement.
+- **Deprecated** - A decision that is no longer valid, often because it was replaced by a newer **ADR**.
 
 **Why it matters:**
 
-* Provides clarity on whether the **ADR** represents a live, actionable agreement.
-* Helps teams avoid confusion when revisiting old decisions.
-* Supports governance by giving visibility into the evolution of architectural thinking.
-* Ensures that decisions can be confidently referenced (or questioned) in the future.
+- Provides clarity on whether the **ADR** represents a live, actionable agreement.
+- Helps teams avoid confusion when revisiting old decisions.
+- Supports governance by giving visibility into the evolution of architectural thinking.
+- Ensures that decisions can be confidently referenced (or questioned) in the future.
 
 ### Context
 
@@ -62,9 +61,9 @@ Typical values include:
 
 Clearly frame the problem using these three parts:
 
-* **Ideal**: What's the desired situation or outcome?
-* **Reality**: What's the current situation, and how does it differ from the ideal?
-* **Consequences**: What risks or pains result from not moving from reality to ideal?
+- **Ideal**: What's the desired situation or outcome?
+- **Reality**: What's the current situation, and how does it differ from the ideal?
+- **Consequences**: What risks or pains result from not moving from reality to ideal?
 
 This framing keeps the focus on outcomes, not just technology.
 
@@ -90,9 +89,9 @@ Use **3–5 options** to catalyse creative thinking, and always include **Option
 
 For each:
 
-* **Description**
-* **Pros** (`+` bullets)
-* **Cons** (`-` bullets)
+- **Description**
+- **Pros** (`+` bullets)
+- **Cons** (`-` bullets)
 
 Ensure each option is explored with roughly equal detail to challenge assumptions and bias.
 
@@ -102,8 +101,8 @@ The **Decision** section captures which option (or options) has been chosen to t
 
 **What to include:**
 
-* **Chosen Option** - Explicitly name the selected option.
-* **Why This Option** - Summarise why this option was selected over others.
+- **Chosen Option** - Explicitly name the selected option.
+- **Why This Option** - Summarise why this option was selected over others.
 
 **Why it matters:**
 
@@ -117,15 +116,15 @@ The **Consequences** section outlines the impact and follow-on effects of making
 
 **What to include:**
 
-* **What Changes** - Describe what will need to change or be done as a result of the decision.
-* **Expected Effort** - Highlight any additional work, resources, or processes required.
-* **Longer-Term Implications** - Note any downstream impacts, such as new risks, dependencies, or opportunities.
+- **What Changes** - Describe what will need to change or be done as a result of the decision.
+- **Expected Effort** - Highlight any additional work, resources, or processes required.
+- **Longer-Term Implications** - Note any downstream impacts, such as new risks, dependencies, or opportunities.
 
 **Why it matters:**
 
-* Makes clear the cost and impact of the decision.
-* Helps teams plan implementation steps and allocate resources effectively.
-* Surfaces potential challenges early to support proactive management.
+- Makes clear the cost and impact of the decision.
+- Helps teams plan implementation steps and allocate resources effectively.
+- Surfaces potential challenges early to support proactive management.
 
 ---
 

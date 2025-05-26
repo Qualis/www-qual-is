@@ -56,8 +56,8 @@ The question remains though, will this democratization **reduce demand for skill
 
 I have generated the following back-of-napkin projections using data from [Evans Data](https://evansdata.com/reports/viewRelease.php?reportID=9) and [Octoverse](https://octoverse.github.com/) for two potential scenarios.
 
-* **Scenario A** – Augmentation: AI increases demand for software across industries, with engineers focusing on integration, supervision, research, and complex system design.
-* **Scenario B** – Automation: broader automation reduces demand for existing generalist roles, while growing specialized AI-related positions.
+- **Scenario A** – Augmentation: AI increases demand for software across industries, with engineers focusing on integration, supervision, research, and complex system design.
+- **Scenario B** – Automation: broader automation reduces demand for existing generalist roles, while growing specialized AI-related positions.
 
 I have given thought to risks around e.g. **security, privacy, and safety** i.e. the demand for human oversight will grow as systems increase their needs for these [ilities](https://en.wikipedia.org/wiki/List_of_system_quality_attributes).
 
@@ -65,11 +65,11 @@ I have given thought to risks around e.g. **security, privacy, and safety** i.e.
 
 History shows that when industries undergo automation, workforce structures shift dramatically.
 
-* In the early 1900s, car assembly was slow and largely done by skilled craftsmen, building vehicles piece by piece. With the introduction of the **assembly line by Henry Ford in 1913**, production times plummeted, and output increased - the time to build a **Model T** dropped from [over 12 hours to about 1.5 hours](https://www.history.com/this-day-in-history/december-1/fords-assembly-line-starts-rolling).
-* This didn't eliminate jobs but **reshaped them**: skilled artisans gave way to assembly line workers, and thousands of new factory jobs emerged, albeit with more repetitive tasks.
-* By 1917, the automotive sector in Detroit had expanded, with over [90,000 individuals employed in car assembly plants and an additional 44,000 working for parts suppliers](https://www.motorcities.org/southwest-detroit-auto-heritage-guide/early-auto-boom).
-* Over time, further automation (like **robotic welding and painting in the 1970s-80s**) reduced the need for human labor in some roles, but increased demand in others - particularly in robotics maintenance, automation programming, and industrial design.
-* More recently, the rise of **autonomous vehicles and electric drivetrains** has shifted focus again, pushing automotive marques to invest in software engineering, data analysis, and battery technology.
+- In the early 1900s, car assembly was slow and largely done by skilled craftsmen, building vehicles piece by piece. With the introduction of the **assembly line by Henry Ford in 1913**, production times plummeted, and output increased - the time to build a **Model T** dropped from [over 12 hours to about 1.5 hours](https://www.history.com/this-day-in-history/december-1/fords-assembly-line-starts-rolling).
+- This didn't eliminate jobs but **reshaped them**: skilled artisans gave way to assembly line workers, and thousands of new factory jobs emerged, albeit with more repetitive tasks.
+- By 1917, the automotive sector in Detroit had expanded, with over [90,000 individuals employed in car assembly plants and an additional 44,000 working for parts suppliers](https://www.motorcities.org/southwest-detroit-auto-heritage-guide/early-auto-boom).
+- Over time, further automation (like **robotic welding and painting in the 1970s-80s**) reduced the need for human labor in some roles, but increased demand in others - particularly in robotics maintenance, automation programming, and industrial design.
+- More recently, the rise of **autonomous vehicles and electric drivetrains** has shifted focus again, pushing automotive marques to invest in software engineering, data analysis, and battery technology.
 
 Will generative AI do something similar for software engineering?
 
@@ -97,16 +97,16 @@ What I envision based on the numbers before us is something like:
 
 As automotive factories created roles for machine operators, supervisors, and mechanics maintaining machines, AI is creating e.g.:
 
-* AI/ML engineers
-* Prompt engineers
-* AI governance specialists
-* [Human-in-the-loop](https://careerfoundry.com/en/blog/data-analytics/human-in-the-loop/) designers
+- AI/ML engineers
+- Prompt engineers
+- AI governance specialists
+- [Human-in-the-loop](https://careerfoundry.com/en/blog/data-analytics/human-in-the-loop/) designers
 
 We're shifting more and more from writing every line of code, to **designing, orchestrating, and maintaining complex augmented systems**.
 
 ### More to Maintain
 
-Every line of AI-generated code adds to the software ecosystem needing maintenance. As I discussed in [*Architecture for AI-Driven Development*](architecture-for-ai-driven-development), AI increases software quantity; oversight, security, and maintenance needs scale alongside it.
+Every line of AI-generated code adds to the software ecosystem needing maintenance. As I discussed in [_Architecture for AI-Driven Development_](architecture-for-ai-driven-development), AI increases software quantity; oversight, security, and maintenance needs scale alongside it.
 
 This doesn't reduce the need for engineers; it increases their responsibility for long-term custodianship.
 
@@ -114,17 +114,17 @@ This doesn't reduce the need for engineers; it increases their responsibility fo
 
 In my role as **Head of Engineering**, I have structured a [generative AI engineering approach](generative-ai-for-research-development-and-documentation) that currently uses **Codeium.vim, Claude, and ChatGPT** for code generation, re-factoring, documentation, and architecture analysis, achieving:
 
-* **50–75% reduction in lead time**
-* **50–75% increase in deployment frequency**
-* **Zero deviation in change failure rate**
+- **50–75% reduction in lead time**
+- **50–75% increase in deployment frequency**
+- **Zero deviation in change failure rate**
 
 This has resulted in delivering value sooner, with higher quality and lower cost.
 
 Integrating generative AI allowed me to:
 
-* Shift toward higher-value, research-based activity
-* Accelerate architecture analysis and documentation
-* Focus on quality, security, and oversight
+- Shift toward higher-value, research-based activity
+- Accelerate architecture analysis and documentation
+- Focus on quality, security, and oversight
 
 ## Resistance and Adaptation
 
