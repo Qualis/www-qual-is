@@ -15,8 +15,8 @@ export default async function markdownToHtml(markdown: string) {
     (match, level, content) => {
       const id = content
         .toLowerCase()
-        .replace(/[^\w\s-]/g, '')
-        .replace(/\s+/g, '-');
+        .replace(/[^\w\s-]/g, "")
+        .replace(/\s+/g, "-");
       return `<h${level} id="${id}">${content}</h${level}>`;
     }
   );

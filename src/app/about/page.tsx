@@ -6,7 +6,8 @@ export const metadata: Metadata = {
   title: "About Sean Van Osselaer | The Quality of Quality",
   description:
     "Learn more about Sean Van Osselaer (SVO), a software engineering leader and architect with deep expertise in scalable systems, AI-driven development, and team leadership.",
-  keywords: "Sean Van Osselaer, Van Osselaer, SVO, software engineering, leadership, architecture, AI, DevOps",
+  keywords:
+    "Sean Van Osselaer, Van Osselaer, SVO, software engineering, leadership, architecture, AI, DevOps",
   openGraph: {
     title: "About Sean Van Osselaer | The Quality of Quality",
     description:
@@ -30,7 +31,9 @@ export default function AboutPage() {
           <meta itemProp="alternateName" content="SVO" />
           <meta itemProp="url" content="https://qual.is" />
 
-          <h1 className="text-3xl md:text-5xl font-bold mb-8 text-center">Sean Van Osselaer</h1>
+          <h1 className="text-3xl md:text-5xl font-bold mb-8 text-center">
+            Sean Van Osselaer
+          </h1>
 
           <img
             src="/assets/blog/authors/svo.png"
@@ -41,14 +44,30 @@ export default function AboutPage() {
 
           <div className="text-lg leading-relaxed">
             <p>
-              I'm Sean Van Osselaer (SVO), Head of Engineering at <a href="https://on.life" target="_blank" rel="noopener noreferrer">Onlife</a>. I'm a software engineering leader, architect and engineer with extensive experience building scalable, high-performance systems and nurturing high-performing teams.
+              I'm Sean Van Osselaer (SVO), Head of Engineering at{" "}
+              <a
+                href="https://on.life"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Onlife
+              </a>
+              . I'm a software engineering leader, architect and engineer with
+              extensive experience building scalable, high-performance systems
+              and nurturing high-performing teams.
             </p>
 
             <p>
-              This site is for sharing insights on technical architecture, leadership strategies, process improvement, and hands-on software engineering practices; complete with working code and real-world examples. You'll find posts on decision frameworks, team scaling, cloud-native architectures, and more.
+              This site is for sharing insights on technical architecture,
+              leadership strategies, process improvement, and hands-on software
+              engineering practices; complete with working code and real-world
+              examples. You'll find posts on decision frameworks, team scaling,
+              cloud-native architectures, and more.
             </p>
 
-            <h2 className="text-2xl font-bold mt-8 mb-4 text-center">Expertise</h2>
+            <h2 className="text-2xl font-bold mt-8 mb-4 text-center">
+              Expertise
+            </h2>
             <ul>
               <li>Engineering leadership and team building</li>
               <li>Software architecture and microservices</li>

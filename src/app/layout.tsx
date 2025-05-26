@@ -13,26 +13,28 @@ export const metadata: Metadata = {
   description: `Musings on software development and delivery by Sean Van Osselaer (SVO). Covering architecture, agile practices, DevOps, and tech leadership to empower your digital journey.`,
   metadataBase: new URL("https://qual.is"),
   keywords: `Sean Van Osselaer, Van Osselaer, SVO, software development, engineering leadership, tech blog, architecture, agile, DevOps`,
-  authors: [{ name: 'Sean Van Osselaer', url: 'https://qual.is' }],
-  creator: 'Sean Van Osselaer',
-  publisher: 'Sean Van Osselaer',
+  authors: [{ name: "Sean Van Osselaer", url: "https://qual.is" }],
+  creator: "Sean Van Osselaer",
+  publisher: "Sean Van Osselaer",
   openGraph: {
-    title: 'The quality of quality | Sean Van Osselaer',
-    description: 'Musings on software development and delivery by Sean Van Osselaer (SVO)',
-    url: 'https://qual.is',
-    siteName: 'qual.is',
+    title: "The quality of quality | Sean Van Osselaer",
+    description:
+      "Musings on software development and delivery by Sean Van Osselaer (SVO)",
+    url: "https://qual.is",
+    siteName: "qual.is",
     images: [HOME_OG_IMAGE_URL],
-    locale: 'en_US',
-    type: 'website',
+    locale: "en_US",
+    type: "website",
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'The quality of quality | Sean Van Osselaer',
-    description: 'Musings on software development and delivery by Sean Van Osselaer (SVO)',
+    card: "summary_large_image",
+    title: "The quality of quality | Sean Van Osselaer",
+    description:
+      "Musings on software development and delivery by Sean Van Osselaer (SVO)",
     images: [HOME_OG_IMAGE_URL],
   },
   alternates: {
-    canonical: 'https://qual.is',
+    canonical: "https://qual.is",
   },
 };
 
@@ -44,7 +46,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning data-mode="system">
       <head>
-        <script defer src="https://cloud.umami.is/script.js" data-website-id="dd0b2581-9ffc-4bcb-8423-6973b138c1e4"></script>
+        <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="dd0b2581-9ffc-4bcb-8423-6973b138c1e4"
+        ></script>
         <link
           rel="apple-touch-icon"
           sizes="152x152"
@@ -92,22 +98,23 @@ export default function RootLayout({
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebSite",
-            "name": "The quality of quality | Sean Van Osselaer",
-            "url": "https://qual.is",
-            "description": "Musings on software development and delivery by Sean Van Osselaer (SVO)",
-            "author": {
+            name: "The quality of quality | Sean Van Osselaer",
+            url: "https://qual.is",
+            description:
+              "Musings on software development and delivery by Sean Van Osselaer (SVO)",
+            author: {
               "@type": "Person",
               "@id": "https://qual.is/#seanvanosselaer",
-              "name": "Sean Van Osselaer",
-              "givenName": "Sean",
-              "familyName": "Van Osselaer",
-              "alternateName": "SVO",
-              "url": "https://qual.is",
-              "sameAs": [
+              name: "Sean Van Osselaer",
+              givenName: "Sean",
+              familyName: "Van Osselaer",
+              alternateName: "SVO",
+              url: "https://qual.is",
+              sameAs: [
                 "https://github.com/svo",
-                "https://www.linkedin.com/in/5v0/"
-              ]
-            }
+                "https://www.linkedin.com/in/5v0/",
+              ],
+            },
           })}
         </script>
       </head>

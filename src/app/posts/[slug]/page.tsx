@@ -35,27 +35,27 @@ export default async function Post(props: Params) {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "BlogPosting",
-            "headline": post.title,
-            "datePublished": post.date,
-            "dateModified": post.date,
-            "author": {
+            headline: post.title,
+            datePublished: post.date,
+            dateModified: post.date,
+            author: {
               "@type": "Person",
-              "name": post.author.name
+              name: post.author.name,
             },
-            "description": post.excerpt,
-            "image": post.coverImage,
-            "mainEntityOfPage": {
+            description: post.excerpt,
+            image: post.coverImage,
+            mainEntityOfPage: {
               "@type": "WebPage",
-              "@id": `https://qual.is/posts/${post.slug}`
+              "@id": `https://qual.is/posts/${post.slug}`,
             },
-            "publisher": {
+            publisher: {
               "@type": "Organization",
-              "name": "Qualis",
-              "logo": {
+              name: "Qualis",
+              logo: {
                 "@type": "ImageObject",
-                "url": "https://qual.is/favicon/android-icon-192x192.png"
-              }
-            }
+                url: "https://qual.is/favicon/android-icon-192x192.png",
+              },
+            },
           })}
         </Script>
       </Container>
@@ -88,14 +88,19 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
     openGraph: {
       title,
       description: post.excerpt,
-      type: 'article',
+      type: "article",
       publishedTime: post.date,
       authors: [post.author.name],
-      tags: [post.topic, 'software development', 'engineering', 'tech leadership'],
+      tags: [
+        post.topic,
+        "software development",
+        "engineering",
+        "tech leadership",
+      ],
       images: [post.ogImage.url],
     },
     twitter: {
-      card: 'summary_large_image',
+      card: "summary_large_image",
       title,
       description: post.excerpt,
       images: [post.ogImage.url],

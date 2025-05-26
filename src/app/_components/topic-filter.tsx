@@ -72,7 +72,10 @@ export function TopicFilter({ topics, allPosts }: TopicFilterProps) {
         <h2 className="text-primary mb-6 text-lg md:text-2xl font-bold tracking-tighter leading-tight text-center">
           Topic Filters
         </h2>
-        <div className="flex flex-wrap justify-center gap-3 text-sm" ref={containerRef}>
+        <div
+          className="flex flex-wrap justify-center gap-3 text-sm"
+          ref={containerRef}
+        >
           {topics.map((topic) => (
             <button
               key={topic}
@@ -88,7 +91,8 @@ export function TopicFilter({ topics, allPosts }: TopicFilterProps) {
                 }
               `}
             >
-              {selectedTopics.includes(topic) ? '🔘 ' : '⚪️ '}{topic}
+              {selectedTopics.includes(topic) ? "🔘 " : "⚪️ "}
+              {topic}
             </button>
           ))}
         </div>
