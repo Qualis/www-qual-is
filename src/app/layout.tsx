@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     images: [HOME_OG_IMAGE_URL],
   },
   alternates: {
-    canonical: "https://qual.is",
+    canonical: "https://www.qual.is",
   },
 };
 
