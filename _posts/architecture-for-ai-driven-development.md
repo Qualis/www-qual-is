@@ -1,7 +1,7 @@
 ---
 title: "Foundations of Quality: Architecture for AI-Driven Development and Easier Maintenance"
 excerpt: "Prepare your software projects for the generative AI era by embedding quality deeply into your architecture from day one. By using Domain-Driven Design (DDD), Hexagonal Architecture, and rigorous automation standards, this structured Sprint Zero approach enhances maintainability, security, and clarity. These guidelines significantly reduce long-term maintenance overhead and help generative AI tools deliver accurate, reliable code."
-topic: "engineering"
+topic: "engineer"
 date: "2025-03-30"
 author:
   name: SVO

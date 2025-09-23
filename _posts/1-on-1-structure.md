@@ -1,7 +1,7 @@
 ---
 title: "Structuring Effective 1:1 Meetings for Growth and Alignment"
 excerpt: "Improve your 1:1 with a structured approach that combines Objectives and Key Results, personal development plans, happiness retrospectives, and transparent performance discussions-driving alignment, growth, and stronger communication."
-topic: "management"
+topic: "manage"
 date: "2024-01-12"
 author:
   name: SVO

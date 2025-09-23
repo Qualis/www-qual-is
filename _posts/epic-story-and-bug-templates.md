@@ -1,7 +1,7 @@
 ---
 title: "Epic, Story, and Bug Templates for Task Management Software"
 excerpt: "Create a streamlined and efficient task management workflow with this Epic, Story, and Bug Template. Whether you're leading a development team, managing a project, or improving an existing workflow, this structured approach helps teams maintain clarity, reduce friction, and improve collaboration across all work items."
-topic: "management"
+topic: "manage"
 date: "2025-01-17"
 author:
   name: SVO

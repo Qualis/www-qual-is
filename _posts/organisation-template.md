@@ -1,7 +1,7 @@
 ---
 title: "Organise Your Teams for Combined Health, Happiness, and Success"
 excerpt: "Create a thriving organisation with this Organisation Template, a structured template for defining teams, decision-making, and governance. Whether you're scaling a startup or refining an existing structure, this template provides a sample set of best practices."
-topic: "management"
+topic: "manage"
 date: "2022-02-20"
 author:
   name: SVO

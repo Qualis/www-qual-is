@@ -1,7 +1,7 @@
 ---
 title: "Measuring Individual Contributor Performance with Accelerate Metrics"
 excerpt: "Adopt a structured, data-driven approach to evaluating software engineer performance using the Accelerate Metrics. Capture meaningful insights to foster transparent and effective performance conversations."
-topic: "management"
+topic: "manage"
 date: "2023-04-21"
 author:
   name: SVO

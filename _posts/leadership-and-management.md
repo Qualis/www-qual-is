@@ -1,7 +1,7 @@
 ---
 title: "Leadership and Management: What's the Difference and Why It Matters"
 excerpt: "Management focuses on coordination and control; leadership on vision and influence. This post explores both, and how to consciously shift between them to build healthier systems, stronger teams, and more thoughtful outcomes."
-topic: "progression"
+topic: "think"
 date: "2025-05-26"
 author:
   name: SVO

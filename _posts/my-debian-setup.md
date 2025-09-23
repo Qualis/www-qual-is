@@ -1,7 +1,7 @@
 ---
 title: "Make Your Debian Setup Testable and Repeatable"
 excerpt: "Automate your Debian setup with Ansible to ensure a consistent, repeatable, and testable system configuration. This approach saves time, reduces errors, and keeps your setup version-controlled."
-topic: "engineering"
+topic: "engineer"
 date: "2022-03-13"
 author:
   name: SVO

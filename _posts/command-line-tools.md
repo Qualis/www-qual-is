@@ -1,7 +1,7 @@
 ---
 title: "Start Your Linux Command-Line Friendship"
 excerpt: "New to the Linux command-line? This simple Vagrant setup provides a hands-on way to explore essential tools like locate, tree, nmap, and more. Whether you're navigating files, managing processes, or analyzing networks, this guide helps you build confidence and efficiency."
-topic: "engineering"
+topic: "engineer"
 date: "2022-03-01"
 author:
   name: SVO

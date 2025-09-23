@@ -53,5 +53,6 @@ export function getAllPosts(): Post[] {
 export function getAllTopics(): string[] {
   const posts = getAllPosts();
   const topicsSet = new Set(posts.map((post) => post.topic));
-  return Array.from(topicsSet);
+  const topicOrder = ["engineer", "lead", "manage", "think"];
+  return topicOrder.filter(topic => topicsSet.has(topic));
 }

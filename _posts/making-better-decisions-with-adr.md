@@ -1,7 +1,7 @@
 ---
 title: "Making Better Decisions with ADR: Structure, Speed, and Clarity"
 excerpt: "Use Architecture Decision Records (ADR) to navigate solution options and drive confident decisions. This guide provides a structured approach for documenting, evaluating, and sharing decisions across your organisation; boosting traceability, clarity, and alignment."
-topic: "management"
+topic: "manage"
 date: "2025-05-10"
 author:
   name: SVO

@@ -1,7 +1,7 @@
 ---
 title: "Make Your macOS Setup Testable and Repeatable"
 excerpt: "Automate your macOS setup with Ansible to ensure a consistent, repeatable, and testable system configuration. This approach saves time, reduces errors, and keeps your setup version-controlled."
-topic: "engineering"
+topic: "engineer"
 date: "2022-03-12"
 author:
   name: SVO

@@ -1,7 +1,7 @@
 ---
 title: "Learn About Black Hats by Putting on a White One"
 excerpt: "Learn cybersecurity by doing with this hands-on security testing project. Using Vagrant and Docker, you'll explore real-world attack scenarios in a controlled environment. Test vulnerabilities, run reconnaissance, and strengthen your security skills."
-topic: "engineering"
+topic: "engineer"
 date: "2022-02-26"
 author:
   name: SVO

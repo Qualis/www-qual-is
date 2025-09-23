@@ -1,7 +1,7 @@
 ---
 title: "OKR to Set You and Your New Employer Up for Success in the First 90 Days of Your Engineering Management"
 excerpt: "Set yourself up for success in your first 90 days in an engineering management role with a structured OKR framework. These objectives help you build the right team, improve efficiency, align with business goals, and establish cultural norms. By focusing on hiring, delivery, budgeting, strategy, and technology, you can create a strong foundation for long-term impact."
-topic: "management"
+topic: "manage"
 date: "2022-03-19"
 author:
   name: SVO

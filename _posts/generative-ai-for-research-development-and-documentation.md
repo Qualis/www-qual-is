@@ -1,7 +1,7 @@
 ---
 title: "Leveraging Generative AI for Research, Development, and Documentation"
 excerpt: "Enhance productivity with generative AI in research, development, and documentation. From AI-assisted coding and debugging to architectural decisions and sprint planning, this structured approach streamlines workflows and improves efficiency."
-topic: "engineering"
+topic: "engineer"
 date: "2025-03-14"
 author:
   name: SVO
