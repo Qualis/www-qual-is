@@ -9,7 +9,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: `The quality of quality | Sean Van Osselaer | Fractional CTO`,
+  title: `The quality of quality | Engineering Leadership & Fractional CTO Services | Sean Van Osselaer (SVO)`,
   description: `Fractional CTO and engineering leadership specialist. AI-driven development, scalable architecture for growing companies.`,
   metadataBase: new URL("https://qual.is"),
   keywords: `Sean Van Osselaer, Van Osselaer, SVO, fractional CTO, fractional CTO services, engineering leadership consultant, technical strategy consultant, CTO as a service, engineering team scaling, AI-driven development strategy, software development, architecture, agile, DevOps`,
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   creator: "Sean Van Osselaer",
   publisher: "Sean Van Osselaer",
   openGraph: {
-    title: "The quality of quality | Sean Van Osselaer | Fractional CTO",
+    title: "The quality of quality | Engineering Leadership & Fractional CTO Services | Sean Van Osselaer (SVO)",
     description:
       "Fractional CTO and engineering leadership specialist. AI-driven development, scalable architecture for growing companies.",
     url: "https://qual.is",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "The quality of quality | Sean Van Osselaer | Fractional CTO",
+    title: "The quality of quality | Engineering Leadership & Fractional CTO Services | Sean Van Osselaer (SVO)",
     description:
       "Fractional CTO and engineering leadership specialist. AI-driven development, scalable architecture for growing companies.",
     images: [HOME_OG_IMAGE_URL],
@@ -101,7 +101,7 @@ export default function RootLayout({
               {
                 "@type": "WebSite",
                 "@id": "https://qual.is/#website",
-                name: "The quality of quality | Sean Van Osselaer | Fractional CTO",
+                name: "The quality of quality | Engineering Leadership & Fractional CTO Services | Sean Van Osselaer (SVO)",
                 url: "https://qual.is",
                 description:
                   "Fractional CTO and engineering leadership specialist. AI-driven development, scalable architecture for growing companies.",
