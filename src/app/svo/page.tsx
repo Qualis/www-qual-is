@@ -6,13 +6,13 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Fractional CTO Services | Sean Van Osselaer",
   description:
-    "Experienced Fractional CTO specializing in AI-driven development, scalable architecture, and high-performing engineering teams. Proven results in team scaling, process optimization, and technical strategy.",
+    "Fractional CTO specializing in AI-driven development, scalable architecture, and high-performing engineering teams. Proven results in team scaling, process optimization, and technical strategy.",
   keywords:
     "Fractional CTO, Sean Van Osselaer, SVO, CTO services, AI-driven development, engineering leadership, software architecture, team scaling, technical strategy",
   openGraph: {
     title: "Fractional CTO Services | Sean Van Osselaer",
     description:
-      "Experienced Fractional CTO specializing in AI-driven development, scalable architecture, and high-performing engineering teams. Proven results in team scaling, process optimization, and technical strategy.",
+      "Fractional CTO specializing in AI-driven development, scalable architecture, and high-performing engineering teams. Proven results in team scaling, process optimization, and technical strategy.",
     url: "https://qual.is/svo",
     type: "profile",
   },
@@ -108,7 +108,7 @@ export default function AboutPage() {
             </div>
 
             <h2 className="text-3xl font-bold mt-12 mb-6 text-center">
-              Experience & Credentials
+              Technical Expertise
             </h2>
 
             <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
@@ -146,6 +146,62 @@ export default function AboutPage() {
               I leverage technical innovation, philosophical concepts, and psychological understanding to create sustainable engineering
               cultures that deliver exceptional results while supporting team growth and wellbeing.
             </p>
+
+            <h2 className="text-3xl font-bold mt-12 mb-8 text-center">
+              Frequently Asked Questions
+            </h2>
+
+            <div className="mb-12 space-y-8">
+              <div className="border-l-4 border-blue-500 pl-6">
+                <h3 className="text-xl font-bold mb-3">What is a Fractional CTO?</h3>
+                <p>
+                  A Fractional CTO is a part-time Chief Technology Officer who provides strategic technical leadership
+                  to growing companies without the full-time commitment and cost. I work with multiple clients to deliver
+                  the same high-level technical strategy, team leadership, and architectural guidance that a full-time
+                  CTO would provide, but on a flexible engagement model that scales with your needs.
+                </p>
+              </div>
+
+              <div className="border-l-4 border-green-500 pl-6">
+                <h3 className="text-xl font-bold mb-3">How does fractional CTO work vs full-time hiring?</h3>
+                <p>
+                  Fractional CTO services offer immediate expertise without the 6-12 month hiring process.
+                  You get proven technical leadership from day one, with the flexibility to
+                  scale engagement up or down based on your company's growth stage and needs. This approach is ideal for
+                  companies that need senior technical guidance but aren't ready for a full-time executive hire.
+                </p>
+              </div>
+
+              <div className="border-l-4 border-purple-500 pl-6">
+                <h3 className="text-xl font-bold mb-3">What size companies benefit most from fractional CTO services?</h3>
+                <p>
+                  Growing companies with 10-100 employees typically see the greatest value from fractional CTO services.
+                  This includes startups scaling beyond their founding team, established companies launching digital
+                  initiatives, and businesses experiencing technical bottlenecks that impact growth. If you have
+                  engineering challenges but can't justify a full-time CTO salary, fractional services bridge that gap perfectly.
+                </p>
+              </div>
+
+              <div className="border-l-4 border-orange-500 pl-6">
+                <h3 className="text-xl font-bold mb-3">How do you measure success in a fractional CTO engagement?</h3>
+                <p>
+                  Success is measured through concrete improvements: faster deployment cycles, reduced system downtime,
+                  improved team performance metrics, and alignment between technical strategy and business objectives.
+                  I establish clear OKRs at engagement start, including lead time for changes, deployment frequency,
+                  mean time to recovery, and team satisfaction scores. Regular reviews ensure we're delivering measurable value.
+                </p>
+              </div>
+
+              <div className="border-l-4 border-red-500 pl-6">
+                <h3 className="text-xl font-bold mb-3">What's the typical engagement timeline and process?</h3>
+                <p>
+                  Engagements typically start with a 2-week assessment to understand your technical landscape, team dynamics,
+                  and growth objectives. From there, we establish ongoing strategic guidance that might include weekly leadership
+                  meetings, monthly architecture reviews, quarterly strategic planning, and as-needed project oversight.
+                  Engagements are flexible and can evolve from intensive implementation phases to ongoing advisory relationships.
+                </p>
+              </div>
+            </div>
 
             <div className="bg-blue-50 dark:bg-blue-900 rounded-lg p-8 text-center">
               <h2 className="text-2xl font-bold mb-4">Ready to Transform Your Engineering Organization?</h2>

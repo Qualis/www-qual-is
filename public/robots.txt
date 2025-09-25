@@ -2,12 +2,12 @@ User-agent: *
 Allow: /
 
 User-agent: GPTBot
-Crawl-delay: 5
+Allow: /
 
 User-agent: ClaudeBot
-Crawl-delay: 5
+Allow: /
 
 User-agent: Anthropic-AI
-Crawl-delay: 5
+Allow: /
 
 Sitemap: https://qual.is/sitemap.xml
