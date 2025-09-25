@@ -209,15 +209,6 @@ export default function AboutPage() {
                 Let's discuss how I can help you build scalable systems, implement AI-driven development practices,
                 and create high-performing engineering teams.
               </p>
-              <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-                <a
-                  href="/resume-svo-2025.pdf"
-                  target="_blank"
-                  className="mx-2 bg-primary hover:bg-accent-1 hover:text-primary border border-primary text-white font-bold py-2 px-8 lg:px-6 duration-200 transition-colors mb-4 lg:mb-0 no-underline"
-                >
-                  Resume
-                </a>
-              </div>
             </div>
           </div>
         </article>
