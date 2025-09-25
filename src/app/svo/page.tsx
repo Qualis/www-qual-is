@@ -71,9 +71,8 @@ export default function AboutPage() {
               <div className="border-l-4 border-green-500 pl-6">
                 <h3 className="text-2xl font-bold mb-3">AI-Driven Development Strategy</h3>
                 <p>
-                  Implement generative AI tools and practices that deliver measurable improvements: 50-75%
-                  decrease in lead time for changes, 50-75% increase in deployment frequency, with zero
-                  deviation in change failure rates. Design architectures that leverage AI for enhanced
+                  Implement generative AI tools and practices that deliver measurable improvements in
+                  lead time for changes, deployment frequency, and change failure rates. Design architectures that leverage AI for enhanced
                   decision-making and streamlined workflows.
                 </p>
               </div>

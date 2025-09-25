@@ -53,22 +53,41 @@ export function Intro() {
       </div>
 
       <div className="flex justify-center mb-6 w-full">
-        <Image
-          src="/assets/banner.png"
-          alt="Code, People & Strategy - Musings by SVO"
-          width={1200}
-          height={300}
-          className="w-full h-auto"
-          priority
-        />
+        <Link href="/svo">
+          <Image
+            src="/assets/banner.png"
+            alt="Code, People & Strategy - Musings by SVO"
+            width={1200}
+            height={300}
+            className="w-full h-auto cursor-pointer hover:opacity-80 transition-opacity duration-200"
+            priority
+          />
+        </Link>
       </div>
 
-      <p className="text-accent-3 dark:text-accent-1 text-lg leading-relaxed mb-10 text-center max-w-4xl mx-auto">
-        Insights on technical architecture, leadership strategies, process
-        improvement, and hands-on software engineering practices; complete with
-        working code and real-world examples. You'll find posts on decision
-        frameworks, team scaling, cloud-native architectures, and more.
-      </p>
+      <div className="text-center mb-10 max-w-4xl mx-auto">
+        <p className="text-primary text-xl md:text-2xl font-semibold leading-relaxed mb-6">
+          Need to scale your engineering team and accelerate delivery? I help growing companies achieve faster deployments, build high-performing teams, and implement AI-driven development practices that deliver measurable results.
+        </p>
+        <div className="mb-8">
+          <Link
+            href="/svo"
+            className="bg-primary hover:bg-accent-1 hover:text-primary border-2 border-primary text-white font-bold py-3 px-6 md:py-5 md:px-12 text-lg md:text-xl rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-110 transition-all duration-300 inline-block"
+          >
+            Let's Talk →
+          </Link>
+        </div>
+        <hr className="border-t border-primary dark:border-primary w-full mb-8" />
+        <h2 className="text-primary mb-8 text-xl md:text-3xl lg:text-4xl font-bold tracking-tighter leading-tight text-center">
+          Musings
+        </h2>
+        <p className="text-accent-3 dark:text-accent-1 text-lg leading-relaxed">
+          Insights on technical architecture, leadership strategies, process
+          improvement, and hands-on software engineering practices; complete with
+          working code and real-world examples. You'll find posts on decision
+          frameworks, team scaling, cloud-native architectures, and more.
+        </p>
+      </div>
     </div>
   );
 }
