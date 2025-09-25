@@ -33,7 +33,7 @@ const Header = () => {
         </h2>
         <div className="flex items-center space-x-4">
           <Link
-            href="/about"
+            href="/svo"
             className="text-primary transition-colors"
             aria-label="Sean Van Osselaer"
           >

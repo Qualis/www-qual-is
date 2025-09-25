@@ -20,7 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
-      url: `${baseUrl}/about`,
+      url: `${baseUrl}/svo`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.9,

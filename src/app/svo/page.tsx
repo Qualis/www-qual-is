@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "Fractional CTO Services | Sean Van Osselaer",
     description:
       "Experienced Fractional CTO specializing in AI-driven development, scalable architecture, and high-performing engineering teams. Proven results in team scaling, process optimization, and technical strategy.",
-    url: "https://qual.is/about",
+    url: "https://qual.is/svo",
     type: "profile",
   },
 };
@@ -39,11 +39,11 @@ export default function AboutPage() {
               className="w-48 h-48 rounded-full mx-auto mb-6"
               itemProp="image"
             />
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              Sean Van Osselaer
+            <h1 className="text-3xl md:text-4xl font-bold mb-4">
+              SVO - Sean Van Osselaer
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-6">
-              Fractional CTO
+              CTO - Fractional
             </p>
             <p className="text-lg leading-relaxed max-w-3xl mx-auto">
               I help growing companies build scalable engineering organizations, implement AI-driven development practices,
