@@ -74,7 +74,7 @@ export function Intro() {
             href="/svo"
             className="bg-primary hover:bg-accent-1 hover:text-primary border-2 border-primary text-white font-bold py-3 px-6 md:py-5 md:px-12 text-lg md:text-xl rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-110 transition-all duration-300 inline-block"
           >
-            Let's Talk →
+            How I Can Help →
           </Link>
         </div>
         <hr className="border-t border-primary dark:border-primary w-full mb-8" />
