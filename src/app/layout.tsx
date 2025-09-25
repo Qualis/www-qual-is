@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: `The quality of quality | Sean Van Osselaer | Fractional CTO`,
-  description: `The quality of quality in engineering leadership. Fractional CTO specializing in AI-driven development, scalable architecture, and building high-performing engineering teams for growing companies.`,
+  description: `Fractional CTO specializing in AI-driven development, scalable architecture, and high-performing engineering teams for growing companies.`,
   metadataBase: new URL("https://qual.is"),
   keywords: `Sean Van Osselaer, Van Osselaer, SVO, fractional CTO, fractional CTO services, engineering leadership consultant, technical strategy consultant, CTO as a service, engineering team scaling, AI-driven development strategy, software development, architecture, agile, DevOps`,
   authors: [{ name: "Sean Van Osselaer", url: "https://qual.is" }],
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "The quality of quality | Sean Van Osselaer | Fractional CTO",
     description:
-      "The quality of quality in engineering leadership. Fractional CTO specializing in AI-driven development and scalable architecture.",
+      "Fractional CTO specializing in AI-driven development and scalable architecture for growing companies.",
     url: "https://qual.is",
     siteName: "qual.is",
     images: [HOME_OG_IMAGE_URL],
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "The quality of quality | Sean Van Osselaer | Fractional CTO",
     description:
-      "The quality of quality in engineering leadership. Fractional CTO specializing in AI-driven development and scalable architecture.",
+      "Fractional CTO specializing in AI-driven development and scalable architecture for growing companies.",
     images: [HOME_OG_IMAGE_URL],
   },
   alternates: {
@@ -104,7 +104,7 @@ export default function RootLayout({
                 name: "The quality of quality | Sean Van Osselaer | Fractional CTO",
                 url: "https://qual.is",
                 description:
-                  "The quality of quality in engineering leadership. Fractional CTO specializing in AI-driven development and scalable architecture.",
+                  "Fractional CTO specializing in AI-driven development and scalable architecture for growing companies.",
                 author: { "@id": "https://qual.is/#seanvanosselaer" },
               },
               {

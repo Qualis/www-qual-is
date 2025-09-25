@@ -6,13 +6,13 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Fractional CTO Services | Sean Van Osselaer",
   description:
-    "Fractional CTO specializing in AI-driven development, scalable architecture, and high-performing engineering teams. Proven results in team scaling, process optimization, and technical strategy.",
+    "Fractional CTO services: AI-driven development, scalable architecture, team scaling. Proven results in technical strategy and optimization.",
   keywords:
     "Fractional CTO, Sean Van Osselaer, SVO, CTO services, AI-driven development, engineering leadership, software architecture, team scaling, technical strategy",
   openGraph: {
     title: "Fractional CTO Services | Sean Van Osselaer",
     description:
-      "Fractional CTO specializing in AI-driven development, scalable architecture, and high-performing engineering teams. Proven results in team scaling, process optimization, and technical strategy.",
+      "Fractional CTO services: AI-driven development, scalable architecture, team scaling. Proven results in technical strategy and optimization.",
     url: "https://qual.is/svo",
     type: "profile",
   },
