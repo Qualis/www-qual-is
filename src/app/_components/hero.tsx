@@ -54,35 +54,274 @@ export function Hero() {
               <div className="relative bg-gradient-to-br from-primary/10 to-accent-3/10 dark:from-accent-1/10 dark:to-primary/10 rounded-2xl p-8 lg:p-12">
 
                 <div className="relative z-10">
-                  <div className="grid grid-cols-2 gap-6">
-                    <div className="bg-primary/20 rounded-xl p-6 flex items-center justify-center">
-                      <svg className="w-12 h-12 text-primary dark:text-primary-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                      </svg>
-                    </div>
+                  <svg className="w-full h-full" viewBox="0 0 320 240" fill="none">
+                    <g stroke="currentColor" strokeWidth="1.5">
 
-                    <div className="bg-accent-3/20 dark:bg-accent-1/20 rounded-xl p-6 flex items-center justify-center">
-                      <svg className="w-12 h-12 text-primary dark:text-primary-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                      </svg>
-                    </div>
+                      {/* Background edges - original pattern */}
+                      <g className="text-primary dark:text-primary-dark opacity-10">
 
-                    <div className="bg-accent-1/20 rounded-xl p-6 flex items-center justify-center">
-                      <svg className="w-12 h-12 text-primary dark:text-primary-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                      </svg>
-                    </div>
+                        <path d="M100 60L65 12" />
+                        <path d="M130 60L212 15" />
+                        <path d="M170 140L145 185" />
+                        <path d="M240 60L275 8" />
 
-                    <div className="bg-primary/20 rounded-xl p-6 flex items-center justify-center">
-                      <svg className="w-12 h-12 text-primary dark:text-primary-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                      </svg>
-                    </div>
-                  </div>
+                        <path d="M12 25L5 75" />
+                        <path d="M65 12L158 6" />
+                        <path d="M212 15L158 6" />
+                        <path d="M275 8L315 85" />
+
+                        <path d="M8 125L312 115" />
+
+                        <path d="M25 45L115 155" />
+                        <path d="M175 165L185 232" />
+                        <path d="M245 45L285 175" />
+                        <path d="M265 210L225 225" />
+                        <path d="M125 45L265 210" />
+                        <path d="M175 35L312 165" />
+                        <path d="M5 75L245 45" />
+                        <path d="M175 165L225 225" />
+
+                        <path d="M15 180L35 215" />
+                        <path d="M35 215L75 228" />
+                        <path d="M310 25L245 45" />
+                        <path d="M295 235L285 175" />
+                        <path d="M308 195L312 165" />
+
+                        <path d="M118 235L145 185" />
+                        <path d="M145 185L185 232" />
+                        <path d="M225 225L265 210" />
+
+                        <path d="M22 165L65 175" />
+                        <path d="M12 220L308 220" />
+
+                        <path d="M12 25L25 45" />
+                        <path d="M310 25L315 85" />
+                        <path d="M75 228L115 155" />
+
+                        <path d="M118 235L295 235" />
+                        <path d="M5 75L22 165" />
+                        <path d="M312 115L312 165" />
+
+                        <path d="M125 45L175 35" />
+                        <path d="M15 180L65 175" />
+                        <path d="M185 232L225 225" />
+                        <path d="M285 175L308 195" />
+                      </g>
+
+                      {/* Main SVO letter edges */}
+                      <g className="text-primary dark:text-primary-dark opacity-60">
+
+                        <path d="M100 60L80 60" />
+                        <path d="M80 60L60 60" />
+                        <path d="M60 60L40 80" />
+                        <path d="M40 80L50 100" />
+                        <path d="M50 100L70 100" />
+                        <path d="M70 100L90 100" />
+                        <path d="M90 100L110 120" />
+                        <path d="M110 120L100 140" />
+                        <path d="M100 140L80 140" />
+                        <path d="M80 140L60 140" />
+
+                        <path d="M130 60L170 140" />
+                        <path d="M140 80L170 140" />
+                        <path d="M150 100L170 140" />
+                        <path d="M160 120L170 140" />
+                        <path d="M210 60L170 140" />
+                        <path d="M200 80L170 140" />
+                        <path d="M190 100L170 140" />
+                        <path d="M180 120L170 140" />
+
+                        <path d="M240 60L260 60" />
+                        <path d="M260 60L280 60" />
+                        <path d="M280 60L300 80" />
+                        <path d="M300 80L300 100" />
+                        <path d="M300 100L300 120" />
+                        <path d="M300 120L280 140" />
+                        <path d="M280 140L260 140" />
+                        <path d="M260 140L240 140" />
+                        <path d="M240 140L220 120" />
+                        <path d="M220 120L220 100" />
+                        <path d="M220 100L220 80" />
+                        <path d="M220 80L240 60" />
+                      </g>
+
+                      {/* Background vertices - density gradient showing organization increasing toward SVO */}
+                      <g className="text-primary dark:text-primary-dark opacity-40">
+                        {/* Solid background circles to hide edges */}
+                        <g fill="white" className="dark:fill-gray-900">
+                          {/* Far from SVO - smallest, most chaotic */}
+                          <circle cx="12" cy="25" r="2" />
+                          <circle cx="65" cy="12" r="2.5" />
+                          <circle cx="158" cy="6" r="2" />
+                          <circle cx="212" cy="15" r="2.5" />
+                          <circle cx="275" cy="8" r="2" />
+
+                          <circle cx="5" cy="75" r="2.5" />
+                          <circle cx="315" cy="85" r="2" />
+                          <circle cx="312" cy="115" r="2.5" />
+
+                          <circle cx="15" cy="180" r="2" />
+                          <circle cx="35" cy="215" r="2.5" />
+                          <circle cx="75" cy="228" r="2" />
+                          <circle cx="118" cy="235" r="2.5" />
+                          <circle cx="185" cy="232" r="2" />
+
+                          <circle cx="225" cy="225" r="2.5" />
+                          <circle cx="295" cy="235" r="2" />
+                          <circle cx="12" cy="220" r="2.5" />
+                          <circle cx="308" cy="220" r="2" />
+
+                          {/* Medium distance from SVO - transitioning size */}
+                          <circle cx="25" cy="45" r="3" />
+                          <circle cx="310" cy="25" r="3.5" />
+                          <circle cx="308" cy="195" r="3" />
+
+                          <circle cx="125" cy="45" r="3.5" />
+                          <circle cx="175" cy="35" r="3" />
+                          <circle cx="245" cy="45" r="3.5" />
+
+                          <circle cx="22" cy="165" r="3" />
+                          <circle cx="312" cy="165" r="3.5" />
+                          <circle cx="65" cy="175" r="3" />
+                          <circle cx="285" cy="175" r="3.5" />
+
+                          {/* Close to SVO - larger, more organized */}
+                          <circle cx="115" cy="155" r="4" />
+                          <circle cx="145" cy="185" r="4.5" />
+                          <circle cx="175" cy="165" r="4" />
+                          <circle cx="265" cy="210" r="4.5" />
+
+                          <circle cx="8" cy="125" r="4" />
+                        </g>
+                        {/* Visible vertices - graduated sizes */}
+                        <g fill="currentColor">
+                          {/* Far from SVO - smallest */}
+                          <circle cx="12" cy="25" r="1.5" />
+                          <circle cx="65" cy="12" r="2" />
+                          <circle cx="158" cy="6" r="1.5" />
+                          <circle cx="212" cy="15" r="2" />
+                          <circle cx="275" cy="8" r="1.5" />
+
+                          <circle cx="5" cy="75" r="2" />
+                          <circle cx="315" cy="85" r="1.5" />
+                          <circle cx="312" cy="115" r="2" />
+
+                          <circle cx="15" cy="180" r="1.5" />
+                          <circle cx="35" cy="215" r="2" />
+                          <circle cx="75" cy="228" r="1.5" />
+                          <circle cx="118" cy="235" r="2" />
+                          <circle cx="185" cy="232" r="1.5" />
+
+                          <circle cx="225" cy="225" r="2" />
+                          <circle cx="295" cy="235" r="1.5" />
+                          <circle cx="12" cy="220" r="2" />
+                          <circle cx="308" cy="220" r="1.5" />
+
+                          {/* Medium distance - transitioning */}
+                          <circle cx="25" cy="45" r="2.5" />
+                          <circle cx="310" cy="25" r="3" />
+                          <circle cx="308" cy="195" r="2.5" />
+
+                          <circle cx="125" cy="45" r="3" />
+                          <circle cx="175" cy="35" r="2.5" />
+                          <circle cx="245" cy="45" r="3" />
+
+                          <circle cx="22" cy="165" r="2.5" />
+                          <circle cx="312" cy="165" r="3" />
+                          <circle cx="65" cy="175" r="2.5" />
+                          <circle cx="285" cy="175" r="3" />
+
+                          {/* Close to SVO - largest, most organized */}
+                          <circle cx="115" cy="155" r="3.5" />
+                          <circle cx="145" cy="185" r="4" />
+                          <circle cx="175" cy="165" r="3.5" />
+                          <circle cx="265" cy="210" r="4" />
+
+                          <circle cx="8" cy="125" r="3.5" />
+                        </g>
+                      </g>
+
+                      {/* Main SVO letter vertices - with solid backgrounds */}
+                      <g className="text-primary dark:text-primary-dark">
+                        {/* Solid background circles */}
+                        <g fill="white" className="dark:fill-gray-900">
+                          <circle cx="100" cy="60" r="5.5" />
+                          <circle cx="80" cy="60" r="5.5" />
+                          <circle cx="60" cy="60" r="5.5" />
+                          <circle cx="40" cy="80" r="5.5" />
+                          <circle cx="50" cy="100" r="5.5" />
+                          <circle cx="70" cy="100" r="5.5" />
+                          <circle cx="90" cy="100" r="5.5" />
+                          <circle cx="110" cy="120" r="5.5" />
+                          <circle cx="100" cy="140" r="5.5" />
+                          <circle cx="80" cy="140" r="5.5" />
+                          <circle cx="60" cy="140" r="5.5" />
+
+                          <circle cx="130" cy="60" r="5.5" />
+                          <circle cx="140" cy="80" r="5.5" />
+                          <circle cx="150" cy="100" r="5.5" />
+                          <circle cx="160" cy="120" r="5.5" />
+                          <circle cx="170" cy="140" r="5.5" />
+                          <circle cx="210" cy="60" r="5.5" />
+                          <circle cx="200" cy="80" r="5.5" />
+                          <circle cx="190" cy="100" r="5.5" />
+                          <circle cx="180" cy="120" r="5.5" />
+
+                          <circle cx="240" cy="60" r="5.5" />
+                          <circle cx="260" cy="60" r="5.5" />
+                          <circle cx="280" cy="60" r="5.5" />
+                          <circle cx="220" cy="80" r="5.5" />
+                          <circle cx="300" cy="80" r="5.5" />
+                          <circle cx="220" cy="100" r="5.5" />
+                          <circle cx="300" cy="100" r="5.5" />
+                          <circle cx="220" cy="120" r="5.5" />
+                          <circle cx="300" cy="120" r="5.5" />
+                          <circle cx="240" cy="140" r="5.5" />
+                          <circle cx="260" cy="140" r="5.5" />
+                          <circle cx="280" cy="140" r="5.5" />
+                        </g>
+                        {/* Visible vertices */}
+                        <g fill="currentColor">
+                          <circle cx="100" cy="60" r="5" />
+                          <circle cx="80" cy="60" r="5" />
+                          <circle cx="60" cy="60" r="5" />
+                          <circle cx="40" cy="80" r="5" />
+                          <circle cx="50" cy="100" r="5" />
+                          <circle cx="70" cy="100" r="5" />
+                          <circle cx="90" cy="100" r="5" />
+                          <circle cx="110" cy="120" r="5" />
+                          <circle cx="100" cy="140" r="5" />
+                          <circle cx="80" cy="140" r="5" />
+                          <circle cx="60" cy="140" r="5" />
+
+                          <circle cx="130" cy="60" r="5" />
+                          <circle cx="140" cy="80" r="5" />
+                          <circle cx="150" cy="100" r="5" />
+                          <circle cx="160" cy="120" r="5" />
+                          <circle cx="170" cy="140" r="5" />
+                          <circle cx="210" cy="60" r="5" />
+                          <circle cx="200" cy="80" r="5" />
+                          <circle cx="190" cy="100" r="5" />
+                          <circle cx="180" cy="120" r="5" />
+
+                          <circle cx="240" cy="60" r="5" />
+                          <circle cx="260" cy="60" r="5" />
+                          <circle cx="280" cy="60" r="5" />
+                          <circle cx="220" cy="80" r="5" />
+                          <circle cx="300" cy="80" r="5" />
+                          <circle cx="220" cy="100" r="5" />
+                          <circle cx="300" cy="100" r="5" />
+                          <circle cx="220" cy="120" r="5" />
+                          <circle cx="300" cy="120" r="5" />
+                          <circle cx="240" cy="140" r="5" />
+                          <circle cx="260" cy="140" r="5" />
+                          <circle cx="280" cy="140" r="5" />
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
                 </div>
 
-                <div className="absolute top-4 right-4 w-20 h-20 bg-primary/5 rounded-full"></div>
-                <div className="absolute bottom-4 left-4 w-16 h-16 bg-accent-3/5 dark:bg-accent-1/5 rounded-full"></div>
               </div>
             </div>
           </div>
