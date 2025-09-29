@@ -14,7 +14,7 @@ const Header = () => {
             <span className="mr-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 md:h-6 md:w-6 text-primary dark:text-primary"
+                className="h-5 w-5 md:h-6 md:w-6 text-primary dark:text-primary-dark"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -34,7 +34,7 @@ const Header = () => {
         <div className="flex items-center space-x-4">
           <Link
             href="/svo"
-            className="text-primary transition-colors"
+            className="text-primary dark:text-primary-dark transition-colors"
             aria-label="Sean Van Osselaer"
           >
             <svg

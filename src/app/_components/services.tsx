@@ -77,7 +77,7 @@ export function Services() {
       <section id="services" className="py-12 bg-accent-1/50 dark:bg-accent-3/5 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary dark:text-primary-dark mb-6">
             Services
           </h2>
           <p className="text-xl text-accent-3 dark:text-accent-1 leading-relaxed">
@@ -88,10 +88,10 @@ export function Services() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 lg:max-w-5xl lg:mx-auto">
           {challenges.map((challenge, index) => (
             <div key={index} className="bg-white dark:bg-accent-3/10 rounded-xl p-6 shadow-sm hover:shadow-lg transition-shadow duration-300">
-              <div className="bg-primary/10 rounded-lg p-3 w-fit mb-4 text-primary">
+              <div className="bg-primary/10 rounded-lg p-3 w-fit mb-4 text-primary dark:text-primary-dark">
                 {challenge.icon}
               </div>
-              <h3 className="text-xl font-semibold text-primary mb-3">
+              <h3 className="text-xl font-semibold text-primary dark:text-primary-dark mb-3">
                 {challenge.title}
               </h3>
               <p className="text-accent-3 dark:text-accent-1 leading-relaxed">
@@ -102,7 +102,7 @@ export function Services() {
         </div>
 
         <div className="text-center bg-primary/5 dark:bg-accent-1/5 rounded-2xl p-8 lg:p-12">
-          <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+          <h3 className="text-2xl md:text-3xl font-bold text-primary dark:text-primary-dark mb-4">
             Ready to scale your engineering team?
           </h3>
           <p className="text-lg text-accent-3 dark:text-accent-1 mb-8 max-w-2xl mx-auto">
@@ -118,7 +118,7 @@ export function Services() {
             </button>
             <Link
               href="/about"
-              className="border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold py-4 px-8 text-lg rounded-full transition-all duration-300 text-center"
+              className="border-2 border-primary text-primary dark:text-primary-dark hover:bg-primary hover:text-white font-bold py-4 px-8 text-lg rounded-full transition-all duration-300 text-center"
             >
               About
             </Link>

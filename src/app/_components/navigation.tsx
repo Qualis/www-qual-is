@@ -18,7 +18,7 @@ export function Navigation() {
           <Link href="/" className="flex items-center space-x-2 transition-all duration-200 group">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 text-primary"
+              className="h-6 w-6 text-primary dark:text-primary-dark"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -37,13 +37,13 @@ export function Navigation() {
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/#services" className="text-primary hover:text-accent-3 dark:hover:text-accent-1 transition-colors">
+            <Link href="/#services" className="text-primary dark:text-primary-dark hover:text-accent-3 dark:hover:text-accent-1 transition-colors">
               Services
             </Link>
-            <Link href="/about" className="text-primary hover:text-accent-3 dark:hover:text-accent-1 transition-colors">
+            <Link href="/about" className="text-primary dark:text-primary-dark hover:text-accent-3 dark:hover:text-accent-1 transition-colors">
               About
             </Link>
-            <Link href="/blog" className="text-primary hover:text-accent-3 dark:hover:text-accent-1 transition-colors">
+            <Link href="/blog" className="text-primary dark:text-primary-dark hover:text-accent-3 dark:hover:text-accent-1 transition-colors">
               Blog
             </Link>
           </div>
@@ -56,7 +56,7 @@ export function Navigation() {
 
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden text-primary hover:text-accent-3 dark:hover:text-accent-1"
+              className="md:hidden text-primary dark:text-primary-dark hover:text-accent-3 dark:hover:text-accent-1"
               aria-label="Toggle menu"
             >
               <svg
@@ -83,21 +83,21 @@ export function Navigation() {
             <div className="flex flex-col space-y-2">
               <Link
                 href="/#services"
-                className="block w-full text-center py-3 px-4 text-primary hover:text-accent-3 dark:hover:text-accent-1 hover:bg-primary/5 rounded-lg transition-all"
+                className="block w-full text-center py-3 px-4 text-primary dark:text-primary-dark hover:text-accent-3 dark:hover:text-accent-1 hover:bg-primary/5 rounded-lg transition-all"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Services
               </Link>
               <Link
                 href="/about"
-                className="block w-full text-center py-3 px-4 text-primary hover:text-accent-3 dark:hover:text-accent-1 hover:bg-primary/5 rounded-lg transition-all"
+                className="block w-full text-center py-3 px-4 text-primary dark:text-primary-dark hover:text-accent-3 dark:hover:text-accent-1 hover:bg-primary/5 rounded-lg transition-all"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
               </Link>
               <Link
                 href="/blog"
-                className="block w-full text-center py-3 px-4 text-primary hover:text-accent-3 dark:hover:text-accent-1 hover:bg-primary/5 rounded-lg transition-all"
+                className="block w-full text-center py-3 px-4 text-primary dark:text-primary-dark hover:text-accent-3 dark:hover:text-accent-1 hover:bg-primary/5 rounded-lg transition-all"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Blog

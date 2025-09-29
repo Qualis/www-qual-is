@@ -54,22 +54,22 @@ export default function AboutPage() {
                   className="w-48 h-48 rounded-full mx-auto shadow-lg"
                 />
               </div>
-              <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+              <h1 className="text-4xl md:text-5xl font-bold text-primary dark:text-primary-dark mb-4">
                 Sean Van Osselaer (SVO)
               </h1>
               <p className="text-2xl text-accent-3 dark:text-accent-1 mb-8">
                 Fractional CTO & Engineering Leadership Specialist
               </p>
               <div className="max-w-4xl mx-auto space-y-6">
-                <p className="text-lg text-primary leading-relaxed">
+                <p className="text-lg text-primary dark:text-primary-dark leading-relaxed">
                   Growing companies face predictable challenges when scaling their engineering capabilities - from startups moving beyond their founding team to established companies launching digital initiatives. I provide the strategic technical leadership needed to navigate rapid growth successfully.
                 </p>
 
-                <p className="text-lg text-primary leading-relaxed">
+                <p className="text-lg text-primary dark:text-primary-dark leading-relaxed">
                   My expertise spans AI-driven development practices, cloud-native architectures, team scaling strategies, and process optimization. I focus on practical solutions that align technical strategy with business objectives, delivering measurable improvements in engineering performance and sustainable growth.
                 </p>
 
-                <p className="text-lg text-primary leading-relaxed">
+                <p className="text-lg text-primary dark:text-primary-dark leading-relaxed">
                   With extensive experience building high-performing engineering teams, I help companies transform their technical challenges into competitive advantages through proven methodologies and data-driven approaches.
                 </p>
               </div>
@@ -80,7 +80,7 @@ export default function AboutPage() {
         <section className="py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-primary mb-6">
+              <h2 className="text-4xl font-bold text-primary dark:text-primary-dark mb-6">
                 Technical Expertise
               </h2>
             </div>
@@ -88,7 +88,7 @@ export default function AboutPage() {
             <div className="bg-accent-1/30 dark:bg-accent-3/10 rounded-2xl p-8">
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div>
-                  <h3 className="text-lg font-semibold text-primary mb-3">Languages & Frameworks</h3>
+                  <h3 className="text-lg font-semibold text-primary dark:text-primary-dark mb-3">Languages & Frameworks</h3>
                   <ul className="space-y-1 text-accent-3 dark:text-accent-1">
                     <li>Python, Java, Clojure, ...</li>
                     <li>React, Angular, React Native, ...</li>
@@ -96,7 +96,7 @@ export default function AboutPage() {
                   </ul>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-primary mb-3">Cloud & Infrastructure</h3>
+                  <h3 className="text-lg font-semibold text-primary dark:text-primary-dark mb-3">Cloud & Infrastructure</h3>
                   <ul className="space-y-1 text-accent-3 dark:text-accent-1">
                     <li>AWS, GCP, Azure, ...</li>
                     <li>Terraform, Ansible, ...</li>
@@ -104,7 +104,7 @@ export default function AboutPage() {
                   </ul>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-primary mb-3">Architecture & Systems</h3>
+                  <h3 className="text-lg font-semibold text-primary dark:text-primary-dark mb-3">Architecture & Systems</h3>
                   <ul className="space-y-1 text-accent-3 dark:text-accent-1">
                     <li>Microservices, APIs, ...</li>
                     <li>Distributed Systems, ...</li>
@@ -112,7 +112,7 @@ export default function AboutPage() {
                   </ul>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-primary mb-3">Process & Leadership</h3>
+                  <h3 className="text-lg font-semibold text-primary dark:text-primary-dark mb-3">Process & Leadership</h3>
                   <ul className="space-y-1 text-accent-3 dark:text-accent-1">
                     <li>Agile, Lean, DevOps, ...</li>
                     <li>CI/CD, Monitoring, ...</li>
@@ -127,11 +127,11 @@ export default function AboutPage() {
         <section className="py-12 bg-accent-1/30 dark:bg-accent-3/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-4xl font-bold text-primary mb-8">
+              <h2 className="text-4xl font-bold text-primary dark:text-primary-dark mb-8">
                 Approach & Philosophy
               </h2>
 
-              <div className="space-y-6 text-lg text-primary leading-relaxed">
+              <div className="space-y-6 text-lg text-primary dark:text-primary-dark leading-relaxed">
                 <p>
                   My leadership approach combines deep technical expertise with strategic thinking and philosophical depth.
                   I believe in fostering engineering environments that balance structure with flexibility, emphasizing
@@ -156,7 +156,7 @@ export default function AboutPage() {
         <section className="py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-primary mb-6">
+              <h2 className="text-4xl font-bold text-primary dark:text-primary-dark mb-6">
                 Frequently Asked Questions
               </h2>
             </div>
@@ -164,7 +164,7 @@ export default function AboutPage() {
             <div className="max-w-4xl mx-auto space-y-8">
               {faqs.map((faq, index) => (
                 <div key={index} className="bg-white dark:bg-accent-3/10 rounded-xl p-6 shadow-sm">
-                  <h3 className="text-xl font-semibold text-primary mb-3">
+                  <h3 className="text-xl font-semibold text-primary dark:text-primary-dark mb-3">
                     {faq.question}
                   </h3>
                   <p className="text-accent-3 dark:text-accent-1 leading-relaxed">
@@ -179,7 +179,7 @@ export default function AboutPage() {
         <section className="py-12 bg-accent-1/30 dark:bg-accent-3/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center bg-primary/5 dark:bg-accent-1/5 rounded-2xl p-8 lg:p-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary dark:text-primary-dark mb-6">
                 Ready to transform your engineering organization?
               </h2>
               <p className="text-xl text-accent-3 dark:text-accent-1 mb-8 max-w-3xl mx-auto">

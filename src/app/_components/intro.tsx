@@ -8,11 +8,11 @@ export function Intro() {
     <div>
       <div className="mb-6">
         <div className="flex justify-between items-center mt-8 mb-6">
-          <h1 className="text-primary text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight flex items-center">
+          <h1 className="text-primary dark:text-primary-dark text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight flex items-center">
             <span className="mr-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 md:h-6 md:w-6 text-primary dark:text-primary"
+                className="h-5 w-5 md:h-6 md:w-6 text-primary dark:text-primary-dark"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -30,7 +30,7 @@ export function Intro() {
           <div className="flex items-center space-x-4">
             <Link
               href="/svo"
-              className="text-primary transition-colors"
+              className="text-primary dark:text-primary-dark transition-colors"
               aria-label="Sean Van Osselaer"
             >
               <svg
@@ -66,7 +66,7 @@ export function Intro() {
       </div>
 
       <div className="text-center mb-10 max-w-4xl mx-auto">
-        <p className="text-primary text-xl md:text-2xl font-semibold leading-relaxed mb-6">
+        <p className="text-primary dark:text-primary-dark text-xl md:text-2xl font-semibold leading-relaxed mb-6">
           Need to scale your engineering team and accelerate delivery? I help growing companies achieve faster deployments, build high-performing teams, and implement AI-driven development practices that deliver measurable results.
         </p>
         <div className="mb-8">
@@ -78,7 +78,7 @@ export function Intro() {
           </Link>
         </div>
         <hr className="border-t border-primary dark:border-primary w-full mb-8" />
-        <h2 className="text-primary mb-8 text-xl md:text-3xl lg:text-4xl font-bold tracking-tighter leading-tight text-center">
+        <h2 className="text-primary dark:text-primary-dark mb-8 text-xl md:text-3xl lg:text-4xl font-bold tracking-tighter leading-tight text-center">
           Musings
         </h2>
         <p className="text-accent-3 dark:text-accent-1 text-lg leading-relaxed">

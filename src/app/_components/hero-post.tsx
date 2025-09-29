@@ -26,7 +26,7 @@ export function HeroPost({
     <section>
       <div className="mb-10">
         <div className="mb-1 text-center">
-          <span className="inline-block capitalize px-2 py-0.5 text-primary dark:text-primary font-medium border border-primary rounded-md">
+          <span className="inline-block capitalize px-2 py-0.5 text-primary dark:text-primary-dark font-medium border border-primary rounded-md">
             {topic}
           </span>
         </div>

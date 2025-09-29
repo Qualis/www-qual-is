@@ -28,7 +28,7 @@ export function ContactModal({ isOpen, onClose, title = "Reach out" }: ContactMo
     >
       <div className="p-6 rounded-lg bg-accent-1 dark:bg-accent-3 shadow-xl w-full">
         <div className="flex justify-between items-center mb-6">
-          <h2 className="text-2xl font-bold text-primary dark:text-accent-1">
+          <h2 className="text-2xl font-bold text-primary dark:text-primary-dark">
             {title}
           </h2>
           <button

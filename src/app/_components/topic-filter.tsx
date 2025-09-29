@@ -69,7 +69,7 @@ export function TopicFilter({ topics, allPosts }: TopicFilterProps) {
   return (
     <>
       <div className="mb-8">
-        <h2 className="text-primary mb-6 text-lg md:text-2xl font-bold tracking-tighter leading-tight text-center">
+        <h2 className="text-primary dark:text-primary-dark mb-6 text-lg md:text-2xl font-bold tracking-tighter leading-tight text-center">
           Topic Filters
         </h2>
         <div

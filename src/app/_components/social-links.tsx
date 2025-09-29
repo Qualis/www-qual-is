@@ -7,7 +7,7 @@ export default function SocialLinks() {
         href="https://www.linkedin.com/in/5v0/"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-primary transition-colors"
+        className="text-primary dark:text-primary-dark transition-colors"
         aria-label="LinkedIn Profile"
       >
         <svg
@@ -24,7 +24,7 @@ export default function SocialLinks() {
         href="https://github.com/svo"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-primary transition-colors"
+        className="text-primary dark:text-primary-dark transition-colors"
         aria-label="GitHub Profile"
       >
         <svg

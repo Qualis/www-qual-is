@@ -15,11 +15,13 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        "accent-1": "#FCFDFE",
-        "accent-2": "#EAEAEA",
-        "accent-3": "#1A222B",
-        primary: "#5C7A99",
-        highlight: "#F76C6C",
+        "accent-1": "#FFFFFF",
+        "accent-2": "#F8FAFC",
+        "accent-3": "#0F172A",
+        primary: "#1E40AF",
+        "primary-dark": "#3B82F6",
+        highlight: "#06B6D4",
+        "highlight-dark": "#22D3EE",
       },
       spacing: {
         28: "7rem",
