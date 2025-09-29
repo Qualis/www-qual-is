@@ -1,5 +1,5 @@
 import Container from "@/app/_components/container";
-import { ContactModal } from "@/app/_components/modal/contact-modal";
+import ContactModal from "@/app/_components/modal/contact-modal";
 import SocialLinks from "./social-links";
 import Link from "next/link";
 
@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="py-12 flex flex-col lg:flex-row items-center justify-center">
           <h3 className="text-primary text-3xl lg:text-4xl font-bold tracking-tighter leading-tight text-center lg:text-left mb-6 lg:mb-0 lg:pr-4 lg:w-1/2">
             <Link
-              href="/svo"
+              href="/about"
               className="hover:text-accent-3 dark:hover:text-accent-1 transition-colors"
               aria-label="Sean Van Osselaer"
             >

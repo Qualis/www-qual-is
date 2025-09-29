@@ -5,6 +5,15 @@ const nextConfig = {
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
   reactStrictMode: true,
+  async redirects() {
+    return [
+      {
+        source: "/svo",
+        destination: "/about",
+        permanent: true,
+      },
+    ];
+  },
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.resolve.fallback = {

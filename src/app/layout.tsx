@@ -1,4 +1,5 @@
 import Footer from "@/app/_components/footer";
+import { Navigation } from "@/app/_components/navigation";
 import { HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -130,13 +131,13 @@ export default function RootLayout({
                 serviceType: "Fractional CTO Services",
                 description: "Engineering leadership, AI-driven development strategy, software architecture, team scaling, and technical strategy consulting.",
                 areaServed: "Global",
-                url: "https://qual.is/svo",
+                url: "https://qual.is/about",
               },
               {
                 "@type": "FAQPage",
                 "@id": "https://qual.is/svo#faq",
                 name: "Fractional CTO Services FAQ",
-                url: "https://qual.is/svo",
+                url: "https://qual.is/about",
                 mainEntity: [
                   {
                     "@type": "Question",
@@ -191,6 +192,7 @@ export default function RootLayout({
         )}
       >
         <div id="__next" className="min-h-screen">
+          <Navigation />
           {children}
         </div>
         <Footer />
