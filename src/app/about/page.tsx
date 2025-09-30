@@ -55,14 +55,14 @@ export default function AboutPage() {
                 />
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-primary dark:text-primary-dark mb-4">
-                Sean Van Osselaer (SVO)
+                Sean Van Osselaer (SVO) - Fractional CTO
               </h1>
               <p className="text-2xl text-accent-3 dark:text-accent-1 mb-8">
-                Fractional CTO & Engineering Leadership Specialist
+                Technical Strategy & Team Scaling
               </p>
               <div className="max-w-4xl mx-auto space-y-6">
                 <p className="text-lg text-primary dark:text-primary-dark leading-relaxed">
-                  Growing companies face challenges when scaling their engineering capabilities - from startups moving beyond their founding team to established companies launching digital initiatives. I provide the strategic technical leadership needed to navigate rapid growth successfully.
+                  Growing companies face challenges when scaling their engineering capabilities - from startups moving beyond their founding team to established companies launching digital initiatives. As a fractional CTO, I provide the strategic technical leadership needed to navigate rapid growth successfully.
                 </p>
 
                 <p className="text-lg text-primary dark:text-primary-dark leading-relaxed">
@@ -127,9 +127,12 @@ export default function AboutPage() {
         <section className="py-12 bg-accent-1/30 dark:bg-accent-3/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-4xl font-bold text-primary dark:text-primary-dark mb-8">
+              <h2 className="text-4xl font-bold text-primary dark:text-primary-dark mb-6">
                 Approach & Philosophy
               </h2>
+              <p className="text-xl text-accent-3 dark:text-accent-1 mb-8">
+                Connecting Technical & Human Systems
+              </p>
 
               <div className="space-y-6 text-lg text-primary dark:text-primary-dark leading-relaxed">
                 <p>
