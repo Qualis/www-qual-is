@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: `Engineering Leadership & Fractional CTO | SVO | qual.is`,
   description: `Fractional CTO and engineering leadership specialist. AI-driven development, scalable architecture for growing companies.`,
   metadataBase: new URL("https://qual.is"),
-  keywords: `Sean Van Osselaer, Van Osselaer, SVO, fractional CTO, fractional CTO services, engineering leadership consultant, technical strategy consultant, CTO as a service, engineering team scaling, AI-driven development strategy, software development, architecture, agile, DevOps`,
+  keywords: `Sean Van Osselaer, SVO, fractional CTO, engineering leadership, technical strategy, fractional CTO Australia`,
   authors: [{ name: "Sean Van Osselaer", url: "https://qual.is" }],
   creator: "Sean Van Osselaer",
   publisher: "Sean Van Osselaer",
