@@ -46,3 +46,40 @@
     max-height: 80vh;
   }
 }
+
+.pulse-slow {
+  animation: pulse-opacity 4s ease-in-out infinite;
+}
+
+.pulse-medium {
+  animation: pulse-opacity 3s ease-in-out infinite;
+}
+
+.pulse-fast {
+  animation: pulse-opacity 2s ease-in-out infinite;
+}
+
+.pulse-1 {
+  animation: pulse-opacity 3.5s ease-in-out infinite;
+}
+
+.pulse-2 {
+  animation: pulse-opacity 2.8s ease-in-out infinite;
+}
+
+.pulse-3 {
+  animation: pulse-opacity 4.2s ease-in-out infinite;
+}
+
+.pulse-4 {
+  animation: pulse-opacity 3.2s ease-in-out infinite;
+}
+
+.pulse-5 {
+  animation: pulse-opacity 2.5s ease-in-out infinite;
+}
+
+@keyframes pulse-opacity {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}

@@ -57,58 +57,56 @@ export function Hero() {
                   <svg className="w-full h-full" viewBox="0 0 320 240" fill="none">
                     <g stroke="currentColor" strokeWidth="1.5">
 
-                      {/* Background edges - original pattern */}
                       <g className="text-primary dark:text-primary-dark opacity-10">
 
-                        <path d="M100 60L65 12" />
-                        <path d="M130 60L212 15" />
-                        <path d="M170 140L145 185" />
-                        <path d="M240 60L275 8" />
+                        <path d="M100 60L65 12" className="pulse-slow" />
+                        <path d="M130 60L212 15" className="pulse-medium" />
+                        <path d="M170 140L145 185" className="pulse-fast" />
+                        <path d="M240 60L275 8" className="pulse-1" />
 
-                        <path d="M12 25L5 75" />
-                        <path d="M65 12L158 6" />
-                        <path d="M212 15L158 6" />
-                        <path d="M275 8L315 85" />
+                        <path d="M12 25L5 75" className="pulse-2" />
+                        <path d="M65 12L158 6" className="pulse-3" />
+                        <path d="M212 15L158 6" className="pulse-4" />
+                        <path d="M275 8L315 85" className="pulse-5" />
 
-                        <path d="M8 125L312 115" />
+                        <path d="M8 125L312 115" className="pulse-1" />
 
-                        <path d="M25 45L115 155" />
-                        <path d="M175 165L185 232" />
-                        <path d="M245 45L285 175" />
-                        <path d="M265 210L225 225" />
-                        <path d="M125 45L265 210" />
-                        <path d="M175 35L312 165" />
-                        <path d="M5 75L245 45" />
-                        <path d="M175 165L225 225" />
+                        <path d="M25 45L115 155" className="pulse-2" />
+                        <path d="M175 165L185 232" className="pulse-3" />
+                        <path d="M245 45L285 175" className="pulse-4" />
+                        <path d="M265 210L225 225" className="pulse-5" />
+                        <path d="M125 45L265 210" className="pulse-1" />
+                        <path d="M175 35L312 165" className="pulse-2" />
+                        <path d="M5 75L245 45" className="pulse-3" />
+                        <path d="M175 165L225 225" className="pulse-4" />
 
-                        <path d="M15 180L35 215" />
-                        <path d="M35 215L75 228" />
-                        <path d="M310 25L245 45" />
-                        <path d="M295 235L285 175" />
-                        <path d="M308 195L312 165" />
+                        <path d="M15 180L35 215" className="pulse-5" />
+                        <path d="M35 215L75 228" className="pulse-1" />
+                        <path d="M310 25L245 45" className="pulse-2" />
+                        <path d="M295 235L285 175" className="pulse-3" />
+                        <path d="M308 195L312 165" className="pulse-4" />
 
-                        <path d="M118 235L145 185" />
-                        <path d="M145 185L185 232" />
-                        <path d="M225 225L265 210" />
+                        <path d="M118 235L145 185" className="pulse-5" />
+                        <path d="M145 185L185 232" className="pulse-1" />
+                        <path d="M225 225L265 210" className="pulse-2" />
 
-                        <path d="M22 165L65 175" />
-                        <path d="M12 220L308 220" />
+                        <path d="M22 165L65 175" className="pulse-3" />
+                        <path d="M12 220L308 220" className="pulse-4" />
 
-                        <path d="M12 25L25 45" />
-                        <path d="M310 25L315 85" />
-                        <path d="M75 228L115 155" />
+                        <path d="M12 25L25 45" className="pulse-5" />
+                        <path d="M310 25L315 85" className="pulse-1" />
+                        <path d="M75 228L115 155" className="pulse-2" />
 
-                        <path d="M118 235L295 235" />
-                        <path d="M5 75L22 165" />
-                        <path d="M312 115L312 165" />
+                        <path d="M118 235L295 235" className="pulse-3" />
+                        <path d="M5 75L22 165" className="pulse-4" />
+                        <path d="M312 115L312 165" className="pulse-5" />
 
-                        <path d="M125 45L175 35" />
-                        <path d="M15 180L65 175" />
-                        <path d="M185 232L225 225" />
-                        <path d="M285 175L308 195" />
+                        <path d="M125 45L175 35" className="pulse-1" />
+                        <path d="M15 180L65 175" className="pulse-2" />
+                        <path d="M185 232L225 225" className="pulse-3" />
+                        <path d="M285 175L308 195" className="pulse-4" />
                       </g>
 
-                      {/* Main SVO letter edges */}
                       <g className="text-primary dark:text-primary-dark opacity-60">
 
                         <path d="M100 60L80 60" />
@@ -145,105 +143,94 @@ export function Hero() {
                         <path d="M220 80L240 60" />
                       </g>
 
-                      {/* Background vertices - density gradient showing organization increasing toward SVO */}
                       <g className="text-primary dark:text-primary-dark opacity-40">
-                        {/* Solid background circles to hide edges */}
                         <g fill="white" className="dark:fill-gray-900">
-                          {/* Far from SVO - smallest, most chaotic */}
-                          <circle cx="12" cy="25" r="2" />
-                          <circle cx="65" cy="12" r="2.5" />
-                          <circle cx="158" cy="6" r="2" />
-                          <circle cx="212" cy="15" r="2.5" />
-                          <circle cx="275" cy="8" r="2" />
+                          <circle cx="12" cy="25" r="2" className="pulse-slow" />
+                          <circle cx="65" cy="12" r="2.5" className="pulse-medium" />
+                          <circle cx="158" cy="6" r="2" className="pulse-fast" />
+                          <circle cx="212" cy="15" r="2.5" className="pulse-1" />
+                          <circle cx="275" cy="8" r="2" className="pulse-2" />
 
-                          <circle cx="5" cy="75" r="2.5" />
-                          <circle cx="315" cy="85" r="2" />
-                          <circle cx="312" cy="115" r="2.5" />
+                          <circle cx="5" cy="75" r="2.5" className="pulse-medium" />
+                          <circle cx="315" cy="85" r="2" className="pulse-fast" />
+                          <circle cx="312" cy="115" r="2.5" className="pulse-slow" />
 
-                          <circle cx="15" cy="180" r="2" />
-                          <circle cx="35" cy="215" r="2.5" />
-                          <circle cx="75" cy="228" r="2" />
-                          <circle cx="118" cy="235" r="2.5" />
-                          <circle cx="185" cy="232" r="2" />
+                          <circle cx="15" cy="180" r="2" className="pulse-3" />
+                          <circle cx="35" cy="215" r="2.5" className="pulse-4" />
+                          <circle cx="75" cy="228" r="2" className="pulse-5" />
+                          <circle cx="118" cy="235" r="2.5" className="pulse-1" />
+                          <circle cx="185" cy="232" r="2" className="pulse-2" />
 
-                          <circle cx="225" cy="225" r="2.5" />
-                          <circle cx="295" cy="235" r="2" />
-                          <circle cx="12" cy="220" r="2.5" />
-                          <circle cx="308" cy="220" r="2" />
+                          <circle cx="225" cy="225" r="2.5" className="pulse-3" />
+                          <circle cx="295" cy="235" r="2" className="pulse-4" />
+                          <circle cx="12" cy="220" r="2.5" className="pulse-5" />
+                          <circle cx="308" cy="220" r="2" className="pulse-1" />
 
-                          {/* Medium distance from SVO - transitioning size */}
-                          <circle cx="25" cy="45" r="3" />
-                          <circle cx="310" cy="25" r="3.5" />
-                          <circle cx="308" cy="195" r="3" />
+                          <circle cx="25" cy="45" r="3" className="pulse-2" />
+                          <circle cx="310" cy="25" r="3.5" className="pulse-3" />
+                          <circle cx="308" cy="195" r="3" className="pulse-4" />
 
-                          <circle cx="125" cy="45" r="3.5" />
-                          <circle cx="175" cy="35" r="3" />
-                          <circle cx="245" cy="45" r="3.5" />
+                          <circle cx="125" cy="45" r="3.5" className="pulse-5" />
+                          <circle cx="175" cy="35" r="3" className="pulse-1" />
+                          <circle cx="245" cy="45" r="3.5" className="pulse-2" />
 
-                          <circle cx="22" cy="165" r="3" />
-                          <circle cx="312" cy="165" r="3.5" />
-                          <circle cx="65" cy="175" r="3" />
-                          <circle cx="285" cy="175" r="3.5" />
+                          <circle cx="22" cy="165" r="3" className="pulse-3" />
+                          <circle cx="312" cy="165" r="3.5" className="pulse-4" />
+                          <circle cx="65" cy="175" r="3" className="pulse-5" />
+                          <circle cx="285" cy="175" r="3.5" className="pulse-1" />
 
-                          {/* Close to SVO - larger, more organized */}
-                          <circle cx="115" cy="155" r="4" />
-                          <circle cx="145" cy="185" r="4.5" />
-                          <circle cx="175" cy="165" r="4" />
-                          <circle cx="265" cy="210" r="4.5" />
+                          <circle cx="115" cy="155" r="4" className="pulse-2" />
+                          <circle cx="145" cy="185" r="4.5" className="pulse-slow" />
+                          <circle cx="175" cy="165" r="4" className="pulse-medium" />
+                          <circle cx="265" cy="210" r="4.5" className="pulse-fast" />
 
-                          <circle cx="8" cy="125" r="4" />
+                          <circle cx="8" cy="125" r="4" className="pulse-3" />
                         </g>
-                        {/* Visible vertices - graduated sizes */}
                         <g fill="currentColor">
-                          {/* Far from SVO - smallest */}
-                          <circle cx="12" cy="25" r="1.5" />
-                          <circle cx="65" cy="12" r="2" />
-                          <circle cx="158" cy="6" r="1.5" />
-                          <circle cx="212" cy="15" r="2" />
-                          <circle cx="275" cy="8" r="1.5" />
+                          <circle cx="12" cy="25" r="1.5" className="pulse-slow" />
+                          <circle cx="65" cy="12" r="2" className="pulse-medium" />
+                          <circle cx="158" cy="6" r="1.5" className="pulse-fast" />
+                          <circle cx="212" cy="15" r="2" className="pulse-1" />
+                          <circle cx="275" cy="8" r="1.5" className="pulse-2" />
 
-                          <circle cx="5" cy="75" r="2" />
-                          <circle cx="315" cy="85" r="1.5" />
-                          <circle cx="312" cy="115" r="2" />
+                          <circle cx="5" cy="75" r="2" className="pulse-medium" />
+                          <circle cx="315" cy="85" r="1.5" className="pulse-fast" />
+                          <circle cx="312" cy="115" r="2" className="pulse-slow" />
 
-                          <circle cx="15" cy="180" r="1.5" />
-                          <circle cx="35" cy="215" r="2" />
-                          <circle cx="75" cy="228" r="1.5" />
-                          <circle cx="118" cy="235" r="2" />
-                          <circle cx="185" cy="232" r="1.5" />
+                          <circle cx="15" cy="180" r="1.5" className="pulse-3" />
+                          <circle cx="35" cy="215" r="2" className="pulse-4" />
+                          <circle cx="75" cy="228" r="1.5" className="pulse-5" />
+                          <circle cx="118" cy="235" r="2" className="pulse-1" />
+                          <circle cx="185" cy="232" r="1.5" className="pulse-2" />
 
-                          <circle cx="225" cy="225" r="2" />
-                          <circle cx="295" cy="235" r="1.5" />
-                          <circle cx="12" cy="220" r="2" />
-                          <circle cx="308" cy="220" r="1.5" />
+                          <circle cx="225" cy="225" r="2" className="pulse-3" />
+                          <circle cx="295" cy="235" r="1.5" className="pulse-4" />
+                          <circle cx="12" cy="220" r="2" className="pulse-5" />
+                          <circle cx="308" cy="220" r="1.5" className="pulse-1" />
 
-                          {/* Medium distance - transitioning */}
-                          <circle cx="25" cy="45" r="2.5" />
-                          <circle cx="310" cy="25" r="3" />
-                          <circle cx="308" cy="195" r="2.5" />
+                          <circle cx="25" cy="45" r="2.5" className="pulse-2" />
+                          <circle cx="310" cy="25" r="3" className="pulse-3" />
+                          <circle cx="308" cy="195" r="2.5" className="pulse-4" />
 
-                          <circle cx="125" cy="45" r="3" />
-                          <circle cx="175" cy="35" r="2.5" />
-                          <circle cx="245" cy="45" r="3" />
+                          <circle cx="125" cy="45" r="3" className="pulse-5" />
+                          <circle cx="175" cy="35" r="2.5" className="pulse-1" />
+                          <circle cx="245" cy="45" r="3" className="pulse-2" />
 
-                          <circle cx="22" cy="165" r="2.5" />
-                          <circle cx="312" cy="165" r="3" />
-                          <circle cx="65" cy="175" r="2.5" />
-                          <circle cx="285" cy="175" r="3" />
+                          <circle cx="22" cy="165" r="2.5" className="pulse-3" />
+                          <circle cx="312" cy="165" r="3" className="pulse-4" />
+                          <circle cx="65" cy="175" r="2.5" className="pulse-5" />
+                          <circle cx="285" cy="175" r="3" className="pulse-1" />
 
-                          {/* Close to SVO - largest, most organized */}
-                          <circle cx="115" cy="155" r="3.5" />
-                          <circle cx="145" cy="185" r="4" />
-                          <circle cx="175" cy="165" r="3.5" />
-                          <circle cx="265" cy="210" r="4" />
+                          <circle cx="115" cy="155" r="3.5" className="pulse-2" />
+                          <circle cx="145" cy="185" r="4" className="pulse-slow" />
+                          <circle cx="175" cy="165" r="3.5" className="pulse-medium" />
+                          <circle cx="265" cy="210" r="4" className="pulse-fast" />
 
-                          <circle cx="8" cy="125" r="3.5" />
+                          <circle cx="8" cy="125" r="3.5" className="pulse-3" />
                         </g>
                       </g>
 
-                      {/* Main SVO letter vertices - with solid backgrounds */}
                       <g className="text-primary dark:text-primary-dark">
-                        {/* Solid background circles */}
                         <g fill="white" className="dark:fill-gray-900">
                           <circle cx="100" cy="60" r="5.5" />
                           <circle cx="80" cy="60" r="5.5" />
@@ -280,7 +267,6 @@ export function Hero() {
                           <circle cx="260" cy="140" r="5.5" />
                           <circle cx="280" cy="140" r="5.5" />
                         </g>
-                        {/* Visible vertices */}
                         <g fill="currentColor">
                           <circle cx="100" cy="60" r="5" />
                           <circle cx="80" cy="60" r="5" />
