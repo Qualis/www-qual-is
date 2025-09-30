@@ -48,7 +48,7 @@ const challenges = [
       </svg>
     ),
     title: "Preparing technology for your next growth phase",
-    description: "Fundraising, acquisition discussions, or rapid scaling demand technical due diligence and architecture that can handle 10x growth. I assess current systems, identify scaling risks, and implement the technical foundation needed for your next milestone."
+    description: "Fundraising, acquisition discussions, or rapid scaling demand technical due diligence and architecture that can handle significant growth. I assess current systems, identify scaling risks, and implement the technical foundation needed for your next milestone."
   },
   {
     icon: (

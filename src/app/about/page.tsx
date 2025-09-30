@@ -20,11 +20,11 @@ const faqs = [
   },
   {
     question: "How do you measure success in a fractional CTO engagement?",
-    answer: "Success is measured through concrete improvements: faster deployment cycles, reduced system downtime, improved team performance metrics, and alignment between technical strategy and business objectives. I establish clear OKRs at engagement start, including lead time for changes, deployment frequency, mean time to recovery, and team satisfaction scores."
+    answer: "Success is measured through concrete improvements: faster deployment cycles, reduced system downtime, improved team performance metrics, and alignment between technical strategy and business objectives. I establish clear OKRs at engagement start, including things like lead time for changes, deployment frequency, mean time to recovery, change failure rate, and team satisfaction scores."
   },
   {
     question: "What's the typical engagement timeline and process?",
-    answer: "Engagements typically start with a 2-week assessment to understand your technical landscape, team dynamics, and growth objectives. From there, we establish ongoing strategic guidance that might include weekly leadership meetings, monthly architecture reviews, quarterly strategic planning, and as-needed project oversight."
+    answer: "Engagements typically start with an assessment to understand your technical landscape, team dynamics, and growth objectives. From there, we establish ongoing strategic guidance that might include weekly leadership meetings, monthly architecture reviews, quarterly strategic planning, and as-needed project oversight."
   }
 ];
 
@@ -62,7 +62,7 @@ export default function AboutPage() {
               </p>
               <div className="max-w-4xl mx-auto space-y-6">
                 <p className="text-lg text-primary dark:text-primary-dark leading-relaxed">
-                  Growing companies face predictable challenges when scaling their engineering capabilities - from startups moving beyond their founding team to established companies launching digital initiatives. I provide the strategic technical leadership needed to navigate rapid growth successfully.
+                  Growing companies face challenges when scaling their engineering capabilities - from startups moving beyond their founding team to established companies launching digital initiatives. I provide the strategic technical leadership needed to navigate rapid growth successfully.
                 </p>
 
                 <p className="text-lg text-primary dark:text-primary-dark leading-relaxed">
@@ -90,9 +90,9 @@ export default function AboutPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-primary dark:text-primary-dark mb-3">Languages & Frameworks</h3>
                   <ul className="space-y-1 text-accent-3 dark:text-accent-1">
-                    <li>Python, Java, Clojure, ...</li>
-                    <li>React, Angular, React Native, ...</li>
-                    <li>Flutter, Node.js, ...</li>
+                    <li>Python, TypeScript, Clojure, ...</li>
+                    <li>React, Angular, Node.js, ...</li>
+                    <li>React Native, Flutter, ...</li>
                   </ul>
                 </div>
                 <div>
@@ -133,20 +133,15 @@ export default function AboutPage() {
 
               <div className="space-y-6 text-lg text-primary dark:text-primary-dark leading-relaxed">
                 <p>
-                  My leadership approach combines deep technical expertise with strategic thinking and philosophical depth.
-                  I believe in fostering engineering environments that balance structure with flexibility, emphasizing
-                  communication and collaboration as essential elements of productive teams.
+                  My approach centers on connecting seemingly disconnected technical challenges to reveal the underlying patterns that drive engineering success. I start with systematic assessment - analyzing deployment pipelines, team communication flows, and system architecture to identify the bottlenecks that compound into business problems.
                 </p>
 
                 <p>
-                  Through this site, I share insights on technical architecture, leadership strategies, process improvement,
-                  and hands-on software engineering practices. You'll find posts covering everything from decision frameworks
-                  and team scaling to smart development practices and the philosophical underpinnings of technology choices.
+                  Every engagement follows a data-driven methodology: establish baseline metrics, implement targeted improvements, and measure results against clear success criteria. Whether it's reducing deployment risk through automated testing pipelines or scaling teams through improved onboarding processes, the focus is always on measurable outcomes that align with business objectives.
                 </p>
 
                 <p>
-                  I leverage technical innovation, strategic thinking, and psychological understanding to create sustainable engineering
-                  cultures that deliver exceptional results while supporting team growth and wellbeing.
+                  I translate complex technical challenges into strategic solutions by bridging the gap between engineering capabilities and business needs. This means not just identifying what's broken, but understanding why it matters to growth, revenue, and competitive advantage - then building sustainable practices that deliver consistent results as companies scale.
                 </p>
               </div>
             </div>

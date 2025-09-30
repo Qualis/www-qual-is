@@ -168,7 +168,7 @@ export default function RootLayout({
                     name: "How do you measure success in a fractional CTO engagement?",
                     acceptedAnswer: {
                       "@type": "Answer",
-                      text: "Success is measured through concrete improvements: faster deployment cycles, reduced system downtime, improved team performance metrics, and alignment between technical strategy and business objectives. I establish clear OKRs at engagement start, including lead time for changes, deployment frequency, mean time to recovery, and team satisfaction scores. Regular reviews ensure we're delivering measurable value."
+                      text: "Success is measured through concrete improvements: faster deployment cycles, reduced system downtime, improved team performance metrics, and alignment between technical strategy and business objectives. I establish clear OKRs at engagement start, including things like lead time for changes, deployment frequency, mean time to recovery, change failure rate, and team satisfaction scores. Regular reviews ensure we're delivering measurable value."
                     }
                   },
                   {
@@ -176,7 +176,7 @@ export default function RootLayout({
                     name: "What's the typical engagement timeline and process?",
                     acceptedAnswer: {
                       "@type": "Answer",
-                      text: "Engagements typically start with a 2-week assessment to understand your technical landscape, team dynamics, and growth objectives. From there, we establish ongoing strategic guidance that might include weekly leadership meetings, monthly architecture reviews, quarterly strategic planning, and as-needed project oversight. Engagements are flexible and can evolve from intensive implementation phases to ongoing advisory relationships."
+                      text: "Engagements typically start with an assessment to understand your technical landscape, team dynamics, and growth objectives. From there, we establish ongoing strategic guidance that might include weekly leadership meetings, monthly architecture reviews, quarterly strategic planning, and as-needed project oversight. Engagements are flexible and can evolve from intensive implementation phases to ongoing advisory relationships."
                     }
                   }
                 ]
