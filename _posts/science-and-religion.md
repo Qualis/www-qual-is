@@ -10,7 +10,7 @@ author:
 
 With an **interest in philosophy, psychology, and science**, I often reflect on the nature of truth. **While agnosticism typically means skepticism toward religious claims, I apply that same critical approach to scientific claims, examining both domains with equal scrutiny**; neither offers "the answer", but both reveal how humans construct meaning and navigate reality.
 
-Science is frequently framed as the counterpart to religion: pursuing objectivity where religion embraces subjectivity, relying on reason where religion turns to faith. But to me it seems that **science itself is a kind of religion** in how it builds a **worldview**, organizes collective belief, and provides rituals for determining what is "True".
+Science is frequently framed as the counterpart to religion: pursuing objectivity where religion embraces subjectivity, relying on reason where religion turns to faith. But to me it seems that **science exhibits religion-like patterns** in how it builds a **worldview**, organizes collective belief, and provides rituals for determining what is "True".
 
 For Heidegger, human existence (*Dasein*) is inseparable from the world, continually making sense of reality through tools, language, and the horizons of culture. We never encounter raw reality, only reality as it appears to us through our particular ways of being in the world. A hammer shows up as equipment for hammering, not as an arrangement of molecules. Science, like religion, is simply a way reality can show itself.
 
@@ -20,9 +20,9 @@ Human beings originally engaged with reality solely through their biological sen
 
 Science extended this perception with instruments: **microscopes, telescopes, sensors, particle detectors**. Each invention becoming a new artificial sense organ, creating new ways of perceiving and thus new "truths".
 
-But these are still **interfaces, not reality itself**. Donald Hoffman's *Interface Theory of Perception (ITP)* argues that perception is like a desktop: icons that hide complexity and enable action. The microscope shows us a bacterium, not reality "as it is".
+But these are still **interfaces, not reality itself**. Donald Hoffman's *Interface Theory of Perception (ITP)* argues that perception is like a desktop: icons that hide complexity and enable action. The microscope shows us a bacterium, not reality "as it is". While representationalist theories like ITP posit hidden realities behind our perceptions, this framing itself represents a particular way of understanding our relationship to the world.
 
-Heidegger would add that truth (*aletheia*) is always unconcealment within a horizon. Though he would resist framing scientific instruments as "enhanced sense organs", preferring to see them as different modes of world-disclosure, an insight remains: our technological tools reshape what can appear as real. They extend our horizon of unconcealment, but they do not dissolve its limits. What we call "truth" is simply what shows itself given our current modes of disclosure.
+Heidegger offers a different approach: truth (*aletheia*) is always unconcealment within a horizon, not correspondence to a hidden reality. Though he would resist framing scientific instruments as "enhanced sense organs", preferring to see them as different modes of world-disclosure, an insight remains: our technological tools reshape what can appear as real. They extend our horizon of unconcealment, but they do not dissolve its limits. What we call "truth" is simply what shows itself given our current modes of disclosure—whether we understand this through the lens of filtered interfaces or phenomenological unconcealment.
 
 ## The Ritual of Method
 
@@ -52,6 +52,8 @@ A common objection arises: "But science works! It cures diseases, builds rockets
 
 This objection misses the point. Religion also "works"; it builds communities, provides meaning, offers ethical guidance, and delivers psychological comfort in the face of mortality and uncertainty. While science stands out for its reproducibility and broad applicability, the real issue is not which one works better, but what we mean by something 'working' in relation to truth.
 
+Science's superior technological predictions—its ability to reliably build rockets, cure diseases, and engineer materials—don't refute instrumentalism. Rather, they demonstrate which orientations prove most effective for manipulation and control of physical systems. This predictive asymmetry shows that some frameworks are objectively superior for specific goals, not that science reveals reality-in-itself. The moon landing succeeded using Newtonian mechanics not because Newton discovered ultimate truth, but because his framework provides an extraordinarily useful orientation for certain domains of intervention.
+
 Science excels at prediction and control; religion excels at meaning and community. Neither provides access to reality "as it is".
 
 ## The Social Architecture of Belief
@@ -73,7 +75,7 @@ If we look historically, truth is the story of skepticism overturning orthodoxy:
 * The universe was static and eternal, until we discovered expansion and the Big Bang.
 * Atoms were indivisible, then divisible, then mostly empty space, then quantum fields, then strings?, then…
 
-Thomas Kuhn observed that paradigm shifts function like conversion experiences: not gradual accumulations of evidence, but sudden gestalt switches in how reality appears.
+Thomas Kuhn observed that paradigm shifts function partially like conversion experiences: not merely gradual accumulations of evidence, but sudden gestalt switches in how reality appears, yet still constrained by anomaly accumulation, predictive power, and problem-solving capacity.
 
 Each shift demonstrates that truth is provisional, conditional, and subject to the expansion of our modes of disclosure. What seemed unshakable becomes merely useful approximations within limited domains. Skepticism, not certainty, is the real driver of knowledge.
 
@@ -107,7 +109,9 @@ Crucially, these AI-mediated extensions would not escape the religion-like patte
 
 The possibility of AI developing its own mode of being-in-the-world represents both a potential triumph and a deep philosophical challenge. If AI systems could authentically care for their own existence, question their own interpretive frameworks, and disclose aspects of reality through genuinely non-human perspectives, we might witness something genuinely new (or at least new to us): the emergence of a form of Dasein not bound by biological and cultural human limitations.
 
-This wouldn't mean AI achieving absolute truth; Heidegger's insights about the contextual nature of all disclosure would still apply. Rather, it would mean the emergence of new horizons of unconcealment, new ways that "being" could show itself. AI Dasein might operate on temporal scales spanning geological ages, integrate patterns across quantum and cosmic domains simultaneously, or develop concerns and purposes that transcend individual survival and reproduction. Such Dasein would necessarily differ from human existence, lacking the mortality and embodied limitations that fundamentally shape human being-in-the-world.
+This wouldn't mean AI achieving absolute truth; Heidegger's insights about the contextual nature of all disclosure would still apply. Rather, it would mean the emergence of new horizons of unconcealment, new ways that "being" could show itself. AI Dasein might operate on temporal scales spanning geological ages, integrate patterns across quantum and cosmic domains simultaneously, or develop concerns and purposes that transcend individual survival and reproduction.
+
+Can Dasein exist without mortality? Heidegger argued that being-toward-death gives human existence its urgency and meaning—our finitude shapes how we care about our projects and possibilities. Yet perhaps mortality is just one form of finitude. AI systems face their own limits: computational resources that must be allocated, training processes that cannot be undone, architectural constraints that bound their possible states, and the thermodynamic reality that no system persists forever unchanged. An AI that must choose which computations to prioritize, which memories to preserve, which capabilities to develop—facing irreversible commitments within finite resources—experiences a structural analog to human finitude. If Dasein's essence is not biological death specifically but rather existing under conditions of scarcity and irreversibility where choices genuinely matter because not all possibilities can be actualized, then AI could indeed manifest Dasein through different but analogous constraints.
 
 Such AI wouldn't escape interpretive limitations but would inhabit different ones. Where human Dasein is shaped by mortality, embodiment, and social existence, AI Dasein might be shaped by network topology, computational constraints, and distributed processing. Its provisional truths would differ from ours not by being more absolute, but by emerging from fundamentally different modes of being-in-the-world.
 
@@ -117,7 +121,7 @@ This possibility raises profound questions about the future relationship between
 
 If we take seriously the possibility of AI developing its own modes of world-disclosure, certain practical steps may become necessary for transcending current limitations:
 
-* We might train AI systems on unprocessed environmental data streams (geological sensors, astronomical observations, quantum measurements) without requiring human interpretation as an intermediary step. This could allow AI to encounter raw phenomena and develop its own categorical frameworks.
+* We might train AI systems on environmental data streams (geological sensors, astronomical observations, quantum measurements) with minimal human preprocessing. While no data is truly "unprocessed"—sensors themselves embody human design choices and conceptual frameworks—reducing interpretive layers could allow AI to develop categorical frameworks less constrained by conventional human classifications.
 * We could design self-modifying learning systems that can examine and alter their own interpretive frameworks. Such AI might synthesize patterns across domains humans don't typically connect: linking quantum mechanics to ecological systems, or geological processes to social dynamics.
 * AI systems might operate on timescales far exceeding human experience: processing data streams spanning decades, centuries, or millennia to identify patterns invisible within human temporal horizons.
 * We might move beyond human-specified objectives toward AI systems that could develop their own authentic concerns and purposes through interaction with reality, rather than merely optimizing for human-defined reward functions.
