@@ -10,7 +10,7 @@ author:
 
 With an **interest in philosophy, psychology, and science**, I often reflect on the nature of truth. **While agnosticism typically means skepticism toward religious claims, I apply that same critical approach to scientific claims, examining both domains with equal scrutiny**; neither offers "the answer", but both reveal how humans construct meaning and navigate reality.
 
-Science is frequently framed as the counterpart to religion: pursuing objectivity where religion embraces subjectivity, relying on reason where religion turns to faith. But to me it seems that **science exhibits religion-like patterns** in how it builds a **worldview**, organizes collective belief, and provides rituals for determining what is "True".
+Science is frequently framed as the counterpart to religion: pursuing objectivity where religion embraces subjectivity, relying on reason where religion turns to faith. But to me it seems that **science exhibits religion-like patterns** in how it builds a **worldview**, organizes collective belief, and provides rituals for determining what is "True". To understand these patterns, we must examine how truth-making operates at three levels: the technological tools that extend perception, the philosophical frameworks that interpret what these tools reveal, and the social institutions that legitimize certain interpretations over others.
 
 For Heidegger, human existence (*Dasein*) is inseparable from the world, continually making sense of reality through tools, language, and the horizons of culture. We never encounter raw reality, only reality as it appears to us through our particular ways of being in the world. A hammer shows up as equipment for hammering, not as an arrangement of molecules. Science, like religion, is simply a way reality can show itself.
 
@@ -23,6 +23,8 @@ Science extended this perception with instruments: **microscopes, telescopes, se
 But these are still **interfaces, not reality itself**. Donald Hoffman's *Interface Theory of Perception (ITP)* argues that perception is like a desktop: icons that hide complexity and enable action. The microscope shows us a bacterium, not reality "as it is". While representationalist theories like ITP posit hidden realities behind our perceptions, this framing itself represents a particular way of understanding our relationship to the world.
 
 Heidegger offers a different approach: truth (*aletheia*) is always unconcealment within a horizon, not correspondence to a hidden reality. Though he would resist framing scientific instruments as "enhanced sense organs", preferring to see them as different modes of world-disclosure, an insight remains: our technological tools reshape what can appear as real. They extend our horizon of unconcealment, but they do not dissolve its limits. What we call "truth" is simply what shows itself given our current modes of disclosure—whether we understand this through the lens of filtered interfaces or phenomenological unconcealment.
+
+Extended perception alone doesn't explain science's authority. That requires understanding both how science validates knowledge through method and how institutions maintain that validation.
 
 ## The Ritual of Method
 
@@ -56,6 +58,8 @@ Science's superior technological predictions—its ability to reliably build roc
 
 Science excels at prediction and control; religion excels at meaning and community. Neither provides access to reality "as it is".
 
+This instrumental understanding of truth raises a crucial question: if science doesn't provide absolute truth, what maintains its authority? The answer lies in its social architecture.
+
 ## The Social Architecture of Belief
 
 Science doesn't just resemble religion philosophically; it mirrors religion institutionally and psychologically.
@@ -65,6 +69,8 @@ Universities function as cathedrals, journals as sacred texts, peer review as or
 Beyond these institutional parallels, both science and religion serve similar psychological functions. They offer comfort against uncertainty by providing explanatory frameworks. Science promises that chaos has underlying order discoverable through method; religion promises that suffering has meaning within larger purpose. Both create communities around shared beliefs, whether in natural laws or divine providence.
 
 Neither eliminates mystery; they relocate it. Religion places mystery in the divine; science places it in the yet-to-be-discovered. Both provide the psychological comfort of knowing there are authoritative answers, even if we don't possess them all yet.
+
+These institutional patterns aren't unique to contemporary science—they've repeated throughout history with each paradigm shift.
 
 ## Skepticism and Shifting Truth
 
@@ -78,6 +84,8 @@ If we look historically, truth is the story of skepticism overturning orthodoxy:
 Thomas Kuhn observed that paradigm shifts function partially like conversion experiences: not merely gradual accumulations of evidence, but sudden gestalt switches in how reality appears, yet still constrained by anomaly accumulation, predictive power, and problem-solving capacity.
 
 Each shift demonstrates that truth is provisional, conditional, and subject to the expansion of our modes of disclosure. What seemed unshakable becomes merely useful approximations within limited domains. Skepticism, not certainty, is the real driver of knowledge.
+
+Our latest technological leap—artificial intelligence—represents another expansion of disclosure, exhibiting these same technological, philosophical, and institutional patterns.
 
 ## Our Latest Sense Organs
 
