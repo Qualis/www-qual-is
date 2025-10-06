@@ -64,7 +64,7 @@ This instrumental understanding of truth raises a crucial question: if science d
 
 ## The Social Architecture of Belief
 
-Science doesn't just resemble religion philosophically; it mirrors religion institutionally and psychologically. Sociologists of knowledge from Robert K. Merton to Bruno Latour and Peter Berger have traced how laboratories, funding agencies, and credentialing regimes stabilize what counts as "legitimate" truth.
+Science doesn't just resemble religion philosophically; it mirrors religion institutionally and psychologically. Sociologists of knowledge have traced how laboratories, funding agencies, and credentialing regimes stabilize what counts as "legitimate" truth.
 
 Universities function as cathedrals, journals as sacred texts, peer review as orthodoxy enforcement. Citations become scripture, with frequent references conferring authority. Tenure resembles priesthood: institutional protection for those who've proven their devotion. Retraction serves as excommunication, removal from the community of legitimate voices. Grant funding operates like tithing, concentrating resources among the faithful. Even scientific conferences resemble religious gatherings: communal reinforcement of shared beliefs, ritual presentations, and the social bonding that maintains institutional coherence.
 
