@@ -67,7 +67,10 @@ export function Intro() {
 
       <div className="text-center mb-10 max-w-4xl mx-auto">
         <p className="text-primary dark:text-primary-dark text-xl md:text-2xl font-semibold leading-relaxed mb-6">
-          Need to scale your engineering team and accelerate delivery? I help growing companies achieve faster deployments, build high-performing teams, and implement AI-driven development practices that deliver measurable results.
+          Need to scale your engineering team and accelerate delivery? I help
+          growing companies achieve faster deployments, build high-performing
+          teams, and implement AI-driven development practices that deliver
+          measurable results.
         </p>
         <div className="mb-8">
           <Link
@@ -83,9 +86,10 @@ export function Intro() {
         </h2>
         <p className="text-accent-3 dark:text-accent-1 text-lg leading-relaxed">
           Insights on technical architecture, leadership strategies, process
-          improvement, and hands-on software engineering practices; complete with
-          working code and real-world examples. You'll find posts on decision
-          frameworks, team scaling, cloud-native architectures, and more.
+          improvement, and hands-on software engineering practices; complete
+          with working code and real-world examples. You'll find posts on
+          decision frameworks, team scaling, cloud-native architectures, and
+          more.
         </p>
       </div>
     </div>

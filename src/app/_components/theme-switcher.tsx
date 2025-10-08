@@ -65,13 +65,17 @@ const Switch = () => {
 
   const handleModeSwitch = () => {
     const index = modes.indexOf(mode);
-    setMode(modes[(index + 1) % modes.length]);
+    const nextMode = modes[(index + 1) % modes.length];
+    if (nextMode) {
+      setMode(nextMode);
+    }
   };
   return (
     <button
       suppressHydrationWarning
       className={styles.switch}
       onClick={handleModeSwitch}
+      aria-label="Toggle theme"
     />
   );
 };

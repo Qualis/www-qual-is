@@ -31,8 +31,9 @@ export default function BlogPage() {
             </h1>
             <p className="text-xl text-accent-3 dark:text-accent-1 leading-relaxed max-w-4xl mx-auto">
               Insights on technical architecture, leadership strategies, process
-              improvement, and hands-on software engineering practices. Complete with
-              working code and real-world examples from scaling engineering teams.
+              improvement, and hands-on software engineering practices. Complete
+              with working code and real-world examples from scaling engineering
+              teams.
             </p>
           </div>
         </div>

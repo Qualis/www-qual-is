@@ -20,8 +20,17 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    "target": "ES2017"
+    "target": "ES2017",
+    // Enhanced strictness options
+    "noUncheckedIndexedAccess": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+    "forceConsistentCasingInFileNames": true
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "playwright-report", "test-results", "coverage"]
 }

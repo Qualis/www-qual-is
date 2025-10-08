@@ -8,10 +8,6 @@ import React from "react";
 export default function Footer() {
   const [isContactModalOpen, setIsContactModalOpen] = React.useState(false);
 
-  function openContactModal() {
-    setIsContactModalOpen(true);
-  }
-
   function closeContactModal() {
     setIsContactModalOpen(false);
   }
@@ -20,7 +16,10 @@ export default function Footer() {
       <footer className="bg-accent-1 border-t border-primary dark:bg-accent-3">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20 pb-6">
-            <Link href="/" className="flex items-center space-x-2 transition-all duration-200 group">
+            <Link
+              href="/"
+              className="flex items-center space-x-2 transition-all duration-200 group"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6 text-primary dark:text-primary-dark"

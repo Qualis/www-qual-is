@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+npm run build &&
+version=$(node -p "require('./package.json').version") &&
+
+mkdir -p /tmp/build &&
+tar -czf "/tmp/build/www-qual-is-${version}.tar.gz" -C dist . &&
+mv "/tmp/build/www-qual-is-${version}.tar.gz" "dist/" &&
+
+node scripts/generate-openapi.js &&
+
+packer build -color=false -var "artifact=www-qual-is-${version}.tar.gz" -var "version=${version}" infrastructure/packer/service.pkr.hcl &&
+
+echo "VERSION=$version"

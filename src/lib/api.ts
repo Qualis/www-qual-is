@@ -21,7 +21,7 @@ export function buildImageUrls(topic: string) {
 
 export function extractTopicFromCoverImage(coverImage: string): string {
   const match = coverImage.match(/\/assets\/blog\/categories\/([^.]+)\.png/);
-  return match ? match[1] : "uncategorized";
+  return match?.[1] ?? "uncategorized";
 }
 
 export function getPostBySlug(slug: string) {
@@ -54,5 +54,5 @@ export function getAllTopics(): string[] {
   const posts = getAllPosts();
   const topicsSet = new Set(posts.map((post) => post.topic));
   const topicOrder = ["engineer", "lead", "manage", "think"];
-  return topicOrder.filter(topic => topicsSet.has(topic));
+  return topicOrder.filter((topic) => topicsSet.has(topic));
 }

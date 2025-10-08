@@ -11,7 +11,11 @@ interface ContactModalProps {
   title?: string;
 }
 
-export function ContactModal({ isOpen, onClose, title = "Reach out" }: ContactModalProps) {
+export function ContactModal({
+  isOpen,
+  onClose,
+  title = "Reach out",
+}: ContactModalProps) {
   return (
     <Modal
       isOpen={isOpen}

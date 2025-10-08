@@ -12,7 +12,7 @@ export default async function markdownToHtml(markdown: string) {
 
   htmlContent = htmlContent.replace(
     /<h([1-6])>(.*?)<\/h\1>/g,
-    (match, level, content) => {
+    (_match, level, content) => {
       const id = content
         .toLowerCase()
         .replace(/[^\w\s-]/g, "")

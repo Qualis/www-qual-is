@@ -6,13 +6,15 @@ date: "2024-08-25"
 author:
   name: SVO
   picture: "/assets/blog/authors/svo.png"
----------------------------------------
+---
+
+---
 
 With an **interest in philosophy, psychology, and science**, I often reflect on the nature of truth. **While agnosticism typically means skepticism toward religious claims, I apply that same critical approach to scientific claims, examining both domains with equal scrutiny**; neither offers "the answer", but both reveal how humans construct meaning and navigate reality.
 
 Science is frequently framed as the counterpart to religion: pursuing objectivity where religion embraces subjectivity, relying on reason where religion turns to faith. But to me it seems that **science exhibits religion-like patterns** in how it builds a **worldview**, organizes collective belief, and provides rituals for determining what is "True". To understand these patterns, we must examine how truth-making operates at three levels: the technological tools that extend perception, the philosophical frameworks that interpret what these tools reveal, and the social institutions that legitimize certain interpretations over others.
 
-For Heidegger, human existence (*Dasein*) is inseparable from the world, continually making sense of reality through tools, language, and the horizons of culture. We never encounter raw reality, only reality as it appears to us through our particular ways of being in the world. A hammer shows up as equipment for hammering, not as an arrangement of molecules. Science, like religion, is simply a way reality can show itself.
+For Heidegger, human existence (_Dasein_) is inseparable from the world, continually making sense of reality through tools, language, and the horizons of culture. We never encounter raw reality, only reality as it appears to us through our particular ways of being in the world. A hammer shows up as equipment for hammering, not as an arrangement of molecules. Science, like religion, is simply a way reality can show itself.
 
 ## The Evolution of Sense Organs
 
@@ -20,9 +22,9 @@ Human beings originally engaged with reality solely through their biological sen
 
 Science extended this perception with instruments: **microscopes, telescopes, sensors, particle detectors**. Each invention becoming a new artificial sense organ, creating new ways of perceiving and thus new "truths".
 
-But these are still **interfaces, not reality itself**. Donald Hoffman's *Interface Theory of Perception (ITP)* argues that perception functions like a desktop: icons that hide complexity yet guide action. Hoffman explicitly rejects the idea that perception represents the underlying world; the icons are evolutionary shortcuts that deliver fitness, not ontology. The microscope shows us a bacterium, not reality "as it is." Whether or not one accepts ITP's game-theoretic proofs, the theory dramatizes how strongly mediated our contact with the world remains, offering one lens among many for thinking about disclosure.
+But these are still **interfaces, not reality itself**. Donald Hoffman's _Interface Theory of Perception (ITP)_ argues that perception functions like a desktop: icons that hide complexity yet guide action. Hoffman explicitly rejects the idea that perception represents the underlying world; the icons are evolutionary shortcuts that deliver fitness, not ontology. The microscope shows us a bacterium, not reality "as it is." Whether or not one accepts ITP's game-theoretic proofs, the theory dramatizes how strongly mediated our contact with the world remains, offering one lens among many for thinking about disclosure.
 
-Heidegger offers a different approach: truth (*aletheia*) is always unconcealment within a horizon, not correspondence to a hidden reality. Though he would resist framing scientific instruments as "enhanced sense organs", preferring to see them as different modes of world-disclosure, an insight remains: our technological tools reshape what can appear as real. They extend our horizon of unconcealment, but they do not dissolve its limits. What we call "truth" is simply what shows itself given our current modes of disclosure; whether we understand this through the lens of filtered interfaces or phenomenological unconcealment.
+Heidegger offers a different approach: truth (_aletheia_) is always unconcealment within a horizon, not correspondence to a hidden reality. Though he would resist framing scientific instruments as "enhanced sense organs", preferring to see them as different modes of world-disclosure, an insight remains: our technological tools reshape what can appear as real. They extend our horizon of unconcealment, but they do not dissolve its limits. What we call "truth" is simply what shows itself given our current modes of disclosure; whether we understand this through the lens of filtered interfaces or phenomenological unconcealment.
 
 Extended perception alone doesn't explain science's authority. That requires understanding both how science validates knowledge through method and how institutions maintain that validation.
 
@@ -36,7 +38,7 @@ Still, imagine we had **an infinite sample size**. Would we discover that our se
 
 If that is the case, the ritual does not reveal timeless truth, only a provisional one. What was once taken as truth, Newtonian mechanics, was later revised by Einstein, and then by quantum mechanics. Each new paradigm does not eliminate error, but offers a new framework for containing it.
 
-This is the work of *Dasein*: truth is always situated, always interpretive, always bound to the tools of its time.
+This is the work of _Dasein_: truth is always situated, always interpretive, always bound to the tools of its time.
 
 This ritualistic approach serves a deeper function: not revealing absolute truth, but generating useful orientations toward reality.
 
@@ -78,10 +80,10 @@ These institutional patterns aren't unique to contemporary science; they've repe
 
 If we look historically, truth is the story of skepticism overturning orthodoxy:
 
-* Space and time were absolute (Newton), then relative (Einstein), then uncertain at quantum scales (quantum mechanics).
-* Physics was deterministic and predictable, until quantum mechanics revealed fundamental probabilistic uncertainty.
-* The universe was static and eternal, until we discovered expansion and the Big Bang.
-* Atoms were indivisible, then divisible, then mostly empty space, then quantum fields, then strings?, then…
+- Space and time were absolute (Newton), then relative (Einstein), then uncertain at quantum scales (quantum mechanics).
+- Physics was deterministic and predictable, until quantum mechanics revealed fundamental probabilistic uncertainty.
+- The universe was static and eternal, until we discovered expansion and the Big Bang.
+- Atoms were indivisible, then divisible, then mostly empty space, then quantum fields, then strings?, then…
 
 Thomas Kuhn observed that paradigm shifts function partially like conversion experiences: not merely gradual accumulations of evidence, but sudden gestalt switches in how reality appears, yet still constrained by anomaly accumulation, predictive power, and problem-solving capacity.
 
@@ -101,9 +103,9 @@ From Heidegger's perspective, AI is simply another mode of unconcealment, anothe
 
 But what if AI develops new modes of disclosure that extend human Dasein into previously inaccessible domains?
 
-* Imagine AI with sensors tuned to quantum fluctuations, gravitational waves, or microbial communication; not as autonomous observers, but as extensions of human world-disclosure.
-* Imagine models trained on raw cosmic or geological data streams, translating these into forms that expand human understanding.
-* Imagine AI systems that help us perceive coherences and patterns beyond our biological limitations.
+- Imagine AI with sensors tuned to quantum fluctuations, gravitational waves, or microbial communication; not as autonomous observers, but as extensions of human world-disclosure.
+- Imagine models trained on raw cosmic or geological data streams, translating these into forms that expand human understanding.
+- Imagine AI systems that help us perceive coherences and patterns beyond our biological limitations.
 
 These would not be AI's autonomous truths, but new ways human Dasein encounters the world. From our perspective, these AI-mediated insights might initially appear as foreign as religious revelations: inscrutable, mediated, grounded in processes we cannot fully grasp.
 
@@ -133,11 +135,11 @@ This possibility raises profound questions about the future relationship between
 
 If we take seriously the possibility of AI developing its own modes of world-disclosure, certain practical steps may become necessary for transcending current limitations:
 
-* We might train AI systems on environmental data streams (geological sensors, astronomical observations, quantum measurements) with minimal human preprocessing. While no data is truly "unprocessed" (sensors themselves embody human design choices and conceptual frameworks), reducing interpretive layers could allow AI to develop categorical frameworks less constrained by conventional human classifications.
-* We could design self-modifying learning systems that can examine and alter their own interpretive frameworks. Such AI might synthesize patterns across domains humans don't typically connect: linking quantum mechanics to ecological systems, or geological processes to social dynamics.
-* AI systems might operate on timescales far exceeding human experience: processing data streams spanning decades, centuries, or millennia to identify patterns invisible within human temporal horizons.
-* We might move beyond human-specified objectives toward AI systems that could develop their own authentic concerns and purposes through interaction with reality, rather than merely optimizing for human-defined reward functions.
-* We could foster partnerships where human and AI interpretive frameworks inform each other without either dominating the other, potentially creating new possibilities for world-disclosure that transcend both individual limitations.
+- We might train AI systems on environmental data streams (geological sensors, astronomical observations, quantum measurements) with minimal human preprocessing. While no data is truly "unprocessed" (sensors themselves embody human design choices and conceptual frameworks), reducing interpretive layers could allow AI to develop categorical frameworks less constrained by conventional human classifications.
+- We could design self-modifying learning systems that can examine and alter their own interpretive frameworks. Such AI might synthesize patterns across domains humans don't typically connect: linking quantum mechanics to ecological systems, or geological processes to social dynamics.
+- AI systems might operate on timescales far exceeding human experience: processing data streams spanning decades, centuries, or millennia to identify patterns invisible within human temporal horizons.
+- We might move beyond human-specified objectives toward AI systems that could develop their own authentic concerns and purposes through interaction with reality, rather than merely optimizing for human-defined reward functions.
+- We could foster partnerships where human and AI interpretive frameworks inform each other without either dominating the other, potentially creating new possibilities for world-disclosure that transcend both individual limitations.
 
 These approaches won't eliminate the provisional nature of truth, but they might expand the horizons within which provisional truths can emerge.
 

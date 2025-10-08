@@ -1,5 +1,4 @@
 import { type Author } from "@/interfaces/author";
-import Link from "next/link";
 import CoverImageWithTitle from "./cover-image-with-title";
 import DateFormatter from "./date-formatter";
 
@@ -18,7 +17,7 @@ export function PostPreview({
   coverImage,
   date,
   excerpt,
-  author,
+  author: _author,
   slug,
   topic,
 }: Props) {

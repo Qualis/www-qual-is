@@ -87,6 +87,7 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
       title,
       description: post.excerpt,
       type: "article",
+      url: `https://qual.is/posts/${post.slug}`,
       publishedTime: post.date,
       authors: [post.author.name],
       tags: [

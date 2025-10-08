@@ -4,18 +4,18 @@ import { ThemeSwitcher } from "./theme-switcher";
 import SocialLinks from "./social-links";
 import Link from "next/link";
 import { useState } from "react";
-import { usePathname } from "next/navigation";
 
 export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const pathname = usePathname();
-  const isHomePage = pathname === '/';
 
   return (
     <nav className="sticky top-0 z-50 bg-accent-1/95 dark:bg-accent-3/95 backdrop-blur-sm border-b border-primary/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link href="/" className="flex items-center space-x-2 transition-all duration-200 group">
+          <Link
+            href="/"
+            className="flex items-center space-x-2 transition-all duration-200 group"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6 text-primary dark:text-primary-dark"
@@ -37,13 +37,22 @@ export function Navigation() {
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/#services" className="text-primary dark:text-primary-dark hover:text-accent-3 dark:hover:text-accent-1 transition-colors">
+            <Link
+              href="/#services"
+              className="text-primary dark:text-primary-dark hover:text-accent-3 dark:hover:text-accent-1 transition-colors"
+            >
               Services
             </Link>
-            <Link href="/about" className="text-primary dark:text-primary-dark hover:text-accent-3 dark:hover:text-accent-1 transition-colors">
+            <Link
+              href="/about"
+              className="text-primary dark:text-primary-dark hover:text-accent-3 dark:hover:text-accent-1 transition-colors"
+            >
               About
             </Link>
-            <Link href="/blog" className="text-primary dark:text-primary-dark hover:text-accent-3 dark:hover:text-accent-1 transition-colors">
+            <Link
+              href="/blog"
+              className="text-primary dark:text-primary-dark hover:text-accent-3 dark:hover:text-accent-1 transition-colors"
+            >
               Blog
             </Link>
           </div>

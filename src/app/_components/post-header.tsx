@@ -1,4 +1,3 @@
-import CoverImage from "./cover-image";
 import { PostTitle } from "@/app/_components/post-title";
 import DateFormatter from "./date-formatter";
 import { OptimizedImage } from "./optimized-image";
@@ -10,7 +9,12 @@ type Props = {
   topic?: string;
 };
 
-export function PostHeader({ title, coverImage, date, topic }: Props) {
+export function PostHeader({
+  title,
+  coverImage: _coverImage,
+  date,
+  topic,
+}: Props) {
   const bannerImage = topic
     ? `/assets/blog/categories/${topic}-banner.png`
     : null;
