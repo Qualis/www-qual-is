@@ -28,7 +28,7 @@
 
 - **Unit/Component**: Vitest + React Testing Library
 - **E2E**: Playwright (Chromium, Firefox, WebKit)
-- **Coverage**: V8 (100% threshold)
+- **Coverage**: V8 (70% target for tested code; pages tested via E2E)
 
 ### Code Quality
 

@@ -9,7 +9,6 @@ import {
   getAllTopics,
 } from "./api";
 
-// Mock fs module
 vi.mock("fs");
 vi.mock("path", async () => {
   const actual = await vi.importActual<typeof path>("path");
@@ -88,7 +87,6 @@ topic: engineer
     const result = getPostBySlug("test-post");
 
     expect(result.title).toBe("Test Post");
-    // gray-matter automatically parses dates as Date objects
     expect(result.date).toEqual(new Date("2025-01-08T00:00:00.000Z"));
     expect(result.topic).toBe("engineer");
     expect(result.slug).toBe("test-post");
@@ -186,7 +184,7 @@ Content 3`
     const results = getAllPosts();
 
     expect(results).toHaveLength(3);
-    expect(results[0]?.title).toBe("Post 2"); // Latest date first
+    expect(results[0]?.title).toBe("Post 2");
     expect(results[1]?.title).toBe("Post 3");
     expect(results[2]?.title).toBe("Post 1");
   });
@@ -309,7 +307,6 @@ topic: engineer
 
     const results = getAllTopics();
 
-    // Should be in the predefined order: engineer, lead, manage, think
     expect(results).toEqual(["engineer", "lead", "manage", "think"]);
   });
 });
