@@ -19,7 +19,7 @@
     "test:e2e:report": "playwright show-report",
     "test:all": "npm run test:unit && npm run test:e2e",
     "quality": "npm run lint && npm run type-check && npm run test:unit",
-    "postinstall": "npx playwright install --with-deps chromium firefox webkit",
+    "postinstall": "if [ -z \"$AWS_APP_ID\" ]; then npx playwright install --with-deps chromium firefox webkit; fi",
     "prepare": "husky"
   },
   "dependencies": {
