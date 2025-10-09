@@ -29,7 +29,6 @@ export default defineConfig({
         "e2e/**",
         "coverage/**",
       ],
-      // Set low thresholds initially - increase as test coverage grows
       thresholds: {
         lines: 2,
         functions: 2,
