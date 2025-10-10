@@ -1,22 +1,14 @@
-import { describe, it, expect, vi, beforeEach } from "vitest";
-import * as fs from "fs";
-import * as path from "path";
+import { describe, it, expect, beforeEach, afterEach } from "vitest";
 import {
   buildImageUrls,
   extractTopicFromCoverImage,
   getPostBySlug,
+  getPostSlugs,
   getAllPosts,
   getAllTopics,
 } from "./api";
-
-vi.mock("fs");
-vi.mock("path", async () => {
-  const actual = await vi.importActual<typeof path>("path");
-  return {
-    ...actual,
-    join: vi.fn((...args: string[]) => args.join("/")),
-  };
-});
+import { InMemoryPostRepository } from "@/infrastructure/repositories/InMemoryPostRepository";
+import { container } from "@/infrastructure/di/container";
 
 describe("buildImageUrls", () => {
   it("should build correct image URLs for a given topic", () => {
@@ -72,22 +64,47 @@ describe("extractTopicFromCoverImage", () => {
   });
 });
 
-describe("getPostBySlug", () => {
+describe("getPostSlugs", () => {
+  let repository: InMemoryPostRepository;
+
   beforeEach(() => {
-    vi.clearAllMocks();
+    repository = new InMemoryPostRepository();
+    container.setPostRepository(repository);
+  });
+
+  afterEach(() => {
+    container.reset();
+  });
+
+  it("should return all post slugs", () => {
+    repository.addPost("post-1", { topic: "engineer" }, "Content 1");
+    repository.addPost("post-2", { topic: "lead" }, "Content 2");
+    repository.addPost("post-3", { topic: "think" }, "Content 3");
+
+    const results = getPostSlugs();
+
+    expect(results).toHaveLength(3);
+  });
+});
+
+describe("getPostBySlug", () => {
+  let repository: InMemoryPostRepository;
+
+  beforeEach(() => {
+    repository = new InMemoryPostRepository();
+    container.setPostRepository(repository);
+  });
+
+  afterEach(() => {
+    container.reset();
   });
 
   it("should parse the post title correctly", () => {
-    const mockFileContents = `---
-title: Test Post
-date: 2025-01-08
-topic: engineer
----
-
-# Test Content`;
-
-    vi.mocked(fs.readFileSync).mockReturnValue(mockFileContents);
-    vi.mocked(path.join).mockReturnValue("_posts/test-post.md");
+    repository.addPost(
+      "test-post",
+      { title: "Test Post", date: new Date("2025-01-08"), topic: "engineer" },
+      "# Test Content"
+    );
 
     const result = getPostBySlug("test-post");
 
@@ -95,16 +112,11 @@ topic: engineer
   });
 
   it("should parse the post date correctly", () => {
-    const mockFileContents = `---
-title: Test Post
-date: 2025-01-08
-topic: engineer
----
-
-# Test Content`;
-
-    vi.mocked(fs.readFileSync).mockReturnValue(mockFileContents);
-    vi.mocked(path.join).mockReturnValue("_posts/test-post.md");
+    repository.addPost(
+      "test-post",
+      { title: "Test Post", date: new Date("2025-01-08"), topic: "engineer" },
+      "# Test Content"
+    );
 
     const result = getPostBySlug("test-post");
 
@@ -112,16 +124,11 @@ topic: engineer
   });
 
   it("should parse the post topic correctly", () => {
-    const mockFileContents = `---
-title: Test Post
-date: 2025-01-08
-topic: engineer
----
-
-# Test Content`;
-
-    vi.mocked(fs.readFileSync).mockReturnValue(mockFileContents);
-    vi.mocked(path.join).mockReturnValue("_posts/test-post.md");
+    repository.addPost(
+      "test-post",
+      { title: "Test Post", date: new Date("2025-01-08"), topic: "engineer" },
+      "# Test Content"
+    );
 
     const result = getPostBySlug("test-post");
 
@@ -129,16 +136,11 @@ topic: engineer
   });
 
   it("should set the slug from the filename", () => {
-    const mockFileContents = `---
-title: Test Post
-date: 2025-01-08
-topic: engineer
----
-
-# Test Content`;
-
-    vi.mocked(fs.readFileSync).mockReturnValue(mockFileContents);
-    vi.mocked(path.join).mockReturnValue("_posts/test-post.md");
+    repository.addPost(
+      "test-post",
+      { title: "Test Post", date: new Date("2025-01-08"), topic: "engineer" },
+      "# Test Content"
+    );
 
     const result = getPostBySlug("test-post");
 
@@ -146,16 +148,11 @@ topic: engineer
   });
 
   it("should parse the post content correctly", () => {
-    const mockFileContents = `---
-title: Test Post
-date: 2025-01-08
-topic: engineer
----
-
-# Test Content`;
-
-    vi.mocked(fs.readFileSync).mockReturnValue(mockFileContents);
-    vi.mocked(path.join).mockReturnValue("_posts/test-post.md");
+    repository.addPost(
+      "test-post",
+      { title: "Test Post", date: new Date("2025-01-08"), topic: "engineer" },
+      "# Test Content"
+    );
 
     const result = getPostBySlug("test-post");
 
@@ -163,14 +160,11 @@ topic: engineer
   });
 
   it("should strip .md extension from slug", () => {
-    const mockFileContents = `---
-title: Test Post
-topic: lead
----
-
-Content`;
-
-    vi.mocked(fs.readFileSync).mockReturnValue(mockFileContents);
+    repository.addPost(
+      "test-post",
+      { title: "Test Post", topic: "lead" },
+      "Content"
+    );
 
     const result = getPostBySlug("test-post.md");
 
@@ -178,14 +172,11 @@ Content`;
   });
 
   it("should extract topic from coverImage if topic is missing", () => {
-    const mockFileContents = `---
-title: Test Post
-coverImage: /assets/blog/categories/think.png
----
-
-Content`;
-
-    vi.mocked(fs.readFileSync).mockReturnValue(mockFileContents);
+    repository.addPost(
+      "test-post",
+      { title: "Test Post", coverImage: "/assets/blog/categories/think.png" },
+      "Content"
+    );
 
     const result = getPostBySlug("test-post");
 
@@ -193,14 +184,11 @@ Content`;
   });
 
   it("should auto-generate coverImage when topic is provided but coverImage is missing", () => {
-    const mockFileContents = `---
-title: Test Post
-topic: manage
----
-
-Content`;
-
-    vi.mocked(fs.readFileSync).mockReturnValue(mockFileContents);
+    repository.addPost(
+      "test-post",
+      { title: "Test Post", topic: "manage" },
+      "Content"
+    );
 
     const result = getPostBySlug("test-post");
 
@@ -208,14 +196,11 @@ Content`;
   });
 
   it("should auto-generate ogImage when topic is provided but ogImage is missing", () => {
-    const mockFileContents = `---
-title: Test Post
-topic: manage
----
-
-Content`;
-
-    vi.mocked(fs.readFileSync).mockReturnValue(mockFileContents);
+    repository.addPost(
+      "test-post",
+      { title: "Test Post", topic: "manage" },
+      "Content"
+    );
 
     const result = getPostBySlug("test-post");
 
@@ -223,16 +208,15 @@ Content`;
   });
 
   it("should auto-generate coverImage when topic is provided and ogImage exists", () => {
-    const mockFileContents = `---
-title: Test Post
-topic: manage
-ogImage:
-  url: /custom-og-image.png
----
-
-Content`;
-
-    vi.mocked(fs.readFileSync).mockReturnValue(mockFileContents);
+    repository.addPost(
+      "test-post",
+      {
+        title: "Test Post",
+        topic: "manage",
+        ogImage: { url: "/custom-og-image.png" },
+      },
+      "Content"
+    );
 
     const result = getPostBySlug("test-post");
 
@@ -240,16 +224,15 @@ Content`;
   });
 
   it("should preserve custom ogImage when provided", () => {
-    const mockFileContents = `---
-title: Test Post
-topic: manage
-ogImage:
-  url: /custom-og-image.png
----
-
-Content`;
-
-    vi.mocked(fs.readFileSync).mockReturnValue(mockFileContents);
+    repository.addPost(
+      "test-post",
+      {
+        title: "Test Post",
+        topic: "manage",
+        ogImage: { url: "/custom-og-image.png" },
+      },
+      "Content"
+    );
 
     const result = getPostBySlug("test-post");
 
@@ -258,45 +241,33 @@ Content`;
 });
 
 describe("getAllPosts", () => {
+  let repository: InMemoryPostRepository;
+
   beforeEach(() => {
-    vi.clearAllMocks();
+    repository = new InMemoryPostRepository();
+    container.setPostRepository(repository);
+  });
+
+  afterEach(() => {
+    container.reset();
   });
 
   it("should return all posts", () => {
-    vi.mocked(fs.readdirSync).mockReturnValue([
-      "post-1.md",
-      "post-2.md",
-      "post-3.md",
-    ] as any);
-
-    vi.mocked(fs.readFileSync)
-      .mockReturnValueOnce(
-        `---
-title: Post 1
-date: 2025-01-01
-topic: engineer
----
-
-Content 1`
-      )
-      .mockReturnValueOnce(
-        `---
-title: Post 2
-date: 2025-01-15
-topic: lead
----
-
-Content 2`
-      )
-      .mockReturnValueOnce(
-        `---
-title: Post 3
-date: 2025-01-10
-topic: think
----
-
-Content 3`
-      );
+    repository.addPost(
+      "post-1",
+      { title: "Post 1", date: new Date("2025-01-01"), topic: "engineer" },
+      "Content 1"
+    );
+    repository.addPost(
+      "post-2",
+      { title: "Post 2", date: new Date("2025-01-15"), topic: "lead" },
+      "Content 2"
+    );
+    repository.addPost(
+      "post-3",
+      { title: "Post 3", date: new Date("2025-01-10"), topic: "think" },
+      "Content 3"
+    );
 
     const results = getAllPosts();
 
@@ -304,40 +275,21 @@ Content 3`
   });
 
   it("should return posts with most recent date first", () => {
-    vi.mocked(fs.readdirSync).mockReturnValue([
-      "post-1.md",
-      "post-2.md",
-      "post-3.md",
-    ] as any);
-
-    vi.mocked(fs.readFileSync)
-      .mockReturnValueOnce(
-        `---
-title: Post 1
-date: 2025-01-01
-topic: engineer
----
-
-Content 1`
-      )
-      .mockReturnValueOnce(
-        `---
-title: Post 2
-date: 2025-01-15
-topic: lead
----
-
-Content 2`
-      )
-      .mockReturnValueOnce(
-        `---
-title: Post 3
-date: 2025-01-10
-topic: think
----
-
-Content 3`
-      );
+    repository.addPost(
+      "post-1",
+      { title: "Post 1", date: new Date("2025-01-01"), topic: "engineer" },
+      "Content 1"
+    );
+    repository.addPost(
+      "post-2",
+      { title: "Post 2", date: new Date("2025-01-15"), topic: "lead" },
+      "Content 2"
+    );
+    repository.addPost(
+      "post-3",
+      { title: "Post 3", date: new Date("2025-01-10"), topic: "think" },
+      "Content 3"
+    );
 
     const results = getAllPosts();
 
@@ -345,40 +297,21 @@ Content 3`
   });
 
   it("should return posts with second most recent date second", () => {
-    vi.mocked(fs.readdirSync).mockReturnValue([
-      "post-1.md",
-      "post-2.md",
-      "post-3.md",
-    ] as any);
-
-    vi.mocked(fs.readFileSync)
-      .mockReturnValueOnce(
-        `---
-title: Post 1
-date: 2025-01-01
-topic: engineer
----
-
-Content 1`
-      )
-      .mockReturnValueOnce(
-        `---
-title: Post 2
-date: 2025-01-15
-topic: lead
----
-
-Content 2`
-      )
-      .mockReturnValueOnce(
-        `---
-title: Post 3
-date: 2025-01-10
-topic: think
----
-
-Content 3`
-      );
+    repository.addPost(
+      "post-1",
+      { title: "Post 1", date: new Date("2025-01-01"), topic: "engineer" },
+      "Content 1"
+    );
+    repository.addPost(
+      "post-2",
+      { title: "Post 2", date: new Date("2025-01-15"), topic: "lead" },
+      "Content 2"
+    );
+    repository.addPost(
+      "post-3",
+      { title: "Post 3", date: new Date("2025-01-10"), topic: "think" },
+      "Content 3"
+    );
 
     const results = getAllPosts();
 
@@ -386,40 +319,21 @@ Content 3`
   });
 
   it("should return posts with oldest date last", () => {
-    vi.mocked(fs.readdirSync).mockReturnValue([
-      "post-1.md",
-      "post-2.md",
-      "post-3.md",
-    ] as any);
-
-    vi.mocked(fs.readFileSync)
-      .mockReturnValueOnce(
-        `---
-title: Post 1
-date: 2025-01-01
-topic: engineer
----
-
-Content 1`
-      )
-      .mockReturnValueOnce(
-        `---
-title: Post 2
-date: 2025-01-15
-topic: lead
----
-
-Content 2`
-      )
-      .mockReturnValueOnce(
-        `---
-title: Post 3
-date: 2025-01-10
-topic: think
----
-
-Content 3`
-      );
+    repository.addPost(
+      "post-1",
+      { title: "Post 1", date: new Date("2025-01-01"), topic: "engineer" },
+      "Content 1"
+    );
+    repository.addPost(
+      "post-2",
+      { title: "Post 2", date: new Date("2025-01-15"), topic: "lead" },
+      "Content 2"
+    );
+    repository.addPost(
+      "post-3",
+      { title: "Post 3", date: new Date("2025-01-10"), topic: "think" },
+      "Content 3"
+    );
 
     const results = getAllPosts();
 
@@ -427,8 +341,6 @@ Content 3`
   });
 
   it("should return empty array when no posts exist", () => {
-    vi.mocked(fs.readdirSync).mockReturnValue([] as any);
-
     const results = getAllPosts();
 
     expect(results).toHaveLength(0);
@@ -436,55 +348,38 @@ Content 3`
 });
 
 describe("getAllTopics", () => {
+  let repository: InMemoryPostRepository;
+
   beforeEach(() => {
-    vi.clearAllMocks();
+    repository = new InMemoryPostRepository();
+    container.setPostRepository(repository);
+  });
+
+  afterEach(() => {
+    container.reset();
   });
 
   it("should return unique topics in the correct order", () => {
-    vi.mocked(fs.readdirSync).mockReturnValue([
-      "post-1.md",
-      "post-2.md",
-      "post-3.md",
-      "post-4.md",
-    ] as any);
-
-    vi.mocked(fs.readFileSync)
-      .mockReturnValueOnce(
-        `---
-title: Post 1
-date: 2025-01-01
-topic: engineer
----
-
-Content 1`
-      )
-      .mockReturnValueOnce(
-        `---
-title: Post 2
-date: 2025-01-15
-topic: lead
----
-
-Content 2`
-      )
-      .mockReturnValueOnce(
-        `---
-title: Post 3
-date: 2025-01-10
-topic: engineer
----
-
-Content 3`
-      )
-      .mockReturnValueOnce(
-        `---
-title: Post 4
-date: 2025-01-05
-topic: manage
----
-
-Content 4`
-      );
+    repository.addPost(
+      "post-1",
+      { title: "Post 1", date: new Date("2025-01-01"), topic: "engineer" },
+      "Content 1"
+    );
+    repository.addPost(
+      "post-2",
+      { title: "Post 2", date: new Date("2025-01-15"), topic: "lead" },
+      "Content 2"
+    );
+    repository.addPost(
+      "post-3",
+      { title: "Post 3", date: new Date("2025-01-10"), topic: "engineer" },
+      "Content 3"
+    );
+    repository.addPost(
+      "post-4",
+      { title: "Post 4", date: new Date("2025-01-05"), topic: "manage" },
+      "Content 4"
+    );
 
     const results = getAllTopics();
 
@@ -492,16 +387,10 @@ Content 4`
   });
 
   it("should only return topics that exist in posts", () => {
-    vi.mocked(fs.readdirSync).mockReturnValue(["post-1.md"] as any);
-
-    vi.mocked(fs.readFileSync).mockReturnValueOnce(
-      `---
-title: Post 1
-date: 2025-01-01
-topic: engineer
----
-
-Content 1`
+    repository.addPost(
+      "post-1",
+      { title: "Post 1", date: new Date("2025-01-01"), topic: "engineer" },
+      "Content 1"
     );
 
     const results = getAllTopics();
@@ -510,16 +399,10 @@ Content 1`
   });
 
   it("should not include lead topic when no posts have lead topic", () => {
-    vi.mocked(fs.readdirSync).mockReturnValue(["post-1.md"] as any);
-
-    vi.mocked(fs.readFileSync).mockReturnValueOnce(
-      `---
-title: Post 1
-date: 2025-01-01
-topic: engineer
----
-
-Content 1`
+    repository.addPost(
+      "post-1",
+      { title: "Post 1", date: new Date("2025-01-01"), topic: "engineer" },
+      "Content 1"
     );
 
     const results = getAllTopics();
@@ -528,16 +411,10 @@ Content 1`
   });
 
   it("should not include manage topic when no posts have manage topic", () => {
-    vi.mocked(fs.readdirSync).mockReturnValue(["post-1.md"] as any);
-
-    vi.mocked(fs.readFileSync).mockReturnValueOnce(
-      `---
-title: Post 1
-date: 2025-01-01
-topic: engineer
----
-
-Content 1`
+    repository.addPost(
+      "post-1",
+      { title: "Post 1", date: new Date("2025-01-01"), topic: "engineer" },
+      "Content 1"
     );
 
     const results = getAllTopics();
@@ -546,16 +423,10 @@ Content 1`
   });
 
   it("should not include think topic when no posts have think topic", () => {
-    vi.mocked(fs.readdirSync).mockReturnValue(["post-1.md"] as any);
-
-    vi.mocked(fs.readFileSync).mockReturnValueOnce(
-      `---
-title: Post 1
-date: 2025-01-01
-topic: engineer
----
-
-Content 1`
+    repository.addPost(
+      "post-1",
+      { title: "Post 1", date: new Date("2025-01-01"), topic: "engineer" },
+      "Content 1"
     );
 
     const results = getAllTopics();
@@ -564,34 +435,10 @@ Content 1`
   });
 
   it("should maintain the predefined topic order", () => {
-    vi.mocked(fs.readdirSync).mockReturnValue([
-      "post-1.md",
-      "post-2.md",
-      "post-3.md",
-      "post-4.md",
-    ] as any);
-
-    vi.mocked(fs.readFileSync)
-      .mockReturnValueOnce(
-        `---
-topic: think
----`
-      )
-      .mockReturnValueOnce(
-        `---
-topic: manage
----`
-      )
-      .mockReturnValueOnce(
-        `---
-topic: lead
----`
-      )
-      .mockReturnValueOnce(
-        `---
-topic: engineer
----`
-      );
+    repository.addPost("post-1", { topic: "think" }, "");
+    repository.addPost("post-2", { topic: "manage" }, "");
+    repository.addPost("post-3", { topic: "lead" }, "");
+    repository.addPost("post-4", { topic: "engineer" }, "");
 
     const results = getAllTopics();
 

@@ -82,6 +82,7 @@ const Switch = () => {
 
 const Script = memo(() => (
   <script
+    suppressHydrationWarning
     dangerouslySetInnerHTML={{
       __html: `(${NoFOUCScript.toString()})('${STORAGE_KEY}')`,
     }}
