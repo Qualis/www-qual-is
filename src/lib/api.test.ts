@@ -30,10 +30,15 @@ describe("buildImageUrls", () => {
     });
   });
 
-  it("should handle different topics correctly", () => {
+  it("should build correct coverImage for different topics", () => {
     const result = buildImageUrls("lead");
 
     expect(result.coverImage).toBe("/assets/blog/categories/lead.png");
+  });
+
+  it("should build correct ogImage URL for different topics", () => {
+    const result = buildImageUrls("lead");
+
     expect(result.ogImage.url).toBe("/assets/blog/categories/lead.png");
   });
 });
@@ -72,7 +77,7 @@ describe("getPostBySlug", () => {
     vi.clearAllMocks();
   });
 
-  it("should read and parse a post correctly", () => {
+  it("should parse the post title correctly", () => {
     const mockFileContents = `---
 title: Test Post
 date: 2025-01-08
@@ -87,9 +92,73 @@ topic: engineer
     const result = getPostBySlug("test-post");
 
     expect(result.title).toBe("Test Post");
+  });
+
+  it("should parse the post date correctly", () => {
+    const mockFileContents = `---
+title: Test Post
+date: 2025-01-08
+topic: engineer
+---
+
+# Test Content`;
+
+    vi.mocked(fs.readFileSync).mockReturnValue(mockFileContents);
+    vi.mocked(path.join).mockReturnValue("_posts/test-post.md");
+
+    const result = getPostBySlug("test-post");
+
     expect(result.date).toEqual(new Date("2025-01-08T00:00:00.000Z"));
+  });
+
+  it("should parse the post topic correctly", () => {
+    const mockFileContents = `---
+title: Test Post
+date: 2025-01-08
+topic: engineer
+---
+
+# Test Content`;
+
+    vi.mocked(fs.readFileSync).mockReturnValue(mockFileContents);
+    vi.mocked(path.join).mockReturnValue("_posts/test-post.md");
+
+    const result = getPostBySlug("test-post");
+
     expect(result.topic).toBe("engineer");
+  });
+
+  it("should set the slug from the filename", () => {
+    const mockFileContents = `---
+title: Test Post
+date: 2025-01-08
+topic: engineer
+---
+
+# Test Content`;
+
+    vi.mocked(fs.readFileSync).mockReturnValue(mockFileContents);
+    vi.mocked(path.join).mockReturnValue("_posts/test-post.md");
+
+    const result = getPostBySlug("test-post");
+
     expect(result.slug).toBe("test-post");
+  });
+
+  it("should parse the post content correctly", () => {
+    const mockFileContents = `---
+title: Test Post
+date: 2025-01-08
+topic: engineer
+---
+
+# Test Content`;
+
+    vi.mocked(fs.readFileSync).mockReturnValue(mockFileContents);
+    vi.mocked(path.join).mockReturnValue("_posts/test-post.md");
+
+    const result = getPostBySlug("test-post");
+
     expect(result.content).toContain("# Test Content");
   });
 
@@ -123,7 +192,7 @@ Content`;
     expect(result.topic).toBe("think");
   });
 
-  it("should auto-generate coverImage and ogImage when topic is provided but images are missing", () => {
+  it("should auto-generate coverImage when topic is provided but coverImage is missing", () => {
     const mockFileContents = `---
 title: Test Post
 topic: manage
@@ -136,10 +205,24 @@ Content`;
     const result = getPostBySlug("test-post");
 
     expect(result.coverImage).toBe("/assets/blog/categories/manage.png");
+  });
+
+  it("should auto-generate ogImage when topic is provided but ogImage is missing", () => {
+    const mockFileContents = `---
+title: Test Post
+topic: manage
+---
+
+Content`;
+
+    vi.mocked(fs.readFileSync).mockReturnValue(mockFileContents);
+
+    const result = getPostBySlug("test-post");
+
     expect(result.ogImage?.url).toBe("/assets/blog/categories/manage.png");
   });
 
-  it("should auto-generate only coverImage when topic is provided and ogImage exists", () => {
+  it("should auto-generate coverImage when topic is provided and ogImage exists", () => {
     const mockFileContents = `---
 title: Test Post
 topic: manage
@@ -154,6 +237,22 @@ Content`;
     const result = getPostBySlug("test-post");
 
     expect(result.coverImage).toBe("/assets/blog/categories/manage.png");
+  });
+
+  it("should preserve custom ogImage when provided", () => {
+    const mockFileContents = `---
+title: Test Post
+topic: manage
+ogImage:
+  url: /custom-og-image.png
+---
+
+Content`;
+
+    vi.mocked(fs.readFileSync).mockReturnValue(mockFileContents);
+
+    const result = getPostBySlug("test-post");
+
     expect(result.ogImage?.url).toBe("/custom-og-image.png");
   });
 });
@@ -163,7 +262,7 @@ describe("getAllPosts", () => {
     vi.clearAllMocks();
   });
 
-  it("should return all posts sorted by date descending", () => {
+  it("should return all posts", () => {
     vi.mocked(fs.readdirSync).mockReturnValue([
       "post-1.md",
       "post-2.md",
@@ -202,8 +301,128 @@ Content 3`
     const results = getAllPosts();
 
     expect(results).toHaveLength(3);
+  });
+
+  it("should return posts with most recent date first", () => {
+    vi.mocked(fs.readdirSync).mockReturnValue([
+      "post-1.md",
+      "post-2.md",
+      "post-3.md",
+    ] as any);
+
+    vi.mocked(fs.readFileSync)
+      .mockReturnValueOnce(
+        `---
+title: Post 1
+date: 2025-01-01
+topic: engineer
+---
+
+Content 1`
+      )
+      .mockReturnValueOnce(
+        `---
+title: Post 2
+date: 2025-01-15
+topic: lead
+---
+
+Content 2`
+      )
+      .mockReturnValueOnce(
+        `---
+title: Post 3
+date: 2025-01-10
+topic: think
+---
+
+Content 3`
+      );
+
+    const results = getAllPosts();
+
     expect(results[0]?.title).toBe("Post 2");
+  });
+
+  it("should return posts with second most recent date second", () => {
+    vi.mocked(fs.readdirSync).mockReturnValue([
+      "post-1.md",
+      "post-2.md",
+      "post-3.md",
+    ] as any);
+
+    vi.mocked(fs.readFileSync)
+      .mockReturnValueOnce(
+        `---
+title: Post 1
+date: 2025-01-01
+topic: engineer
+---
+
+Content 1`
+      )
+      .mockReturnValueOnce(
+        `---
+title: Post 2
+date: 2025-01-15
+topic: lead
+---
+
+Content 2`
+      )
+      .mockReturnValueOnce(
+        `---
+title: Post 3
+date: 2025-01-10
+topic: think
+---
+
+Content 3`
+      );
+
+    const results = getAllPosts();
+
     expect(results[1]?.title).toBe("Post 3");
+  });
+
+  it("should return posts with oldest date last", () => {
+    vi.mocked(fs.readdirSync).mockReturnValue([
+      "post-1.md",
+      "post-2.md",
+      "post-3.md",
+    ] as any);
+
+    vi.mocked(fs.readFileSync)
+      .mockReturnValueOnce(
+        `---
+title: Post 1
+date: 2025-01-01
+topic: engineer
+---
+
+Content 1`
+      )
+      .mockReturnValueOnce(
+        `---
+title: Post 2
+date: 2025-01-15
+topic: lead
+---
+
+Content 2`
+      )
+      .mockReturnValueOnce(
+        `---
+title: Post 3
+date: 2025-01-10
+topic: think
+---
+
+Content 3`
+      );
+
+    const results = getAllPosts();
+
     expect(results[2]?.title).toBe("Post 1");
   });
 
@@ -288,8 +507,59 @@ Content 1`
     const results = getAllTopics();
 
     expect(results).toEqual(["engineer"]);
+  });
+
+  it("should not include lead topic when no posts have lead topic", () => {
+    vi.mocked(fs.readdirSync).mockReturnValue(["post-1.md"] as any);
+
+    vi.mocked(fs.readFileSync).mockReturnValueOnce(
+      `---
+title: Post 1
+date: 2025-01-01
+topic: engineer
+---
+
+Content 1`
+    );
+
+    const results = getAllTopics();
+
     expect(results).not.toContain("lead");
+  });
+
+  it("should not include manage topic when no posts have manage topic", () => {
+    vi.mocked(fs.readdirSync).mockReturnValue(["post-1.md"] as any);
+
+    vi.mocked(fs.readFileSync).mockReturnValueOnce(
+      `---
+title: Post 1
+date: 2025-01-01
+topic: engineer
+---
+
+Content 1`
+    );
+
+    const results = getAllTopics();
+
     expect(results).not.toContain("manage");
+  });
+
+  it("should not include think topic when no posts have think topic", () => {
+    vi.mocked(fs.readdirSync).mockReturnValue(["post-1.md"] as any);
+
+    vi.mocked(fs.readFileSync).mockReturnValueOnce(
+      `---
+title: Post 1
+date: 2025-01-01
+topic: engineer
+---
+
+Content 1`
+    );
+
+    const results = getAllTopics();
+
     expect(results).not.toContain("think");
   });
 

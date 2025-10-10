@@ -12,7 +12,7 @@ describe("Container", () => {
     expect(screen.getByText("Test Content")).toBeInTheDocument();
   });
 
-  it("should render multiple children", () => {
+  it("should render first child", () => {
     render(
       <Container>
         <div>First</div>
@@ -20,6 +20,15 @@ describe("Container", () => {
       </Container>
     );
     expect(screen.getByText("First")).toBeInTheDocument();
+  });
+
+  it("should render second child", () => {
+    render(
+      <Container>
+        <div>First</div>
+        <div>Second</div>
+      </Container>
+    );
     expect(screen.getByText("Second")).toBeInTheDocument();
   });
 

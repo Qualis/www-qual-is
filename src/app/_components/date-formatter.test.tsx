@@ -3,11 +3,17 @@ import { render, screen } from "@testing-library/react";
 import DateFormatter from "./date-formatter";
 
 describe("DateFormatter", () => {
-  it("should render a formatted date", () => {
+  it("should render a formatted date in the document", () => {
     render(<DateFormatter dateString="2025-01-08" />);
 
     const timeElement = screen.getByText("January 8, 2025");
     expect(timeElement).toBeInTheDocument();
+  });
+
+  it("should render as a TIME element", () => {
+    render(<DateFormatter dateString="2025-01-08" />);
+
+    const timeElement = screen.getByText("January 8, 2025");
     expect(timeElement.tagName).toBe("TIME");
   });
 
