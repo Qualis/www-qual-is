@@ -1,5 +1,7 @@
 # qual.is
 
+[![Service](https://github.com/Qualis/www-qual-is/actions/workflows/service.yml/badge.svg)](https://github.com/Qualis/www-qual-is/actions/workflows/service.yml)
+
 ## Features
 
 - Built with Next.js 15 and React 19
