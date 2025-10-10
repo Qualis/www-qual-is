@@ -92,6 +92,13 @@ npm run test:e2e:report  # Show Playwright report
 npm run test:all         # Run all tests
 ```
 
+#### Security
+
+```bash
+npm audit                # Check for dependency vulnerabilities
+npm audit fix            # Automatically fix vulnerabilities
+```
+
 ### Project Structure
 
 ```

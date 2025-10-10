@@ -17,7 +17,7 @@
     "test:e2e:ui": "playwright test --ui",
     "test:e2e:debug": "playwright test --debug",
     "test:e2e:report": "playwright show-report",
-    "test:all": "npm run quality && npm run test:coverage && npm run test:e2e",
+    "test:all": "npm audit --audit-level=high && npm run quality && npm run test:coverage && npm run test:e2e",
     "quality": "npm run lint && npm run type-check",
     "postinstall": "if [ -z \"$AWS_APP_ID\" ]; then npx playwright install --with-deps chromium firefox webkit; fi",
     "prepare": "husky"
