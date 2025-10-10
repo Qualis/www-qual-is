@@ -40,6 +40,12 @@ export default defineConfig({
       },
     },
   },
+  server: {
+    watch: {
+      usePolling: true,
+      interval: 1000,
+    },
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
