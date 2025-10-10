@@ -138,6 +138,24 @@ Content`;
     expect(result.coverImage).toBe("/assets/blog/categories/manage.png");
     expect(result.ogImage?.url).toBe("/assets/blog/categories/manage.png");
   });
+
+  it("should auto-generate only coverImage when topic is provided and ogImage exists", () => {
+    const mockFileContents = `---
+title: Test Post
+topic: manage
+ogImage:
+  url: /custom-og-image.png
+---
+
+Content`;
+
+    vi.mocked(fs.readFileSync).mockReturnValue(mockFileContents);
+
+    const result = getPostBySlug("test-post");
+
+    expect(result.coverImage).toBe("/assets/blog/categories/manage.png");
+    expect(result.ogImage?.url).toBe("/custom-og-image.png");
+  });
 });
 
 describe("getAllPosts", () => {
