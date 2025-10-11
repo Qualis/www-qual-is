@@ -14,7 +14,6 @@ test.describe("Homepage", () => {
 
   test("should display navigation links", async ({ page }) => {
     await page.goto("/");
-    await page.waitForLoadState("networkidle");
 
     const menuButton = page.getByRole("button", { name: /toggle menu/i });
     if (await menuButton.isVisible()) {
@@ -39,7 +38,6 @@ test.describe("Homepage", () => {
 
     await expect(page).toHaveURL("/about");
 
-    await page.waitForLoadState("networkidle");
     const heading = page.locator("h1, h2").first();
     await expect(heading).toBeVisible();
   });

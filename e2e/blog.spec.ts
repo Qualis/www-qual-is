@@ -32,12 +32,12 @@ test.describe("Blog Page", () => {
   }) => {
     await page.goto("/blog");
 
-    await page.waitForLoadState("networkidle");
-
     const activeFilter = page
       .locator("button")
       .filter({ hasText: "🔘" })
       .first();
+
+    await activeFilter.waitFor({ state: "visible" });
 
     if (await activeFilter.isVisible()) {
       const buttonText = await activeFilter.textContent();
@@ -61,8 +61,6 @@ test.describe("Blog Page", () => {
 
   test("should navigate to individual post", async ({ page }) => {
     await page.goto("/blog");
-
-    await page.waitForLoadState("networkidle");
 
     const postLink = page.locator("a[href^='/posts/']").first();
 

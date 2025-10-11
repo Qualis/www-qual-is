@@ -3,10 +3,11 @@ import { test, expect } from "@playwright/test";
 test.describe("Individual Post Page", () => {
   test.beforeEach(async ({ page }) => {
     await page.goto("/blog");
-    await page.waitForLoadState("networkidle");
     const postLink = page.locator("a[href^='/posts/']").first();
+    await postLink.waitFor({ state: "visible" });
     await postLink.click();
     await page.waitForURL(/\/posts\/.+/);
+    await page.locator("h1, h2").first().waitFor({ state: "visible" });
   });
 
   test("should display post title", async ({ page }) => {
@@ -42,18 +43,18 @@ test.describe("Individual Post Page", () => {
   });
 
   test("should have proper Open Graph meta tags", async ({ page }) => {
-    const ogTitle = page.locator('meta[property="og:title"]');
+    const ogTitle = page.locator('meta[property="og:title"]').first();
     await expect(ogTitle).toHaveAttribute("content", /.+/);
 
-    const ogImage = page.locator('meta[property="og:image"]');
+    const ogImage = page.locator('meta[property="og:image"]').first();
     await expect(ogImage).toHaveAttribute("content", /.+/);
 
-    const ogUrl = page.locator('meta[property="og:url"]');
+    const ogUrl = page.locator('meta[property="og:url"]').first();
     await expect(ogUrl).toHaveAttribute("content", /.+/);
   });
 
   test("should have proper Twitter Card meta tags", async ({ page }) => {
-    const twitterCard = page.locator('meta[name="twitter:card"]');
+    const twitterCard = page.locator('meta[name="twitter:card"]').first();
     await expect(twitterCard).toHaveAttribute("content", /.+/);
   });
 });

@@ -14,7 +14,6 @@ test.describe("About Page", () => {
 
   test("should display profile image", async ({ page }) => {
     await page.goto("/about");
-    await page.waitForLoadState("networkidle");
 
     const profileImage = page.getByAltText(/sean van osselaer/i);
     await expect(profileImage).toBeVisible();
@@ -141,9 +140,9 @@ test.describe("About Page", () => {
 
   test("should have proper section structure", async ({ page }) => {
     await page.goto("/about");
-    await page.waitForLoadState("networkidle");
 
     const sections = page.locator("section");
+    await sections.first().waitFor({ state: "visible" });
     const sectionCount = await sections.count();
 
     expect(sectionCount).toBeGreaterThanOrEqual(5);
