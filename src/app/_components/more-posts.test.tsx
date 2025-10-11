@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from "vitest";
 import { render, screen } from "@testing-library/react";
-import { MoreStories } from "./more-stories";
+import { MorePosts } from "./more-posts";
 import { Post } from "@/interfaces/post";
 
 vi.mock("./post-preview", () => ({
@@ -9,7 +9,7 @@ vi.mock("./post-preview", () => ({
   ),
 }));
 
-describe("MoreStories", () => {
+describe("MorePosts", () => {
   const mockPosts: Post[] = [
     {
       slug: "post-1",
@@ -36,42 +36,42 @@ describe("MoreStories", () => {
   ];
 
   it("should render the heading", () => {
-    render(<MoreStories posts={mockPosts} />);
+    render(<MorePosts posts={mockPosts} />);
     expect(screen.getByText("More Musings")).toBeInTheDocument();
   });
 
   it("should render heading as h2", () => {
-    render(<MoreStories posts={mockPosts} />);
+    render(<MorePosts posts={mockPosts} />);
     const heading = screen.getByRole("heading", { level: 2 });
     expect(heading).toHaveTextContent("More Musings");
   });
 
   it("should render all posts", () => {
-    render(<MoreStories posts={mockPosts} />);
+    render(<MorePosts posts={mockPosts} />);
     const previews = screen.getAllByTestId("post-preview");
     expect(previews).toHaveLength(2);
   });
 
   it("should render post titles", () => {
-    render(<MoreStories posts={mockPosts} />);
+    render(<MorePosts posts={mockPosts} />);
     expect(screen.getByText("First Post")).toBeInTheDocument();
     expect(screen.getByText("Second Post")).toBeInTheDocument();
   });
 
   it("should render in a section element", () => {
-    const { container } = render(<MoreStories posts={mockPosts} />);
+    const { container } = render(<MorePosts posts={mockPosts} />);
     expect(container.querySelector("section")).toBeInTheDocument();
   });
 
   it("should use grid layout", () => {
-    const { container } = render(<MoreStories posts={mockPosts} />);
+    const { container } = render(<MorePosts posts={mockPosts} />);
     const grid = container.querySelector(".grid");
     expect(grid).toBeInTheDocument();
     expect(grid).toHaveClass("grid-cols-1", "md:grid-cols-2");
   });
 
   it("should render with empty posts array", () => {
-    render(<MoreStories posts={[]} />);
+    render(<MorePosts posts={[]} />);
     expect(screen.getByText("More Musings")).toBeInTheDocument();
     expect(screen.queryAllByTestId("post-preview")).toHaveLength(0);
   });

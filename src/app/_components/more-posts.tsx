@@ -5,7 +5,7 @@ type Props = {
   posts: Post[];
 };
 
-export function MoreStories({ posts }: Props) {
+export function MorePosts({ posts }: Props) {
   return (
     <section>
       <h2 className="text-primary dark:text-primary-dark mb-8 text-xl md:text-3xl lg:text-4xl font-bold tracking-tighter leading-tight text-center">

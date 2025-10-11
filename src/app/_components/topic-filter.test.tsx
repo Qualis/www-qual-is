@@ -12,9 +12,9 @@ vi.mock("./hero-post", () => ({
   ),
 }));
 
-vi.mock("./more-stories", () => ({
-  MoreStories: ({ posts }: { posts: Post[] }) => (
-    <div data-testid="more-stories">
+vi.mock("./more-posts", () => ({
+  MorePosts: ({ posts }: { posts: Post[] }) => (
+    <div data-testid="more-posts">
       {posts.map((post) => (
         <div key={post.slug}>{post.title}</div>
       ))}
@@ -89,10 +89,10 @@ describe("TopicFilter", () => {
     expect(manageButton).toHaveClass("bg-primary");
   });
 
-  it("should render hero post and more stories", () => {
+  it("should render hero post and more posts", () => {
     render(<TopicFilter topics={mockTopics} allPosts={mockPosts} />);
     expect(screen.getByTestId("hero-post")).toBeInTheDocument();
-    expect(screen.getByTestId("more-stories")).toBeInTheDocument();
+    expect(screen.getByTestId("more-posts")).toBeInTheDocument();
   });
 
   it("should filter posts when topic is deselected", () => {
@@ -205,11 +205,11 @@ describe("TopicFilter", () => {
     expect(screen.getByText("engineer")).toBeInTheDocument();
   });
 
-  it("should render more stories with correct number of posts", () => {
+  it("should render more posts with correct number of posts", () => {
     render(<TopicFilter topics={mockTopics} allPosts={mockPosts} />);
 
-    const moreStories = screen.getByTestId("more-stories");
-    expect(moreStories).toBeInTheDocument();
+    const morePosts = screen.getByTestId("more-posts");
+    expect(morePosts).toBeInTheDocument();
     expect(screen.getByText("Lead Post")).toBeInTheDocument();
     expect(screen.getByText("Manage Post")).toBeInTheDocument();
     expect(screen.getByText("Another Engineer Post")).toBeInTheDocument();

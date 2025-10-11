@@ -1,8 +1,9 @@
 # tmp files
-core
-tmp
 .vagrant
+.claude
+core
 dist
+tmp
 
 # dependencies
 /node_modules

@@ -3,7 +3,7 @@
 import { useState, useRef, useLayoutEffect } from "react";
 import { Post } from "@/interfaces/post";
 import { HeroPost } from "./hero-post";
-import { MoreStories } from "./more-stories";
+import { MorePosts } from "./more-posts";
 import styles from "./topic-filter.module.css";
 
 type TopicFilterProps = {
@@ -111,7 +111,7 @@ export function TopicFilter({ topics, allPosts }: TopicFilterProps) {
       )}
 
       {morePosts.length > 0 ? (
-        <MoreStories posts={morePosts} />
+        <MorePosts posts={morePosts} />
       ) : (
         !heroPost && (
           <div className="text-center py-10">
