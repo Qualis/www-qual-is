@@ -1,6 +1,39 @@
-import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
+import {
+  describe,
+  it,
+  expect,
+  vi,
+  beforeEach,
+  afterEach,
+  type Mock,
+} from "vitest";
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import { ThemeSwitcher, NoFOUCScript } from "./theme-switcher";
+
+interface MockClassList {
+  add: Mock;
+  remove: Mock;
+  contains: Mock;
+}
+
+interface MockStyleElement {
+  textContent: string;
+}
+
+interface MockHead {
+  appendChild: Mock;
+  removeChild: Mock;
+}
+
+interface MockDocumentElement {
+  classList: MockClassList;
+  setAttribute: Mock;
+}
+
+interface MockMatchMedia {
+  matches: boolean;
+  addEventListener: Mock;
+}
 
 describe("ThemeSwitcher", () => {
   let localStorageMock: { [key: string]: string };
@@ -135,7 +168,8 @@ describe("ThemeSwitcher", () => {
 
   it("should ignore storage events for other keys", async () => {
     render(<ThemeSwitcher />);
-    const initialCallCount = (localStorage.setItem as any).mock.calls.length;
+    const setItemMock = localStorage.setItem as unknown as Mock;
+    const initialCallCount = setItemMock.mock.calls.length;
 
     const storageEvent = new StorageEvent("storage", {
       key: "other-key",
@@ -145,9 +179,7 @@ describe("ThemeSwitcher", () => {
     window.dispatchEvent(storageEvent);
 
     await waitFor(() => {
-      expect((localStorage.setItem as any).mock.calls.length).toBe(
-        initialCallCount
-      );
+      expect(setItemMock.mock.calls.length).toBe(initialCallCount);
     });
   });
 
@@ -186,11 +218,11 @@ describe("ThemeSwitcher", () => {
 });
 
 describe("NoFOUCScript", () => {
-  let mockClassList: any;
-  let mockMatchMedia: any;
-  let mockHead: any;
-  let mockStyleElement: any;
-  let mockDocumentElement: any;
+  let mockClassList: MockClassList;
+  let mockMatchMedia: MockMatchMedia;
+  let mockHead: MockHead;
+  let mockStyleElement: MockStyleElement;
+  let mockDocumentElement: MockDocumentElement;
   let localStorageMock: { [key: string]: string };
 
   beforeEach(() => {
@@ -261,7 +293,7 @@ describe("NoFOUCScript", () => {
   afterEach(() => {
     vi.restoreAllMocks();
     vi.useRealTimers();
-    delete (window as any).updateDOM;
+    delete (window as unknown as { updateDOM?: () => void }).updateDOM;
   });
 
   it("should create and set up window.updateDOM function", () => {

@@ -1,7 +1,6 @@
 import { Post } from "@/interfaces/post";
 import { container } from "@/infrastructure/di/container";
 
-// Re-export pure functions from transformers for convenience
 export { buildImageUrls, extractTopicFromCoverImage } from "@/lib/transformers";
 
 export function getPostSlugs(): string[] {

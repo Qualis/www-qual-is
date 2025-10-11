@@ -30,7 +30,6 @@ class Container {
     return this.postService;
   }
 
-  // For testing
   setPostRepository(repository: IPostRepository): void {
     this.postRepository = repository;
     delete (this as unknown as { postService?: PostService }).postService;
