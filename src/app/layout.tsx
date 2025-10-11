@@ -51,6 +51,7 @@ export default function RootLayout({
           defer
           src="https://cloud.umami.is/script.js"
           data-website-id="dd0b2581-9ffc-4bcb-8423-6973b138c1e4"
+          data-domains="qual.is,www.qual.is"
         ></script>
         <link
           rel="apple-touch-icon"
