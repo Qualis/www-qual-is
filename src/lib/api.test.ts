@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach, afterEach } from "vitest";
+import { describe, it, expect, beforeEach, vi } from "vitest";
 import {
   buildImageUrls,
   extractTopicFromCoverImage,
@@ -8,7 +8,29 @@ import {
   getAllTopics,
 } from "./api";
 import { InMemoryPostRepository } from "@/infrastructure/repositories/InMemoryPostRepository";
-import { container } from "@/infrastructure/di/container";
+import { createContainer, Container } from "@/infrastructure/di/container";
+
+type MockedContainerModule = typeof import("@/infrastructure/di/container") & {
+  setTestContainer: (container: Container) => void;
+};
+
+vi.mock("@/infrastructure/di/container", async () => {
+  const actual = await vi.importActual<
+    typeof import("@/infrastructure/di/container")
+  >("@/infrastructure/di/container");
+  let testContainer = actual.createContainer();
+  return {
+    ...actual,
+    get container() {
+      return testContainer;
+    },
+    setTestContainer: (
+      container: ReturnType<typeof actual.createContainer>
+    ) => {
+      testContainer = container;
+    },
+  };
+});
 
 describe("buildImageUrls", () => {
   it("should build correct image URLs for a given topic", () => {
@@ -67,13 +89,12 @@ describe("extractTopicFromCoverImage", () => {
 describe("getPostSlugs", () => {
   let repository: InMemoryPostRepository;
 
-  beforeEach(() => {
+  beforeEach(async () => {
+    const { setTestContainer } = (await import(
+      "@/infrastructure/di/container"
+    )) as MockedContainerModule;
     repository = new InMemoryPostRepository();
-    container.setPostRepository(repository);
-  });
-
-  afterEach(() => {
-    container.reset();
+    setTestContainer(createContainer({ postRepository: repository }));
   });
 
   it("should return all post slugs", () => {
@@ -90,13 +111,12 @@ describe("getPostSlugs", () => {
 describe("getPostBySlug", () => {
   let repository: InMemoryPostRepository;
 
-  beforeEach(() => {
+  beforeEach(async () => {
+    const { setTestContainer } = (await import(
+      "@/infrastructure/di/container"
+    )) as MockedContainerModule;
     repository = new InMemoryPostRepository();
-    container.setPostRepository(repository);
-  });
-
-  afterEach(() => {
-    container.reset();
+    setTestContainer(createContainer({ postRepository: repository }));
   });
 
   it("should parse the post title correctly", () => {
@@ -243,13 +263,12 @@ describe("getPostBySlug", () => {
 describe("getAllPosts", () => {
   let repository: InMemoryPostRepository;
 
-  beforeEach(() => {
+  beforeEach(async () => {
+    const { setTestContainer } = (await import(
+      "@/infrastructure/di/container"
+    )) as MockedContainerModule;
     repository = new InMemoryPostRepository();
-    container.setPostRepository(repository);
-  });
-
-  afterEach(() => {
-    container.reset();
+    setTestContainer(createContainer({ postRepository: repository }));
   });
 
   it("should return all posts", () => {
@@ -350,13 +369,12 @@ describe("getAllPosts", () => {
 describe("getAllTopics", () => {
   let repository: InMemoryPostRepository;
 
-  beforeEach(() => {
+  beforeEach(async () => {
+    const { setTestContainer } = (await import(
+      "@/infrastructure/di/container"
+    )) as MockedContainerModule;
     repository = new InMemoryPostRepository();
-    container.setPostRepository(repository);
-  });
-
-  afterEach(() => {
-    container.reset();
+    setTestContainer(createContainer({ postRepository: repository }));
   });
 
   it("should return unique topics in the correct order", () => {

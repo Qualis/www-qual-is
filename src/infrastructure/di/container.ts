@@ -2,44 +2,34 @@ import { IPostRepository } from "@/domain/repositories/IPostRepository";
 import { FileSystemPostRepository } from "@/infrastructure/repositories/FileSystemPostRepository";
 import { PostService } from "@/application/services/PostService";
 
-class Container {
-  private static instance: Container;
-  private postRepository?: IPostRepository;
-  private postService?: PostService;
+export interface Dependencies {
+  postRepository?: IPostRepository;
+}
 
-  private constructor() {}
+export class Container {
+  private _postRepository?: IPostRepository;
+  private _postService?: PostService;
 
-  static getInstance(): Container {
-    if (!Container.instance) {
-      Container.instance = new Container();
-    }
-    return Container.instance;
-  }
+  constructor(private readonly deps?: Dependencies) {}
 
   getPostRepository(): IPostRepository {
-    if (!this.postRepository) {
-      this.postRepository = new FileSystemPostRepository();
+    if (!this._postRepository) {
+      this._postRepository =
+        this.deps?.postRepository ?? new FileSystemPostRepository();
     }
-    return this.postRepository;
+    return this._postRepository;
   }
 
   getPostService(): PostService {
-    if (!this.postService) {
-      this.postService = new PostService(this.getPostRepository());
+    if (!this._postService) {
+      this._postService = new PostService(this.getPostRepository());
     }
-    return this.postService;
-  }
-
-  setPostRepository(repository: IPostRepository): void {
-    this.postRepository = repository;
-    delete (this as unknown as { postService?: PostService }).postService;
-  }
-
-  reset(): void {
-    delete (this as unknown as { postRepository?: IPostRepository })
-      .postRepository;
-    delete (this as unknown as { postService?: PostService }).postService;
+    return this._postService;
   }
 }
 
-export const container = Container.getInstance();
+export function createContainer(deps?: Dependencies): Container {
+  return new Container(deps);
+}
+
+export const container = createContainer();
