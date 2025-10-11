@@ -5,39 +5,84 @@
 ## Features
 
 - Built with Next.js 15 and React 19
-- Fully responsive design with Tailwind CSS
+- Responsive design with Tailwind CSS
 - Dark/Light theme support
 - Markdown-based blog posts with gray-matter
 - SEO optimized with next-seo
-- Topic-based filtering
-- Accessibility-first design
-- Comprehensive test coverage (Unit + E2E)
-- Type-safe with strict TypeScript
-- Multi-browser E2E testing with Playwright
-- CI/CD with GitHub Actions
-- Pre-commit hooks for code quality
+- Unit + E2E testing
 
-## Technology
+## Architecture
 
-### Core
+This project follows **Hexagonal Architecture**, organizing code into distinct layers with clear dependency rules and boundaries.
 
-- **Framework**: Next.js 15 (App Router)
-- **React**: 19.0
-- **TypeScript**: 5.5 (Strict mode)
-- **Styling**: Tailwind CSS 3.4
+### Project Structure
 
-### Testing
+```
+www-qual-is/
+├── _posts/                # Markdown blog posts
+├── decisions/             # Architecture Decision Records (ADRs)
+├── .github/
+│   └── workflows/         # GitHub Actions CI/CD
+├── .husky/                # Git hooks (pre-commit)
+├── e2e/                   # Playwright E2E tests
+├── public/                # Static assets (images, fonts)
+├── src/
+│   ├── domain/            # Core business rules (innermost layer)
+│   │   └── repositories/  # Port interfaces defining data access contracts
+│   ├── application/       # Application business rules
+│   │   ├── use-cases/     # Single-purpose business operations
+│   │   └── services/      # Orchestration of use cases
+│   ├── infrastructure/    # Framework & external dependencies (outermost layer)
+│   │   ├── repositories/  # Adapter implementations (FileSystem, InMemory)
+│   │   └── di/            # Dependency injection container
+│   ├── app/               # Interface adapters (Next.js App Router)
+│   │   ├── _components/   # React components
+│   │   ├── posts/         # Post pages
+│   │   ├── about/         # About page
+│   │   ├── blog/          # Blog listing
+│   │   └── layout.tsx     # Root layout
+│   ├── interfaces/        # TypeScript type definitions
+│   └── lib/               # Utility functions and helpers
+├── vitest.config.ts       # Vitest configuration
+├── playwright.config.ts   # Playwright configuration
+├── eslint.config.mjs      # ESLint configuration
+├── next.config.js         # Next.js configuration
+└── tsconfig.json          # TypeScript configuration
+```
 
-- **Unit/Component**: Vitest + React Testing Library
-- **E2E**: Playwright (Chromium, Firefox, WebKit)
-- **Coverage**: V8 (100% target for tested code; pages tested via E2E)
+### Layer Responsibilities
 
-### Code Quality
+#### Domain Layer (`src/domain/`)
 
-- **Linting**: ESLint with Next.js, TypeScript, React, and accessibility rules
-- **Formatting**: Prettier
-- **Pre-commit**: Husky + lint-staged
-- **CI/CD**: GitHub Actions
+The core business logic, completely framework-agnostic.
+
+- **Ports**: Interfaces that define contracts (e.g., `IPostRepository`)
+- **No external dependencies**: Cannot import from application, infrastructure, or interface layers
+- **Pure business rules**: Contains only domain concepts and abstractions
+
+#### Application Layer (`src/application/`)
+
+Orchestrates business logic and coordinates domain objects.
+
+- **Use Cases**: Single-purpose operations (e.g., `GetPostBySlugUseCase`)
+- **Services**: Coordinate multiple use cases
+- **Depends only on domain layer**: Cannot import from infrastructure or interface layers
+
+#### Infrastructure Layer (`src/infrastructure/`)
+
+Implements technical capabilities and external system integrations.
+
+- **Adapters**: Concrete implementations of domain ports (e.g., `FileSystemPostRepository`)
+- **Dependency Injection**: Container managing object lifecycles
+- **Framework Integration**: File system, databases, external APIs
+
+#### Interface Layer (`src/app/`)
+
+User interface and external communication.
+
+- **Next.js Pages**: Server components and API routes
+- **React Components**: UI presentation
+- **Depends on application layer**: Uses services and use cases
 
 ## Getting Started
 
@@ -97,29 +142,4 @@ npm run test:all         # Run all tests
 ```bash
 npm audit                # Check for dependency vulnerabilities
 npm audit fix            # Automatically fix vulnerabilities
-```
-
-### Project Structure
-
-```
-www-qual-is/
-├── _posts/              # Markdown blog posts
-├── .github/
-│   └── workflows/       # GitHub Actions CI/CD
-├── .husky/              # Git hooks
-├── e2e/                 # Playwright E2E tests
-├── public/              # Static assets
-├── src/
-│   ├── app/             # Next.js App Router
-│   │   ├── _components/ # React components
-│   │   ├── posts/       # Post pages
-│   │   ├── about/       # About page
-│   │   ├── blog/        # Blog listing
-│   │   └── layout.tsx   # Root layout
-│   ├── interfaces/      # TypeScript interfaces
-│   └── lib/             # Utility functions
-├── vitest.config.ts     # Vitest configuration
-├── playwright.config.ts # Playwright configuration
-├── eslint.config.mjs    # ESLint configuration
-└── tsconfig.json        # TypeScript configuration
 ```
