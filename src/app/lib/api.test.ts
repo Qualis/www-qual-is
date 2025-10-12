@@ -1,12 +1,5 @@
 import { describe, it, expect, beforeEach, vi } from "vitest";
-import {
-  buildImageUrls,
-  extractTopicFromCoverImage,
-  getPostBySlug,
-  getPostSlugs,
-  getAllPosts,
-  getAllTopics,
-} from "./api";
+import { getPostBySlug, getAllPosts, getAllTopics } from "./api";
 import { InMemoryPostRepository } from "@/infrastructure/repositories/InMemoryPostRepository";
 import { createContainer, Container } from "@/infrastructure/di/container";
 
@@ -30,82 +23,6 @@ vi.mock("@/infrastructure/di/container", async () => {
       testContainer = container;
     },
   };
-});
-
-describe("buildImageUrls", () => {
-  it("should build correct image URLs for a given topic", () => {
-    const result = buildImageUrls("engineer");
-
-    expect(result).toEqual({
-      coverImage: "/assets/blog/categories/engineer.png",
-      ogImage: {
-        url: "/assets/blog/categories/engineer.png",
-      },
-    });
-  });
-
-  it("should build correct coverImage for different topics", () => {
-    const result = buildImageUrls("lead");
-
-    expect(result.coverImage).toBe("/assets/blog/categories/lead.png");
-  });
-
-  it("should build correct ogImage URL for different topics", () => {
-    const result = buildImageUrls("lead");
-
-    expect(result.ogImage.url).toBe("/assets/blog/categories/lead.png");
-  });
-});
-
-describe("extractTopicFromCoverImage", () => {
-  it("should extract topic from a valid cover image URL", () => {
-    const coverImage = "/assets/blog/categories/engineer.png";
-    const result = extractTopicFromCoverImage(coverImage);
-
-    expect(result).toBe("engineer");
-  });
-
-  it("should return 'uncategorized' for invalid cover image URL", () => {
-    const coverImage = "/invalid/path/image.png";
-    const result = extractTopicFromCoverImage(coverImage);
-
-    expect(result).toBe("uncategorized");
-  });
-
-  it("should handle different topic names", () => {
-    const coverImage = "/assets/blog/categories/manage.png";
-    const result = extractTopicFromCoverImage(coverImage);
-
-    expect(result).toBe("manage");
-  });
-
-  it("should return 'uncategorized' for empty string", () => {
-    const result = extractTopicFromCoverImage("");
-
-    expect(result).toBe("uncategorized");
-  });
-});
-
-describe("getPostSlugs", () => {
-  let repository: InMemoryPostRepository;
-
-  beforeEach(async () => {
-    const { setTestContainer } = (await import(
-      "@/infrastructure/di/container"
-    )) as MockedContainerModule;
-    repository = new InMemoryPostRepository();
-    setTestContainer(createContainer({ postRepository: repository }));
-  });
-
-  it("should return all post slugs", () => {
-    repository.addPost("post-1", { topic: "engineer" }, "Content 1");
-    repository.addPost("post-2", { topic: "lead" }, "Content 2");
-    repository.addPost("post-3", { topic: "think" }, "Content 3");
-
-    const results = getPostSlugs();
-
-    expect(results).toHaveLength(3);
-  });
 });
 
 describe("getPostBySlug", () => {

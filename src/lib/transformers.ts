@@ -1,6 +1,6 @@
 import { Post } from "@/interfaces/post";
 
-export function buildImageUrls(topic: string) {
+function buildImageUrls(topic: string) {
   const categoryImageUrl = `/assets/blog/categories/${topic}.png`;
   return {
     coverImage: categoryImageUrl,
@@ -10,7 +10,7 @@ export function buildImageUrls(topic: string) {
   };
 }
 
-export function extractTopicFromCoverImage(coverImage: string): string {
+function extractTopicFromCoverImage(coverImage: string): string {
   const match = coverImage.match(/\/assets\/blog\/categories\/([^.]+)\.png/);
   return match?.[1] ?? "uncategorized";
 }

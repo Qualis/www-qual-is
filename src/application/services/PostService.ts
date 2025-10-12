@@ -9,7 +9,7 @@ export class PostService {
   private readonly getAllPostsUseCase: GetAllPostsUseCase;
   private readonly getAllTopicsUseCase: GetAllTopicsUseCase;
 
-  constructor(private readonly postRepository: IPostRepository) {
+  constructor(postRepository: IPostRepository) {
     this.getPostBySlugUseCase = new GetPostBySlugUseCase(postRepository);
     this.getAllPostsUseCase = new GetAllPostsUseCase(postRepository);
     this.getAllTopicsUseCase = new GetAllTopicsUseCase(postRepository);
@@ -25,9 +25,5 @@ export class PostService {
 
   getAllTopics(): string[] {
     return this.getAllTopicsUseCase.execute();
-  }
-
-  getPostSlugs(): string[] {
-    return this.postRepository.getAllSlugs();
   }
 }

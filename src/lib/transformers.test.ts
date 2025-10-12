@@ -31,4 +31,17 @@ describe("parsePostData", () => {
     expect(result.coverImage).toBe("/custom/cover.png");
     expect(result.ogImage?.url).toBe("/custom/og.png");
   });
+
+  it("should set topic to 'uncategorized' when topic is missing and coverImage doesn't match pattern", () => {
+    const result = parsePostData(
+      "test-post",
+      {
+        title: "Test",
+        coverImage: "/some/random/image.png",
+      },
+      "Content"
+    );
+
+    expect(result.topic).toBe("uncategorized");
+  });
 });
