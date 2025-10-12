@@ -20,8 +20,8 @@ const config: Config = {
         "accent-3": "#0F172A",
         primary: "#1E40AF",
         "primary-dark": "#3B82F6",
-        highlight: "#06B6D4",
-        "highlight-dark": "#22D3EE",
+        highlight: "#ffc300",
+        "highlight-dark": "#ffd60a",
       },
       spacing: {
         28: "7rem",
@@ -41,8 +41,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
+  plugins: [require("@tailwindcss/typography")],
 };
 export default config;

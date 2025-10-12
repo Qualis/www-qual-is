@@ -147,14 +147,22 @@ describe("TopicFilter", () => {
     expect(screen.getByText("Engineer Post")).toBeInTheDocument();
   });
 
-  it("should display correct emoji icons for selected/unselected topics", () => {
+  it("should display correct icons for selected/unselected topics", () => {
     render(<TopicFilter topics={mockTopics} allPosts={mockPosts} />);
 
     const engineerButton = screen.getByRole("button", { name: /engineer/i });
-    expect(engineerButton.textContent).toContain("🔘");
+    const selectedIcon = engineerButton.querySelector("svg");
+    expect(selectedIcon).toBeInTheDocument();
+    expect(
+      selectedIcon?.querySelector('path[d*="M5 13l4 4L19 7"]')
+    ).toBeInTheDocument();
 
     fireEvent.click(engineerButton);
-    expect(engineerButton.textContent).toContain("⚪️");
+    const unselectedIcon = engineerButton.querySelector("svg");
+    expect(unselectedIcon).toBeInTheDocument();
+    expect(
+      unselectedIcon?.querySelector('path[d*="M6 18L18 6M6 6l12 12"]')
+    ).toBeInTheDocument();
   });
 
   it("should render topic buttons with capitalize class", () => {
@@ -202,7 +210,7 @@ describe("TopicFilter", () => {
     const heroPost = screen.getByTestId("hero-post");
     expect(heroPost).toBeInTheDocument();
     expect(screen.getByText("Engineer Post")).toBeInTheDocument();
-    expect(screen.getByText("engineer")).toBeInTheDocument();
+    expect(screen.getAllByText("engineer").length).toBeGreaterThan(0);
   });
 
   it("should render more posts with correct number of posts", () => {

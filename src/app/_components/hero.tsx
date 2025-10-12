@@ -23,7 +23,7 @@ export function Hero() {
             <div className="max-w-2xl">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary dark:text-primary-dark leading-tight mb-6">
                 Connecting the Dots:{" "}
-                <span className="text-accent-3 dark:text-accent-1">
+                <span className="text-highlight dark:text-highlight-dark">
                   Decoding Complexity
                 </span>{" "}
                 with Code, People & Strategy
@@ -39,7 +39,7 @@ export function Hero() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <button
                   onClick={openContactModal}
-                  className="bg-primary hover:bg-accent-1 hover:text-primary border-2 border-primary text-white font-bold py-4 px-8 text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-center"
+                  className="bg-primary hover:bg-highlight dark:hover:bg-highlight-dark hover:text-accent-3 border-2 border-primary text-white font-bold py-4 px-8 text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-center"
                 >
                   Reach out →
                 </button>

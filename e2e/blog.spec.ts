@@ -32,30 +32,36 @@ test.describe("Blog Page", () => {
   }) => {
     await page.goto("/blog");
 
-    const activeFilter = page
-      .locator("button")
-      .filter({ hasText: "🔘" })
-      .first();
+    const topicFilterButtons = page.locator("button.capitalize");
+    const activeFilter = topicFilterButtons.filter({ hasText: /./i }).first();
 
     await activeFilter.waitFor({ state: "visible" });
 
     if (await activeFilter.isVisible()) {
-      const buttonText = await activeFilter.textContent();
-      const topicName = buttonText?.replace("🔘", "").trim();
+      await expect(activeFilter).toHaveClass(/bg-primary/);
+
+      const checkmarkPath = activeFilter.locator(
+        'svg path[d*="M5 13l4 4L19 7"]'
+      );
+      await expect(checkmarkPath).toBeVisible();
 
       await activeFilter.click();
       await page.waitForTimeout(300);
 
-      const button = page
-        .locator("button")
-        .filter({ hasText: topicName || "" })
-        .first();
-      await expect(button).toContainText("⚪️");
+      const classes = await activeFilter.getAttribute("class");
+      expect(classes).not.toContain("bg-primary");
 
-      await button.click();
+      const crossPath = activeFilter.locator(
+        'svg path[d*="M6 18L18 6M6 6l12 12"]'
+      );
+      await expect(crossPath).toBeVisible();
+
+      await activeFilter.click();
       await page.waitForTimeout(300);
 
-      await expect(button).toContainText("🔘");
+      await expect(activeFilter).toHaveClass(/bg-primary/);
+
+      await expect(checkmarkPath).toBeVisible();
     }
   });
 

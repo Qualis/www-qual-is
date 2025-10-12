@@ -162,7 +162,7 @@ export function Services() {
                 key={index}
                 className="bg-white dark:bg-accent-3/10 rounded-xl p-6 shadow-sm hover:shadow-lg transition-shadow duration-300"
               >
-                <div className="bg-primary/10 rounded-lg p-3 w-fit mb-4 text-primary dark:text-primary-dark">
+                <div className="bg-highlight/10 dark:bg-highlight-dark/10 rounded-lg p-3 w-fit mb-4 text-highlight dark:text-highlight-dark">
                   {challenge.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-primary dark:text-primary-dark mb-3">
@@ -186,7 +186,7 @@ export function Services() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={openContactModal}
-                className="bg-primary hover:bg-accent-1 hover:text-primary border-2 border-primary text-white font-bold py-4 px-8 text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-center"
+                className="bg-primary hover:bg-highlight dark:hover:bg-highlight-dark hover:text-accent-3 border-2 border-primary text-white font-bold py-4 px-8 text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-center"
               >
                 Reach out →
               </button>

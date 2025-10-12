@@ -232,7 +232,7 @@ export default function AboutPage() {
               <div className="flex justify-center">
                 <button
                   onClick={openContactModal}
-                  className="bg-primary hover:bg-accent-1 hover:text-primary border-2 border-primary text-white font-bold py-4 px-8 text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-center"
+                  className="bg-primary hover:bg-highlight dark:hover:bg-highlight-dark hover:text-accent-3 border-2 border-primary text-white font-bold py-4 px-8 text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-center"
                 >
                   Reach out →
                 </button>

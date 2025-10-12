@@ -24,13 +24,29 @@ export function HeroPost({
   return (
     <section>
       <div className="mb-10">
-        <div className="mb-1 text-center">
-          <span className="inline-block capitalize px-2 py-0.5 text-primary dark:text-primary-dark font-medium border border-primary rounded-md">
-            {topic}
-          </span>
-        </div>
-        <div className="mt-1 mb-2 text-lg text-accent-3 dark:text-accent-1 text-center md:mx-auto text-sm">
-          <DateFormatter dateString={date} />
+        <div className="sm:mx-0 md:max-w-5xl lg:max-w-4xl xl:max-w-3xl md:mx-auto">
+          <div className="text-left flex items-center gap-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-4 w-4 text-primary dark:text-primary-dark"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"
+              />
+            </svg>
+            <span className="capitalize text-primary dark:text-primary-dark font-bold">
+              {topic}
+            </span>
+          </div>
+          <div className="mb-2 text-accent-3 dark:text-accent-1 text-left text-sm">
+            <DateFormatter dateString={date} />
+          </div>
         </div>
         <CoverImageWithTitle
           title={title}
@@ -38,7 +54,9 @@ export function HeroPost({
           slug={slug}
           priority={true}
         />
-        <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+        <div className="sm:mx-0 md:max-w-5xl lg:max-w-4xl xl:max-w-3xl md:mx-auto">
+          <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+        </div>
       </div>
     </section>
   );

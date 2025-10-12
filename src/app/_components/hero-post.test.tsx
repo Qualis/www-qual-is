@@ -48,14 +48,9 @@ describe("HeroPost", () => {
     const topic = screen.getByText("technology");
     expect(topic).toHaveClass(
       "capitalize",
-      "px-2",
-      "py-0.5",
       "text-primary",
       "dark:text-primary-dark",
-      "font-medium",
-      "border",
-      "border-primary",
-      "rounded-md"
+      "font-bold"
     );
   });
 

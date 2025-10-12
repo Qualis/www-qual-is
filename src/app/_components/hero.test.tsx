@@ -145,7 +145,7 @@ describe("Hero", () => {
 
     const reachOutButton = screen.getByRole("button", { name: /Reach out/i });
     expect(reachOutButton).toHaveClass("bg-primary");
-    expect(reachOutButton).toHaveClass("hover:bg-accent-1");
+    expect(reachOutButton).toHaveClass("hover:bg-highlight");
     expect(reachOutButton).toHaveClass("text-white");
     expect(reachOutButton).toHaveClass("font-bold");
     expect(reachOutButton).toHaveClass("rounded-full");
@@ -243,9 +243,9 @@ describe("Hero", () => {
   it("should render accent span in heading", () => {
     const { container } = render(<Hero />);
 
-    const accentSpan = container.querySelector("h1 .text-accent-3");
+    const accentSpan = container.querySelector("h1 .text-highlight");
     expect(accentSpan).toBeInTheDocument();
-    expect(accentSpan).toHaveClass("dark:text-accent-1");
+    expect(accentSpan).toHaveClass("dark:text-highlight-dark");
   });
 
   it("should render description paragraph with correct classes", () => {

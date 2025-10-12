@@ -1,7 +1,6 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { ContactModal } from "./contact-modal";
-import FooterContactModal from "./contact-modal";
 
 vi.mock("react-modal", () => {
   const React = require("react");
@@ -168,56 +167,5 @@ describe("ContactModal", () => {
     );
     const svgs = container.querySelectorAll("svg");
     expect(svgs.length).toBeGreaterThan(0);
-  });
-});
-
-describe("FooterContactModal", () => {
-  beforeEach(() => {
-    vi.clearAllMocks();
-    document.body.style.overflow = "";
-  });
-
-  it("should render Contact button", () => {
-    render(<FooterContactModal />);
-    expect(screen.getByText("Contact")).toBeInTheDocument();
-  });
-
-  it("should not show modal initially", () => {
-    render(<FooterContactModal />);
-    expect(screen.queryByTestId("modal")).not.toBeInTheDocument();
-  });
-
-  it("should open modal when Contact button is clicked", () => {
-    render(<FooterContactModal />);
-    const contactButton = screen.getByRole("button", { name: /contact/i });
-    fireEvent.click(contactButton);
-    expect(screen.getByTestId("modal")).toBeInTheDocument();
-  });
-
-  it("should close modal when close button is clicked", () => {
-    render(<FooterContactModal />);
-    const contactButton = screen.getByRole("button", { name: /contact/i });
-    fireEvent.click(contactButton);
-    expect(screen.getByTestId("modal")).toBeInTheDocument();
-
-    const closeButton = screen.getByLabelText("Close");
-    fireEvent.click(closeButton);
-    expect(screen.queryByTestId("modal")).not.toBeInTheDocument();
-  });
-
-  it("should render modal with Contact title", () => {
-    render(<FooterContactModal />);
-    const contactButton = screen.getByRole("button", { name: /contact/i });
-    fireEvent.click(contactButton);
-    const heading = screen.getByRole("heading", { name: /contact/i });
-    expect(heading).toBeInTheDocument();
-  });
-
-  it("should have correct button styling classes", () => {
-    render(<FooterContactModal />);
-    const contactButton = screen.getByRole("button", { name: /contact/i });
-    expect(contactButton).toHaveClass("bg-primary");
-    expect(contactButton).toHaveClass("text-white");
-    expect(contactButton).toHaveClass("font-bold");
   });
 });

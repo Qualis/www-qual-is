@@ -52,7 +52,7 @@ describe("PostPreview", () => {
   it("should style topic badge correctly", () => {
     render(<PostPreview {...defaultProps} />);
     const topic = screen.getByText("science");
-    expect(topic).toHaveClass("capitalize", "px-2", "py-0.5");
+    expect(topic).toHaveClass("capitalize", "font-bold");
   });
 
   it("should have flex-grow on content area", () => {

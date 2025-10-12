@@ -38,7 +38,7 @@ export function ContactModal({
           <button
             type="button"
             onClick={onClose}
-            className="text-accent-3 dark:text-accent-1 hover:text-highlight bg-transparent rounded-full p-1"
+            className="text-accent-3 dark:text-accent-1 hover:text-highlight dark:hover:text-highlight-dark bg-transparent rounded-full p-1"
             aria-label="Close"
           >
             <svg
@@ -106,7 +106,7 @@ export function ContactModal({
           <button
             type="button"
             onClick={onClose}
-            className="bg-primary hover:bg-accent-1 hover:text-primary text-white font-medium py-2 px-6 rounded-lg border border-primary transition-colors"
+            className="bg-primary hover:bg-highlight dark:hover:bg-highlight-dark hover:text-accent-3 text-white font-medium py-2 px-6 rounded-lg border border-primary transition-colors"
           >
             Close
           </button>
@@ -115,30 +115,3 @@ export function ContactModal({
     </Modal>
   );
 }
-
-const FooterContactModal = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
-
-  function openModal() {
-    setIsOpen(true);
-  }
-
-  function closeModal() {
-    setIsOpen(false);
-  }
-
-  return (
-    <div>
-      <button
-        type="button"
-        onClick={openModal}
-        className="mx-2 bg-primary hover:bg-accent-1 hover:text-primary border border-primary text-white font-bold py-2 px-8 lg:px-6 duration-200 transition-colors mb-4 lg:mb-0"
-      >
-        Contact
-      </button>
-      <ContactModal isOpen={isOpen} onClose={closeModal} title="Contact" />
-    </div>
-  );
-};
-
-export default FooterContactModal;

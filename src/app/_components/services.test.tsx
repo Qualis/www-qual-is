@@ -254,7 +254,7 @@ describe("Services", () => {
 
     const reachOutButton = screen.getByRole("button", { name: /Reach out/i });
     expect(reachOutButton).toHaveClass("bg-primary");
-    expect(reachOutButton).toHaveClass("hover:bg-accent-1");
+    expect(reachOutButton).toHaveClass("hover:bg-highlight");
     expect(reachOutButton).toHaveClass("text-white");
     expect(reachOutButton).toHaveClass("font-bold");
     expect(reachOutButton).toHaveClass("rounded-full");
@@ -290,7 +290,7 @@ describe("Services", () => {
   it("should render challenge icons with correct styling", () => {
     const { container } = render(<Services />);
 
-    const iconContainers = container.querySelectorAll(".bg-primary\\/10");
+    const iconContainers = container.querySelectorAll(".bg-highlight\\/10");
     expect(iconContainers.length).toBe(6);
     iconContainers.forEach((iconContainer) => {
       expect(iconContainer).toHaveClass("rounded-lg");

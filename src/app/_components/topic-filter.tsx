@@ -81,7 +81,7 @@ export function TopicFilter({ topics, allPosts }: TopicFilterProps) {
               key={topic}
               onClick={() => handleTopicToggle(topic)}
               className={`
-                border transition-colors duration-200 font-bold py-2 px-5 capitalize rounded-md
+                border transition-colors duration-200 font-bold py-2 px-5 capitalize rounded-md flex items-center gap-2
                 ${styles.topicButton}
                 ${!selectedTopics.includes(topic) ? styles.disabled : ""}
                 ${
@@ -91,7 +91,37 @@ export function TopicFilter({ topics, allPosts }: TopicFilterProps) {
                 }
               `}
             >
-              {selectedTopics.includes(topic) ? "🔘 " : "⚪️ "}
+              {selectedTopics.includes(topic) ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 text-highlight dark:text-highlight-dark"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={3}
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 text-gray-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={3}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              )}
               {topic}
             </button>
           ))}
