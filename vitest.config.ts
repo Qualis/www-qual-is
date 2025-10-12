@@ -8,6 +8,10 @@ export default defineConfig({
     environment: "happy-dom",
     globals: true,
     setupFiles: ["./vitest.setup.ts"],
+    reporters: ["default", "junit"],
+    outputFile: {
+      junit: "./coverage/junit.xml",
+    },
     exclude: [
       "**/node_modules/**",
       "**/dist/**",

@@ -33,11 +33,11 @@ jobs:
         run: |
           ./test.sh
 
-      - id: jest-upload
-        name: Jest:Upload
+      - id: vitest-upload
+        name: Vitest:Upload
         uses: actions/upload-artifact@v4
         with:
-          name: jest
+          name: vitest
           path: coverage/junit.xml
         if: ${{ always() }}
 
