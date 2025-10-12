@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { TopicFilter } from "../_components/topic-filter";
-import { getAllPosts, getAllTopics } from "@/lib/api";
+import { getAllPosts, getAllTopics } from "@/app/lib/api";
 
 export const metadata: Metadata = {
   title: "Engineering Blog | Sean Van Osselaer",

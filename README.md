@@ -10,6 +10,7 @@
 - Markdown-based blog posts with gray-matter
 - SEO optimized with next-seo
 - Unit + E2E testing
+- Automated architectural boundary enforcement
 
 ## Architecture
 
@@ -84,6 +85,16 @@ User interface and external communication.
 - **React Components**: UI presentation
 - **Depends on application layer**: Uses services and use cases
 
+### Architectural Testing
+
+The project uses **dependency-cruiser** to automatically enforce hexagonal architecture boundaries. These tests ensure that:
+
+- **Domain layer** remains pure with no outward dependencies
+- **Application layer** only depends on domain and interfaces
+- **Infrastructure layer** correctly implements domain ports
+- **Interface layer** uses application services without direct infrastructure coupling
+- **No circular dependencies** exist between modules
+
 ## Getting Started
 
 ### Prerequisites
@@ -125,16 +136,17 @@ npm run quality      # Run all quality checks
 #### Testing
 
 ```bash
-npm test                 # Run unit tests in watch mode
-npm run test:unit        # Run unit tests once
-npm run test:unit:watch  # Run unit tests in watch mode
-npm run test:unit:ui     # Open Vitest UI
-npm run test:coverage    # Generate coverage report
-npm run test:e2e         # Run E2E tests
-npm run test:e2e:ui      # Run E2E tests in UI mode
-npm run test:e2e:debug   # Debug E2E tests
-npm run test:e2e:report  # Show Playwright report
-npm run test:all         # Run all tests
+npm test                    # Run unit tests in watch mode
+npm run test:unit           # Run unit tests once
+npm run test:unit:watch     # Run unit tests in watch mode
+npm run test:unit:ui        # Open Vitest UI
+npm run test:coverage       # Generate coverage report
+npm run test:e2e            # Run E2E tests
+npm run test:e2e:ui         # Run E2E tests in UI mode
+npm run test:e2e:debug      # Debug E2E tests
+npm run test:e2e:report     # Show Playwright report
+npm run test:architecture   # Run architectural boundary tests
+npm run test:all            # Run all tests (audit, quality, architecture, unit, e2e)
 ```
 
 #### Security

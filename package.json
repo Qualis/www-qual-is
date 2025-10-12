@@ -18,7 +18,8 @@
     "test:e2e:ui": "playwright test --ui",
     "test:e2e:debug": "playwright test --debug",
     "test:e2e:report": "playwright show-report",
-    "test:all": "npm audit --audit-level=high && npm run quality && npm run test:coverage && npm run test:e2e",
+    "test:architecture": "depcruise --config .dependency-cruiser.js src",
+    "test:all": "npm audit --audit-level=high && npm run quality && npm run test:architecture && npm run test:coverage && npm run test:e2e",
     "quality": "npm run lint && npm run type-check",
     "postinstall": "if [ -z \"$AWS_APP_ID\" ]; then npx playwright install --with-deps chromium firefox webkit; fi",
     "prepare": "husky"
@@ -54,6 +55,7 @@
     "@vitest/coverage-v8": "^3.2.4",
     "@vitest/ui": "^3.2.4",
     "autoprefixer": "^10.4.21",
+    "dependency-cruiser": "^17.0.2",
     "eslint": "^9.37.0",
     "eslint-config-next": "^15.5.4",
     "eslint-plugin-jsx-a11y": "^6.10.2",
