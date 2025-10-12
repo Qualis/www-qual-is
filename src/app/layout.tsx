@@ -107,11 +107,11 @@ export default function RootLayout({
                 url: "https://qual.is",
                 description:
                   "Fractional CTO and engineering leadership specialist. AI-driven development, scalable architecture for growing companies.",
-                author: { "@id": "https://qual.is/#seanvanosselaer" },
+                author: { "@id": "https://qual.is/about" },
               },
               {
                 "@type": "Person",
-                "@id": "https://qual.is/#seanvanosselaer",
+                "@id": "https://qual.is/about",
                 name: "Sean Van Osselaer",
                 givenName: "Sean",
                 familyName: "Van Osselaer",
@@ -129,7 +129,7 @@ export default function RootLayout({
                 "@type": "ProfessionalService",
                 "@id": "https://qual.is/#service",
                 name: "Fractional CTO Services",
-                provider: { "@id": "https://qual.is/#seanvanosselaer" },
+                provider: { "@id": "https://qual.is/about" },
                 serviceType: "Fractional CTO Services",
                 description:
                   "Engineering leadership, AI-driven development strategy, software architecture, team scaling, and technical strategy consulting.",
