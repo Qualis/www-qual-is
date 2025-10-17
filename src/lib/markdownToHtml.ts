@@ -21,5 +21,12 @@ export default async function markdownToHtml(markdown: string) {
     }
   );
 
+  htmlContent = htmlContent.replace(/<a href="([^"]+)">/g, (_match, href) => {
+    if (href.startsWith("#")) {
+      return `<a href="${href}">`;
+    }
+    return `<a href="${href}" target="_blank" rel="noopener noreferrer">`;
+  });
+
   return htmlContent;
 }

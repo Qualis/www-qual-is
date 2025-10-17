@@ -88,10 +88,26 @@ describe("markdownToHtml", () => {
     expect(result).toContain("<em>italic</em>");
   });
 
-  it("should convert markdown links to HTML", async () => {
+  it("should convert external markdown links to HTML with target blank", async () => {
     const markdown = "[Link Text](https://example.com)";
     const result = await markdownToHtml(markdown);
-    expect(result).toContain('<a href="https://example.com">Link Text</a>');
+    expect(result).toContain(
+      '<a href="https://example.com" target="_blank" rel="noopener noreferrer">Link Text</a>'
+    );
+  });
+
+  it("should convert internal markdown links to HTML with target blank", async () => {
+    const markdown = "[Link Text](/posts/example)";
+    const result = await markdownToHtml(markdown);
+    expect(result).toContain(
+      '<a href="/posts/example" target="_blank" rel="noopener noreferrer">Link Text</a>'
+    );
+  });
+
+  it("should keep anchor links without target blank", async () => {
+    const markdown = "[Link Text](#section)";
+    const result = await markdownToHtml(markdown);
+    expect(result).toContain('<a href="#section">Link Text</a>');
   });
 
   it("should convert markdown lists to HTML", async () => {
