@@ -14,7 +14,7 @@ For some time now I have been refining a structured approach for decision-making
 
 An **Architecture Decision Record (ADR)** is a lightweight, structured document used to capture key decisions around people, processes, data, and technology. It formalises the _why_, _what_, and _how_ behind decisions, giving teams a traceable reference point and aligning stakeholders on the journey forward.
 
-This approach is partially explored in [Organise Your Teams for Combined Health, Happiness, and Success](https://www.qual.is/posts/organisation-template), and focuses on a decision making process that supports long-term organisational health.
+This approach is partially explored in [Organise Your Teams for Combined Health, Happiness, and Success](/posts/organisation-template), and focuses on a decision making process that supports long-term organisational health.
 
 For tooling, I personally use [adr-tools](https://github.com/npryce/adr-tools) and store the **ADR** in a [GitHub repository](https://github.com/), utilizing version control to unlock benefits like traceability, collaboration, and automation ([version control](https://www.atlassian.com/git/tutorials/what-is-version-control)).
 
