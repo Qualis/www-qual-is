@@ -10,11 +10,11 @@ author:
 
 ---
 
-For some people, the number five appears yellow. The sound of a violin tastes like chocolate. These aren't metaphors or learned associations; they're synesthesia, a neurological crossing of sensory boundaries where stimulation of one perceptual pathway involuntarily triggers another.
+For some people, the number five appears yellow. The sound of a violin tastes like chocolate. These aren't metaphors or learned associations; they're [synesthesia](https://en.wikipedia.org/wiki/Synesthesia), a neurological crossing of sensory boundaries where stimulation of one perceptual pathway involuntarily triggers another.
 
-I've never met someone with grapheme-color synesthesia, but the phenomenon fascinates me: letters and numbers tinged with consistent, involuntary colors. What strikes me most is how somewhat arbitrary yet stable these mappings seem. The letter A might be red for one synesthete and blue for another, but for each individual, A is always the same color. The crossing isn't random; it's meaningful, structured, and deeply embedded in how that person experiences reality.
+I've never met someone with [grapheme-color synesthesia](https://en.wikipedia.org/wiki/Grapheme–color_synesthesia), but the phenomenon fascinates me: letters and numbers tinged with consistent, involuntary colors. What strikes me most is how somewhat arbitrary yet stable these mappings seem. The letter A might be red for one synesthete and blue for another, but for each individual, A is always the same color. The crossing isn't random; it's meaningful, structured, and deeply embedded in how that person experiences reality.
 
-In a previous post, I explored how AI systems function as new sense organs, extending human perception into domains we couldn't access before. But there's another possibility: rather than using AI to extend human perception, we might give AI an atypical kind of perception. What if we taught machines to experience language the way some synesthetes do: not as abstract tokens in high-dimensional space, but as combinations of colors?
+In a [previous post](/posts/science-and-religion), I explored how AI systems function as new sense organs, extending human perception into domains we couldn't access before. But there's another possibility: rather than using AI to extend human perception, we might give AI an atypical kind of perception. What if we taught machines to experience language the way some synesthetes do: not as abstract tokens in high-dimensional space, but as combinations of colors?
 
 ## Crossing the Streams
 
@@ -24,21 +24,21 @@ More intriguingly, synesthetic experiences aren't arbitrary noise. Research sugg
 
 This raises a provocative question: what if synesthesia isn't a quirk of misfiring neurons, but a window into a more fundamental truth about how meaning can be represented? What if semantic structure can survive translation into radically different perceptual modes?
 
-Language models today represent meaning as vectors in high-dimensional embedding spaces, often with hundreds or thousands of dimensions. These spaces capture semantic relationships through geometric proximity; words with similar meanings cluster together, analogies become vector arithmetic. But these representations are abstractions, mathematical constructs optimized for computational efficiency and task performance.
+Language models today represent meaning as vectors in high-dimensional [embedding spaces](https://en.wikipedia.org/wiki/Word_embedding), often with hundreds or thousands of dimensions. These spaces capture semantic relationships through geometric proximity; words with similar meanings cluster together, analogies become vector arithmetic. But these representations are abstractions, mathematical constructs optimized for computational efficiency and task performance.
 
 What if we forced meaning through a different channel entirely? What if we mapped semantic embeddings not to yet another mathematical space, but to something sensory: color?
 
 ## The Experiment
 
-The experiment is to take a language model's semantic embeddings (high-dimensional vectors representing word or sentence meanings) and train a model to map them into CIE Lab color space, a three-dimensional space designed to be perceptually uniform for human vision. Then quantize these continuous colors into a finite palette of 4,096 distinct colors (a 12-bit representation chosen to balance computational efficiency with sufficient granularity for semantic distinctions), creating a discrete vocabulary of hues.
+The experiment is to take a language model's semantic embeddings (high-dimensional vectors representing word or sentence meanings) and train a model to map them into [CIE Lab color space](https://en.wikipedia.org/wiki/CIELAB_color_space), a three-dimensional space designed to be perceptually uniform for human vision. Then quantize these continuous colors into a finite palette of 4,096 distinct colors (a 12-bit representation chosen to balance computational efficiency with sufficient granularity for semantic distinctions), creating a discrete vocabulary of hues.
 
-Each word or phrase gets mapped to a single color. Each document becomes a distribution of colors, a histogram showing which hues appear and how frequently. Two documents with similar color distributions presumably share semantic similarities. Retrieval becomes a matter of comparing color palettes using statistical distance metrics like Wasserstein distance, which measures the "cost" of transforming one distribution into another.
+Each word or phrase gets mapped to a single color. Each document becomes a distribution of colors, a histogram showing which hues appear and how frequently. Two documents with similar color distributions presumably share semantic similarities. Retrieval becomes a matter of comparing color palettes using statistical distance metrics like [Wasserstein distance](https://en.wikipedia.org/wiki/Earth_mover's_distance), which measures the "cost" of transforming one distribution into another.
 
 Consider that a typical sentence embedding uses 768 floating-point numbers, each with 32 bits of precision, yielding over 24,000 bits of information. A single color from our palette uses just 12 bits. We're forcing a 2,000-fold compression, squeezing semantic richness through a narrow perceptual channel. Like MP3 compression removes imperceptible sounds while preserving music's essence, this compression asks what semantic information is essential enough to survive translation into color.
 
 ## Structure Through Compression
 
-Information theory tells us that compression exposes structure. When you compress a file, you're exploiting patterns and regularities. The more effectively something can be compressed, the more structured it is.
+[Information theory](https://en.wikipedia.org/wiki/Information_theory) tells us that compression exposes structure. When you compress a file, you're exploiting patterns and regularities. The more effectively something can be compressed, the more structured it is.
 
 By forcing semantic embeddings through a color constraint, we're asking the model to discover which dimensions of meaning matter most. The learned projection must preserve semantic distinctions while collapsing away dimensions that don't contribute to meaningful distinctions. What remains is a kind of distilled essence: the aspects of meaning that prove most fundamental for categorization, retrieval, and comparison.
 
