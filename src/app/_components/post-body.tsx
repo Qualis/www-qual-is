@@ -6,7 +6,7 @@ type Props = {
 
 export function PostBody({ content }: Props) {
   return (
-    <div className="w-full">
+    <div className="w-full post-gradient-bg">
       <section
         aria-label="Article content"
         className={markdownStyles["markdown"]}
