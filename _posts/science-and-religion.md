@@ -14,7 +14,7 @@ With an **interest in philosophy, psychology, and science**, I often reflect on 
 
 Science is frequently framed as the counterpart to religion: pursuing objectivity where religion embraces subjectivity, relying on reason where religion turns to faith. But to me it seems that **science exhibits religion-like patterns** in how it builds a **worldview**, organizes collective belief, and provides rituals for determining what is "True". To understand these patterns, we must examine how truth-making operates at three levels: the technological tools that extend perception, the philosophical frameworks that interpret what these tools reveal, and the social institutions that legitimize certain interpretations over others.
 
-For Heidegger, human existence (_Dasein_) is inseparable from the world, continually making sense of reality through tools, language, and the horizons of culture. We never encounter raw reality, only reality as it appears to us through our particular ways of being in the world. A hammer shows up as equipment for hammering, not as an arrangement of molecules. Science, like religion, is simply a way reality can show itself.
+For [Heidegger](https://plato.stanford.edu/entries/heidegger/), human existence (_Dasein_) is inseparable from the world, continually making sense of reality through tools, language, and the horizons of culture. We never encounter raw reality, only reality as it appears to us through our particular ways of being in the world. A hammer shows up as equipment for hammering, not as an arrangement of molecules. Science, like religion, is simply a way reality can show itself.
 
 ## The Evolution of Sense Organs
 
@@ -22,9 +22,9 @@ Human beings originally engaged with reality solely through their biological sen
 
 Science extended this perception with instruments: **microscopes, telescopes, sensors, particle detectors**. Each invention becoming a new artificial sense organ, creating new ways of perceiving and thus new "truths".
 
-But these are still **interfaces, not reality itself**. Donald Hoffman's _Interface Theory of Perception (ITP)_ argues that perception functions like a desktop: icons that hide complexity yet guide action. Hoffman explicitly rejects the idea that perception represents the underlying world; the icons are evolutionary shortcuts that deliver fitness, not ontology. The microscope shows us a bacterium, not reality "as it is." Whether or not one accepts ITP's game-theoretic proofs, the theory dramatizes how strongly mediated our contact with the world remains, offering one lens among many for thinking about disclosure.
+But these are still **interfaces, not reality itself**. Donald Hoffman's [_Interface Theory of Perception (ITP)_](https://link.springer.com/article/10.3758/s13423-015-0890-8) argues that perception functions like a desktop: icons that hide complexity yet guide action. Hoffman explicitly rejects the idea that perception represents the underlying world; the icons are evolutionary shortcuts that deliver fitness, not ontology. The microscope shows us a bacterium, not reality "as it is." Whether or not one accepts ITP's game-theoretic proofs, the theory dramatizes how strongly mediated our contact with the world remains, offering one lens among many for thinking about disclosure.
 
-Heidegger offers a different approach: truth (_aletheia_) is always unconcealment within a horizon, not correspondence to a hidden reality. Though he would resist framing scientific instruments as "enhanced sense organs", preferring to see them as different modes of world-disclosure, an insight remains: our technological tools reshape what can appear as real. They extend our horizon of unconcealment, but they do not dissolve its limits. What we call "truth" is simply what shows itself given our current modes of disclosure; whether we understand this through the lens of filtered interfaces or phenomenological unconcealment.
+Heidegger offers a different approach: truth ([_aletheia_](https://www.ontology.co/heidegger-aletheia.htm)) is always unconcealment within a horizon, not correspondence to a hidden reality. Though he would resist framing scientific instruments as "enhanced sense organs", preferring to see them as different modes of world-disclosure, an insight remains: our technological tools reshape what can appear as real. They extend our horizon of unconcealment, but they do not dissolve its limits. What we call "truth" is simply what shows itself given our current modes of disclosure; whether we understand this through the lens of filtered interfaces or phenomenological unconcealment.
 
 Extended perception alone doesn't explain science's authority. That requires understanding both how science validates knowledge through method and how institutions maintain that validation.
 
@@ -32,7 +32,7 @@ Extended perception alone doesn't explain science's authority. That requires und
 
 Religion has rituals: prayers, sacraments, ceremonies. Science, too, relies on ritualized practices: hypothesis formation, measurement, replication (that we shorthand as **the scientific method**).
 
-Of course, philosophers of science from Helen Longino to Paul Feyerabend have shown there is no single liturgy. Different fields mobilize different mixtures of modeling, simulation, experiment, and observation; methodological pluralism is the rule, not the exception. Yet that very pluralism is cultivated and policed through shared routines, textbooks, review panels, and training pipelines. The ritual metaphor therefore lands not because science is monolithic, but because every specialty develops its own patterned choreography for deciding what counts.
+Of course, philosophers of science from [Helen Longino](https://plato.stanford.edu/entries/scientific-pluralism/) to [Paul Feyerabend](https://plato.stanford.edu/entries/feyerabend/) have shown there is no single liturgy. Different fields mobilize different mixtures of modeling, simulation, experiment, and observation; methodological pluralism is the rule, not the exception. Yet that very pluralism is cultivated and policed through shared routines, textbooks, review panels, and training pipelines. The ritual metaphor therefore lands not because science is monolithic, but because every specialty develops its own patterned choreography for deciding what counts.
 
 Still, imagine we had **an infinite sample size**. Would we discover that our sense organs and instruments are themselves flawed, embedding error we never previously saw?
 
@@ -44,7 +44,7 @@ This ritualistic approach serves a deeper function: not revealing absolute truth
 
 ## Science as Instrumentalism
 
-Philosophically, science is less about eternal truth than about **instrumentalism**. What works, what predicts, what allows survival and progress.
+Philosophically, science is less about eternal truth than about [**instrumentalism**](https://plato.stanford.edu/entries/scientific-realism/). What works, what predicts, what allows survival and progress.
 
 An instrumentalist view says: truth is not correspondence with reality, but the most useful orientation toward it. Science provides orientation for technology, prediction, and control; just as religion provides orientation for community, ethics, and meaning.
 
@@ -85,7 +85,7 @@ If we look historically, truth is the story of skepticism overturning orthodoxy:
 - The universe was static and eternal, until we discovered expansion and the Big Bang.
 - Atoms were indivisible, then divisible, then mostly empty space, then quantum fields, then strings?, then…
 
-Thomas Kuhn observed that paradigm shifts function partially like conversion experiences: not merely gradual accumulations of evidence, but sudden gestalt switches in how reality appears, yet still constrained by anomaly accumulation, predictive power, and problem-solving capacity.
+[Thomas Kuhn](https://plato.stanford.edu/entries/thomas-kuhn/) observed that paradigm shifts function partially like conversion experiences: not merely gradual accumulations of evidence, but sudden gestalt switches in how reality appears, yet still constrained by anomaly accumulation, predictive power, and problem-solving capacity.
 
 Each shift demonstrates that truth is provisional, conditional, and subject to the expansion of our modes of disclosure. What seemed unshakable becomes merely useful approximations within limited domains. Skepticism, not certainty, is the real driver of knowledge.
 
