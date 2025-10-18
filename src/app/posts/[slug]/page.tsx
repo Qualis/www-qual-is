@@ -32,6 +32,9 @@ export default async function Post(props: Params) {
           <PostNavigationComponent navigation={navigation} />
           <PostBody content={content} />
         </article>
+        <div className="mb-6 mt-6">
+          <PostNavigationComponent navigation={navigation} />
+        </div>
         <Script id="blogpost-schema" type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
