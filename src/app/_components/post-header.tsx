@@ -33,7 +33,7 @@ export function PostHeader({
           <PostTitle>{title}</PostTitle>
         </div>
         {bannerImage && (
-          <div className="mb-10 md:mb-16 bg-black post-banner-image w-full">
+          <div className="bg-black post-banner-image w-full">
             <OptimizedImage
               src={bannerImage}
               alt={`${topic} banner`}

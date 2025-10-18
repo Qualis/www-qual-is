@@ -29,7 +29,9 @@ export default async function Post(props: Params) {
             date={post.date}
             topic={post.topic}
           />
-          <PostNavigationComponent navigation={navigation} />
+          <div className="mt-6">
+            <PostNavigationComponent navigation={navigation} />
+          </div>
           <PostBody content={content} />
         </article>
         <div className="mb-6 mt-6">
