@@ -1,5 +1,10 @@
 import { describe, it, expect, beforeEach, vi } from "vitest";
-import { getPostBySlug, getAllPosts, getAllTopics } from "./api";
+import {
+  getPostBySlug,
+  getAllPosts,
+  getAllTopics,
+  getPostNavigation,
+} from "./api";
 import { InMemoryPostRepository } from "@/infrastructure/repositories/InMemoryPostRepository";
 import { createContainer, Container } from "@/infrastructure/di/container";
 
@@ -378,5 +383,103 @@ describe("getAllTopics", () => {
     const results = getAllTopics();
 
     expect(results).toEqual(["engineer", "lead", "manage", "think"]);
+  });
+});
+
+describe("getPostNavigation", () => {
+  let repository: InMemoryPostRepository;
+
+  beforeEach(async () => {
+    const { setTestContainer } = (await import(
+      "@/infrastructure/di/container"
+    )) as MockedContainerModule;
+    repository = new InMemoryPostRepository();
+    setTestContainer(createContainer({ postRepository: repository }));
+  });
+
+  it("should return navigation with null next for the newest post", () => {
+    repository.addPost(
+      "post-1",
+      { title: "Post 1", date: new Date("2025-01-01"), topic: "engineer" },
+      "Content 1"
+    );
+    repository.addPost(
+      "post-2",
+      { title: "Post 2", date: new Date("2025-01-15"), topic: "lead" },
+      "Content 2"
+    );
+
+    const result = getPostNavigation("post-2");
+
+    expect(result.next).toBeNull();
+    expect(result.previous).not.toBeNull();
+  });
+
+  it("should return navigation with null previous for the oldest post", () => {
+    repository.addPost(
+      "post-1",
+      { title: "Post 1", date: new Date("2025-01-01"), topic: "engineer" },
+      "Content 1"
+    );
+    repository.addPost(
+      "post-2",
+      { title: "Post 2", date: new Date("2025-01-15"), topic: "lead" },
+      "Content 2"
+    );
+
+    const result = getPostNavigation("post-1");
+
+    expect(result.previous).toBeNull();
+    expect(result.next).not.toBeNull();
+  });
+
+  it("should return both previous and next for a middle post", () => {
+    repository.addPost(
+      "post-1",
+      { title: "Post 1", date: new Date("2025-01-01"), topic: "engineer" },
+      "Content 1"
+    );
+    repository.addPost(
+      "post-2",
+      { title: "Post 2", date: new Date("2025-01-10"), topic: "lead" },
+      "Content 2"
+    );
+    repository.addPost(
+      "post-3",
+      { title: "Post 3", date: new Date("2025-01-15"), topic: "think" },
+      "Content 3"
+    );
+
+    const result = getPostNavigation("post-2");
+
+    expect(result.previous).not.toBeNull();
+    expect(result.next).not.toBeNull();
+    expect(result.previous?.slug).toBe("post-1");
+    expect(result.next?.slug).toBe("post-3");
+  });
+
+  it("should return correct slugs and titles in navigation links", () => {
+    repository.addPost(
+      "post-1",
+      { title: "First Post", date: new Date("2025-01-01"), topic: "engineer" },
+      "Content 1"
+    );
+    repository.addPost(
+      "post-2",
+      { title: "Second Post", date: new Date("2025-01-10"), topic: "lead" },
+      "Content 2"
+    );
+    repository.addPost(
+      "post-3",
+      { title: "Third Post", date: new Date("2025-01-15"), topic: "think" },
+      "Content 3"
+    );
+
+    const result = getPostNavigation("post-2");
+
+    expect(result.previous?.slug).toBe("post-1");
+    expect(result.previous?.title).toBe("First Post");
+    expect(result.next?.slug).toBe("post-3");
+    expect(result.next?.title).toBe("Third Post");
   });
 });

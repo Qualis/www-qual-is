@@ -1,4 +1,5 @@
 import { Post } from "@/interfaces/post";
+import { PostNavigation } from "@/interfaces/postNavigation";
 import { container } from "@/infrastructure/di/container";
 
 export function getPostBySlug(slug: string): Post {
@@ -14,4 +15,9 @@ export function getAllPosts(): Post[] {
 export function getAllTopics(): string[] {
   const postService = container.getPostService();
   return postService.getAllTopics();
+}
+
+export function getPostNavigation(slug: string): PostNavigation {
+  const postService = container.getPostService();
+  return postService.getPostNavigation(slug);
 }

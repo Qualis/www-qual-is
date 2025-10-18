@@ -1,10 +1,11 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getAllPosts, getPostBySlug } from "@/app/lib/api";
+import { getAllPosts, getPostBySlug, getPostNavigation } from "@/app/lib/api";
 import markdownToHtml from "@/lib/markdownToHtml";
 import Container from "@/app/_components/container";
 import { PostBody } from "@/app/_components/post-body";
 import { PostHeader } from "@/app/_components/post-header";
+import { PostNavigationComponent } from "@/app/_components/post-navigation";
 import Script from "next/script";
 
 export default async function Post(props: Params) {
@@ -15,6 +16,7 @@ export default async function Post(props: Params) {
     return notFound();
   }
 
+  const navigation = getPostNavigation(params.slug);
   const content = await markdownToHtml(post.content || "");
 
   return (
@@ -27,6 +29,7 @@ export default async function Post(props: Params) {
             date={post.date}
             topic={post.topic}
           />
+          <PostNavigationComponent navigation={navigation} />
           <PostBody content={content} />
         </article>
         <Script id="blogpost-schema" type="application/ld+json">
