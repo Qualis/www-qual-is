@@ -8,8 +8,6 @@ author:
   picture: "/assets/blog/authors/svo.png"
 ---
 
----
-
 With an **interest in philosophy, psychology, and science**, I often reflect on the nature of truth. **While agnosticism typically means skepticism toward religious claims, I apply that same critical approach to scientific claims, examining both domains with equal scrutiny**; neither offers "the answer", but both reveal how humans construct meaning and navigate reality.
 
 Science is frequently framed as the counterpart to religion: pursuing objectivity where religion embraces subjectivity, relying on reason where religion turns to faith. But to me it seems that **science exhibits religion-like patterns** in how it builds a **worldview**, organizes collective belief, and provides rituals for determining what is "True". To understand these patterns, we must examine how truth-making operates at three levels: the technological tools that extend perception, the philosophical frameworks that interpret what these tools reveal, and the social institutions that legitimize certain interpretations over others.

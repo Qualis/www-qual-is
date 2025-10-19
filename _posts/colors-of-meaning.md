@@ -8,8 +8,6 @@ author:
   picture: "/assets/blog/authors/svo.png"
 ---
 
----
-
 For some people, the number five appears yellow. The sound of a violin tastes like chocolate. These aren't metaphors or learned associations; they're [synesthesia](https://en.wikipedia.org/wiki/Synesthesia), a neurological crossing of sensory boundaries where stimulation of one perceptual pathway involuntarily triggers another.
 
 I've never met someone with [grapheme-color synesthesia](https://en.wikipedia.org/wiki/Grapheme–color_synesthesia), but the phenomenon fascinates me: letters and numbers tinged with consistent, involuntary colors. What strikes me most is how somewhat arbitrary yet stable these mappings seem. The letter A might be red for one synesthete and blue for another, but for each individual, A is always the same color. The crossing isn't random; it's meaningful, structured, and deeply embedded in how that person experiences reality.

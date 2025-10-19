@@ -8,8 +8,6 @@ author:
   picture: "/assets/blog/authors/svo.png"
 ---
 
----
-
 In engineering, we often use "management" and "leadership" interchangeably, but they serve very different purposes. Understanding the distinction helps clarify your role and improves how you guide people, systems, and outcomes. I highly recommend David Marquet's [Turn the Ship Around!](https://davidmarquet.com/books/turn-the-ship-around-book/) - not just for this topic, but for leadership more broadly.
 
 ---

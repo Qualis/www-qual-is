@@ -18,7 +18,7 @@ describe("PostTitle", () => {
     render(<PostTitle>Test Title</PostTitle>);
     const heading = screen.getByRole("heading", { level: 1 });
     expect(heading).toHaveClass(
-      "text-xl",
+      "text-base",
       "md:text-3xl",
       "lg:text-4xl",
       "font-bold",
