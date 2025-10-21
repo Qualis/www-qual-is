@@ -52,6 +52,8 @@ We can also experiment with interpretable mappings, where color dimensions encod
 
 Such structured mappings would make the AI's semantic organization literally visible. We could see that abstract philosophical concepts cluster toward desaturated grays, that emotional language burns in saturated reds and oranges, that technical terminology occupies cooler blues and greens. The color space becomes a legible interface to machine understanding.
 
+This structured mapping leverages what Gestalt psychologists call closure: the mind's tendency to complete incomplete patterns. Just as we perceive a full circle from scattered arcs, viewers learn to reconstruct semantic dimensions from color cues. A desaturated gray-blue becomes interpretable shorthand: abstract, technical, perhaps philosophical. The viewer actively participates in meaning-making, decompressing semantic richness from compressed chromatic signals.
+
 ## Seeing Meaning
 
 This experiment makes semantic structure visible in an immediate, intuitive way. Traditional embeddings can't be visualized directly - they exist in hundreds of dimensions. Even with specialized techniques that flatten them to 2D plots, most of their structure is lost.
