@@ -29,7 +29,7 @@ export function PostHeader({
         </div>
       )}
       <div className="flex flex-col items-center w-full">
-        <div className="post-title-wrapper w-full h-24 md:h-32 lg:h-36 flex items-start justify-center bg-black dark:bg-black">
+        <div className="post-title-wrapper w-full h-24 md:h-32 lg:h-36 flex items-center justify-center bg-black dark:bg-black">
           <PostTitle>{title}</PostTitle>
         </div>
         {bannerImage && (
