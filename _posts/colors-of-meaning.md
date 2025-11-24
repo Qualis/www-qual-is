@@ -136,6 +136,18 @@ These questions won't be answered through philosophical speculation alone. They 
 
 Regardless of performance, the deeper value lies in expanding our repertoire of ways that meaning can show itself, ways that information can be organized and accessed. Each new mode of representation is a new lens through which to view semantic structure, potentially revealing patterns and relationships that previous lenses obscured.
 
+## The Implementation
+
+The ideas explored in this post are not merely theoretical. Active development of a working system is underway in the [colors-of-meaning repository](https://github.com/svo/colors-of-meaning), where the synesthesia experiment is being built and refined.
+
+The implementation addresses several concrete challenges. First, mapping high-dimensional embeddings to three-dimensional Lab color space requires training a neural network to learn the projection that best preserves semantic relationships through compression. This involves determining which aspects of semantic structure remain meaningful when constrained to three dimensions.
+
+Second, the quantization to distinct colors introduces another layer of structure. The model must learn to cluster the continuous Lab space into discrete color buckets in a way that preserves semantic distinctions. This resembles quantization in vector quantization methods.
+
+Third, we're implementing various experimental variations: interpretable mappings where color dimensions encode specific semantic properties, different quantization levels to explore precision and compression tradeoffs, and alternative distance metrics for comparing color distributions. Each variation offers a different approach to organizing semantic structure.
+
+The repository is a work in progress where these questions are being investigated empirically. Readers interested in the technical details, experimental results, and ongoing development can follow along at the [source code](https://github.com/svo/colors-of-meaning).
+
 ## Conclusion
 
 The synesthesia experiment explores whether semantic meaning can survive translation into color space. This exploration opens onto interesting questions about the nature of meaning and representation.
