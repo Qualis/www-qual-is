@@ -36,6 +36,7 @@ export default defineConfig({
         "**/app/layout.tsx",
         "**/app/sitemap.ts",
         ".dependency-cruiser.js",
+        ".claude/**",
       ],
       thresholds: {
         lines: 100,
