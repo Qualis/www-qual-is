@@ -155,3 +155,31 @@ npm run test:all            # Run all tests (audit, quality, architecture, unit,
 npm audit                # Check for dependency vulnerabilities
 npm audit fix            # Automatically fix vulnerabilities
 ```
+
+### Claude Code Skills
+
+This project includes [Claude Code](https://claude.com/claude-code) skills (`.claude/skills/`) that assist with development workflows. Some are triggered automatically by context, while others can be invoked manually.
+
+#### Manually Invoked
+
+Use these by describing the action to Claude Code (e.g., "scaffold a new feature", "generate tests for this class"):
+
+| Skill | Trigger Phrases |
+|-------|----------------|
+| **Hexagonal Architecture Scaffolder** | "create a new feature", "scaffold a feature", "add a new use case" |
+| **Test Generator** | "generate tests", "write tests for", "add test coverage" |
+| **Self-Documenting Refactor** | "remove comments", "make code self-documenting" |
+| **Simplify** | "review changed code", "simplify this" |
+| **Keybindings Help** | "customize keyboard shortcuts", "rebind keys" |
+| **Loop** | `/loop 5m /foo` — run a command on a recurring interval |
+
+#### Automatically Invoked
+
+These activate based on context without any explicit request:
+
+| Skill | When |
+|-------|------|
+| **Systematic Debugging** | A bug, test failure, or unexpected behavior is encountered |
+| **Test-Driven Development** | Implementing a feature or bugfix |
+| **Verification Before Completion** | About to claim work is complete or create a PR |
+| **Claude API** | Code imports Anthropic SDK or user asks about Claude API |
