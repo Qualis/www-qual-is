@@ -1,6 +1,7 @@
 # tmp files
 .vagrant
-.claude
+.claude/settings.local.json
+.claude/prompts/
 core
 dist
 tmp
