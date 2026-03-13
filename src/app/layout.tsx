@@ -12,16 +12,16 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: `Engineering Leadership & Fractional CTO | SVO | qual.is`,
   description: `Fractional CTO and engineering leadership specialist. AI-driven development, scalable architecture for growing companies.`,
-  metadataBase: new URL("https://qual.is"),
+  metadataBase: new URL("https://www.qual.is"),
   keywords: `Sean Van Osselaer, SVO, fractional CTO, engineering leadership, technical strategy, fractional CTO Australia`,
-  authors: [{ name: "Sean Van Osselaer", url: "https://qual.is" }],
+  authors: [{ name: "Sean Van Osselaer", url: "https://www.qual.is" }],
   creator: "Sean Van Osselaer",
   publisher: "Sean Van Osselaer",
   openGraph: {
     title: "Engineering Leadership & Fractional CTO | SVO | qual.is",
     description:
       "Fractional CTO and engineering leadership specialist. AI-driven development, scalable architecture for growing companies.",
-    url: "https://qual.is",
+    url: "https://www.qual.is",
     siteName: "qual.is",
     images: [HOME_OG_IMAGE_URL],
     locale: "en_US",
@@ -102,21 +102,21 @@ export default function RootLayout({
             "@graph": [
               {
                 "@type": "WebSite",
-                "@id": "https://qual.is/#website",
+                "@id": "https://www.qual.is/#website",
                 name: "Engineering Leadership & Fractional CTO | SVO | qual.is",
-                url: "https://qual.is",
+                url: "https://www.qual.is",
                 description:
                   "Fractional CTO and engineering leadership specialist. AI-driven development, scalable architecture for growing companies.",
-                author: { "@id": "https://qual.is/about" },
+                author: { "@id": "https://www.qual.is/about" },
               },
               {
                 "@type": "Person",
-                "@id": "https://qual.is/about",
+                "@id": "https://www.qual.is/about",
                 name: "Sean Van Osselaer",
                 givenName: "Sean",
                 familyName: "Van Osselaer",
                 alternateName: "SVO",
-                url: "https://qual.is",
+                url: "https://www.qual.is",
                 jobTitle: "Fractional CTO",
                 description:
                   "Fractional CTO specializing in AI-driven development, scalable architecture, and building high-performing engineering teams.",
@@ -127,20 +127,20 @@ export default function RootLayout({
               },
               {
                 "@type": "ProfessionalService",
-                "@id": "https://qual.is/#service",
+                "@id": "https://www.qual.is/#service",
                 name: "Fractional CTO Services",
-                provider: { "@id": "https://qual.is/about" },
+                provider: { "@id": "https://www.qual.is/about" },
                 serviceType: "Fractional CTO Services",
                 description:
                   "Engineering leadership, AI-driven development strategy, software architecture, team scaling, and technical strategy consulting.",
                 areaServed: "Global",
-                url: "https://qual.is/about",
+                url: "https://www.qual.is/about",
               },
               {
                 "@type": "FAQPage",
-                "@id": "https://qual.is/svo#faq",
+                "@id": "https://www.qual.is/svo#faq",
                 name: "Fractional CTO Services FAQ",
-                url: "https://qual.is/about",
+                url: "https://www.qual.is/about",
                 mainEntity: [
                   {
                     "@type": "Question",

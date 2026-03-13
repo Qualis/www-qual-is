@@ -43,7 +43,7 @@ export default async function Post(props: Params) {
             "@type": "BlogPosting",
             headline: post.title,
             datePublished: post.date,
-            dateModified: post.date,
+            dateModified: post.lastModified ?? post.date,
             author: {
               "@type": "Person",
               name: post.author.name,
@@ -52,14 +52,14 @@ export default async function Post(props: Params) {
             image: post.coverImage,
             mainEntityOfPage: {
               "@type": "WebPage",
-              "@id": `https://qual.is/posts/${post.slug}`,
+              "@id": `https://www.qual.is/posts/${post.slug}`,
             },
             publisher: {
               "@type": "Organization",
               name: "Qualis",
               logo: {
                 "@type": "ImageObject",
-                url: "https://qual.is/favicon/android-icon-192x192.png",
+                url: "https://www.qual.is/favicon/android-icon-192x192.png",
               },
             },
           })}
@@ -84,7 +84,7 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
   }
 
   const title = `${post.title} | The quality of quality`;
-  const keywords = `${post.topic}, software development, engineering, ${post.title.toLowerCase()}, tech leadership`;
+  const keywords = `${post.topic}, software development, engineering, tech leadership`;
 
   return {
     title,
@@ -95,7 +95,7 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
       title,
       description: post.excerpt,
       type: "article",
-      url: `https://qual.is/posts/${post.slug}`,
+      url: `https://www.qual.is/posts/${post.slug}`,
       publishedTime: post.date,
       authors: [post.author.name],
       tags: [
@@ -104,13 +104,14 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
         "engineering",
         "tech leadership",
       ],
-      images: [post.ogImage.url],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description: post.excerpt,
-      images: [post.ogImage.url],
+    },
+    alternates: {
+      canonical: `https://www.qual.is/posts/${post.slug}`,
     },
   };
 }
