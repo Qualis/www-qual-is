@@ -67,9 +67,9 @@ Great leadership is often invisible. Often, the ideal is that the person or grou
 
 Effective management provides clarity and accountability without friction. It shows up in:
 
-- **Templates and systems**: Like [epic, story, and bug templates](epic-story-and-bug-templates) that make expectations clear.
+- **Templates and systems**: Like [epic, story, and bug templates](/posts/epic-story-and-bug-templates) that make expectations clear.
 - **Regular feedback loops**: Through [structured 1:1](1-on-1-structure), retrospectives, and planning.
-- **Decision-making processes**: Tools like [Architectural Decision Records](making-better-decisions-with-adr) that improve alignment without slowing you down.
+- **Decision-making processes**: Tools like [Architectural Decision Records](/posts/making-better-decisions-with-adr) that improve alignment without slowing you down.
 
 You manage to **stabilize** the system and make it repeatable.
 
@@ -79,8 +79,8 @@ You manage to **stabilize** the system and make it repeatable.
 
 Leadership, on the other hand, is how you shape the **why** and the **how**, not just the what.
 
-- It's knowing when to [defer and deflect](deflect-and-defer) to protect team focus.
-- It's about [adjusting with humility](agree-and-adjust) when trying to enact change.
+- It's knowing when to [defer and deflect](/posts/deflect-and-defer) to protect team focus.
+- It's about [adjusting with humility](/posts/agree-and-adjust) when trying to enact change.
 - It's cultivating a culture where people learn, improve, and take ownership.
 
 Where management is about _compliance_, leadership is about _commitment_.

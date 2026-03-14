@@ -106,13 +106,13 @@ We're shifting more and more from writing every line of code, to **designing, or
 
 ### More to Maintain
 
-Every line of AI-generated code adds to the software ecosystem needing maintenance. As I discussed in [_Architecture for AI-Driven Development_](architecture-for-ai-driven-development), AI increases software quantity; oversight, security, and maintenance needs scale alongside it.
+Every line of AI-generated code adds to the software ecosystem needing maintenance. As I discussed in [_Architecture for AI-Driven Development_](/posts/architecture-for-ai-driven-development), AI increases software quantity; oversight, security, and maintenance needs scale alongside it.
 
 This doesn't reduce the need for engineers; it increases their responsibility for long-term custodianship.
 
 ## My Journey Integrating Generative AI
 
-In my role as **Head of Engineering**, I have structured a [generative AI engineering approach](generative-ai-for-research-development-and-documentation) that currently uses **Codeium.vim, Claude, and ChatGPT** for code generation, re-factoring, documentation, and architecture analysis, achieving:
+In my role as **Head of Engineering**, I have structured a [generative AI engineering approach](/posts/generative-ai-for-research-development-and-documentation) that currently uses **Codeium.vim, Claude, and ChatGPT** for code generation, re-factoring, documentation, and architecture analysis, achieving:
 
 - **50–75% reduction in lead time**
 - **50–75% increase in deployment frequency**

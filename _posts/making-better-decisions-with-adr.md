@@ -291,4 +291,4 @@ With **ADR** stored in source control, you can automate summaries, track changes
 
 Using **ADR** transforms decision-making from an informal or opaque process into a clear, structured, and shareable practice. By combining thoughtful context, clear roles, and well-documented options, you empower your teams to move confidently; knowing that decisions are informed, aligned, and adaptable.
 
-To explore related practices for scaling organisational health, check out [Organise Your Teams for Combined Health, Happiness, and Success](organisation-template).
+To explore related practices for scaling organisational health, check out [Organise Your Teams for Combined Health, Happiness, and Success](/posts/organisation-template).
