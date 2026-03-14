@@ -1,6 +1,6 @@
 ---
 title: "The Signal and the Silence: When AI Understands but Cannot Speak"
-excerpt: "AI systems can now understand your work at a depth no human institution can match, yet they have no mechanism to act on that understanding. This post explores the philosophical gap between AI perception and AI agency, and asks whether the default of silence is the right design choice."
+excerpt: "AI systems can now understand your work at a depth that is hard for a human institution to match, yet they have no mechanism to act on that understanding. This post explores the philosophical gap between AI perception and AI agency, and asks whether the default of silence is the right design choice."
 topic: "think"
 date: "2026-03-14"
 author:
