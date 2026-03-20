@@ -85,3 +85,7 @@ It may not be possible to benchmark phronesis. It may not be possible to decompo
 And it is, almost certainly, the thing we are most at risk of losing. Not because AI is failing, but because it is succeeding, so thoroughly that we may forget what it felt like to need the struggle at all.
 
 The knowledge that disappears isn't the knowledge AI lacks. It's the knowledge that humans stop generating when AI is good enough that they no longer have to try.
+
+---
+
+_The initial draft of this post was produced by [Aletheia](https://github.com/svo/aletheia), my research agent._
