@@ -1,0 +1,33 @@
+import { describe, it, expect } from "vitest";
+import { render, screen } from "@testing-library/react";
+import NotFound, { metadata } from "./not-found";
+
+describe("NotFound", () => {
+  it("should render the 404 heading", () => {
+    render(<NotFound />);
+    expect(screen.getByText("404")).toBeInTheDocument();
+  });
+
+  it("should render the error message", () => {
+    render(<NotFound />);
+    expect(
+      screen.getByText("This page could not be found.")
+    ).toBeInTheDocument();
+  });
+
+  it("should render a link to the home page", () => {
+    render(<NotFound />);
+    const homeLink = screen.getByRole("link", { name: "Go Home" });
+    expect(homeLink).toHaveAttribute("href", "/");
+  });
+
+  it("should render a link to the blog page", () => {
+    render(<NotFound />);
+    const blogLink = screen.getByRole("link", { name: "Read the Blog" });
+    expect(blogLink).toHaveAttribute("href", "/blog");
+  });
+
+  it("should export metadata with the correct title", () => {
+    expect(metadata.title).toBe("404 - Page Not Found | qual.is");
+  });
+});
