@@ -74,6 +74,12 @@ The product insight is subtle but clear. The most valuable AI systems won't be t
 
 Imagine a tool that, instead of summarizing a literature for you, showed you _where your thinking already intersects with it_, and where the gaps are. Not a map of the territory, but a map of your relationship to the territory. A system that makes the encounter more productive rather than eliminating it.
 
+What would this look like in practice? You give the system your draft, your notes, your half-formed thinking. It extracts the core positions and assumptions from what you've written. Then it searches existing knowledge, not to summarize what it finds, but to classify each work's relationship to _your specific thinking_: where your argument resonates with existing work, where it conflicts, where there are blind spots your thinking hasn't touched, and where your ideas venture into open space the literature hasn't explored. Every output is a pointer, not a summary. The system knows what the papers say but deliberately withholds the conclusions. It tells you _why_ something matters to your thinking and sends you to engage with the source yourself.
+
+The critical design constraint is the philosophical commitment made concrete in code: the system acts as a matchmaker, not a messenger. It increases the productivity of your encounter with knowledge rather than substituting for the encounter itself. The value is in the routing, not the delivery.
+
+There's an even deeper possibility here. If the system tracks which connections users actually find valuable, it begins to aggregate the very signals that agentic AI otherwise destroys. Each user's engagement with the literature produces a thin public contribution: what matters, what connects to what, what remains under-explored. The tool doesn't just preserve the knowledge commons. It strengthens it, using AI to generate the externality rather than eliminate it.
+
 This is the opposite of the current trajectory, which optimizes for frictionless delivery of context-specific answers. That trajectory works beautifully in the short term and may be catastrophic in the long term, not because the answers are wrong, but because the process of arriving at them is where the knowledge lives.
 
 ---
