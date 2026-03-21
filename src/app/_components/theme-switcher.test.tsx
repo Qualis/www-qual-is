@@ -119,6 +119,15 @@ describe("ThemeSwitcher", () => {
     });
   });
 
+  it("should not throw when window.updateDOM is undefined", () => {
+    const originalUpdateDOM = window.updateDOM;
+    window.updateDOM = undefined as unknown as () => void;
+
+    expect(() => render(<ThemeSwitcher />)).not.toThrow();
+
+    window.updateDOM = originalUpdateDOM;
+  });
+
   it("should have aria-label for accessibility", () => {
     render(<ThemeSwitcher />);
     const button = screen.getByRole("button", { name: /toggle theme/i });

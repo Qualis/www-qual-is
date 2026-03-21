@@ -41,6 +41,12 @@ describe("getPostBySlug", () => {
     setTestContainer(createContainer({ postRepository: repository }));
   });
 
+  it("should return null when post does not exist", () => {
+    const result = getPostBySlug("nonexistent-post");
+
+    expect(result).toBeNull();
+  });
+
   it("should parse the post title correctly", () => {
     repository.addPost(
       "test-post",
@@ -50,7 +56,7 @@ describe("getPostBySlug", () => {
 
     const result = getPostBySlug("test-post");
 
-    expect(result.title).toBe("Test Post");
+    expect(result!.title).toBe("Test Post");
   });
 
   it("should parse the post date correctly", () => {
@@ -62,7 +68,7 @@ describe("getPostBySlug", () => {
 
     const result = getPostBySlug("test-post");
 
-    expect(result.date).toEqual(new Date("2025-01-08T00:00:00.000Z"));
+    expect(result!.date).toEqual(new Date("2025-01-08T00:00:00.000Z"));
   });
 
   it("should parse the post topic correctly", () => {
@@ -74,7 +80,7 @@ describe("getPostBySlug", () => {
 
     const result = getPostBySlug("test-post");
 
-    expect(result.topic).toBe("engineer");
+    expect(result!.topic).toBe("engineer");
   });
 
   it("should set the slug from the filename", () => {
@@ -86,7 +92,7 @@ describe("getPostBySlug", () => {
 
     const result = getPostBySlug("test-post");
 
-    expect(result.slug).toBe("test-post");
+    expect(result!.slug).toBe("test-post");
   });
 
   it("should parse the post content correctly", () => {
@@ -98,7 +104,7 @@ describe("getPostBySlug", () => {
 
     const result = getPostBySlug("test-post");
 
-    expect(result.content).toContain("# Test Content");
+    expect(result!.content).toContain("# Test Content");
   });
 
   it("should strip .md extension from slug", () => {
@@ -110,7 +116,7 @@ describe("getPostBySlug", () => {
 
     const result = getPostBySlug("test-post.md");
 
-    expect(result.slug).toBe("test-post");
+    expect(result!.slug).toBe("test-post");
   });
 
   it("should extract topic from coverImage if topic is missing", () => {
@@ -122,7 +128,7 @@ describe("getPostBySlug", () => {
 
     const result = getPostBySlug("test-post");
 
-    expect(result.topic).toBe("think");
+    expect(result!.topic).toBe("think");
   });
 
   it("should auto-generate coverImage when topic is provided but coverImage is missing", () => {
@@ -134,7 +140,7 @@ describe("getPostBySlug", () => {
 
     const result = getPostBySlug("test-post");
 
-    expect(result.coverImage).toBe("/assets/blog/categories/manage.png");
+    expect(result!.coverImage).toBe("/assets/blog/categories/manage.png");
   });
 
   it("should auto-generate ogImage when topic is provided but ogImage is missing", () => {
@@ -146,7 +152,7 @@ describe("getPostBySlug", () => {
 
     const result = getPostBySlug("test-post");
 
-    expect(result.ogImage?.url).toBe("/assets/blog/categories/manage.png");
+    expect(result!.ogImage?.url).toBe("/assets/blog/categories/manage.png");
   });
 
   it("should auto-generate coverImage when topic is provided and ogImage exists", () => {
@@ -162,7 +168,7 @@ describe("getPostBySlug", () => {
 
     const result = getPostBySlug("test-post");
 
-    expect(result.coverImage).toBe("/assets/blog/categories/manage.png");
+    expect(result!.coverImage).toBe("/assets/blog/categories/manage.png");
   });
 
   it("should preserve custom ogImage when provided", () => {
@@ -178,7 +184,7 @@ describe("getPostBySlug", () => {
 
     const result = getPostBySlug("test-post");
 
-    expect(result.ogImage?.url).toBe("/custom-og-image.png");
+    expect(result!.ogImage?.url).toBe("/custom-og-image.png");
   });
 });
 

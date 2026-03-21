@@ -26,15 +26,12 @@ export class FileSystemPostRepository implements IPostRepository {
     }
   }
 
-  getRawPostData(slug: string): RawPostData {
+  getRawPostData(slug: string): RawPostData | null {
     const realSlug = slug.replace(/\.md$/, "");
     const fullPath = join(this.postsDirectory, `${realSlug}.md`);
 
     if (!fs.existsSync(fullPath)) {
-      throw new Error(
-        `Post file not found: "${realSlug}.md" at path "${fullPath}". ` +
-          `Available posts: ${this.getAllSlugs().join(", ")}`
-      );
+      return null;
     }
 
     try {

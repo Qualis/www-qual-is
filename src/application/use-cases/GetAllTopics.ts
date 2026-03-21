@@ -6,10 +6,12 @@ export class GetAllTopicsUseCase {
 
   execute(): string[] {
     const slugs = this.postRepository.getAllSlugs();
-    const posts = slugs.map((slug) => {
-      const rawData = this.postRepository.getRawPostData(slug);
-      return parsePostData(rawData.slug, rawData.frontMatter, rawData.content);
-    });
+    const posts = slugs
+      .map((slug) => this.postRepository.getRawPostData(slug))
+      .filter((rawData) => rawData !== null)
+      .map((rawData) =>
+        parsePostData(rawData.slug, rawData.frontMatter, rawData.content)
+      );
     return filterExistingTopics(posts);
   }
 }

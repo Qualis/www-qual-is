@@ -61,6 +61,7 @@ export function Hero() {
                       className="w-full h-full"
                       viewBox="0 0 320 240"
                       fill="none"
+                      aria-hidden="true"
                     >
                       <g stroke="currentColor" strokeWidth="1.5">
                         <g className="text-primary dark:text-primary-dark opacity-10">

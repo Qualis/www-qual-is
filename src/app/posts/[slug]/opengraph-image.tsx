@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import { notFound } from "next/navigation";
 import { getPostBySlug, getAllPosts } from "@/app/lib/api";
 
 export const size = { width: 1200, height: 630 };
@@ -16,6 +17,10 @@ export default async function OgImage(props: {
 }) {
   const params = await props.params;
   const post = getPostBySlug(params.slug);
+
+  if (!post) {
+    return notFound();
+  }
 
   const topicColor = TOPIC_COLORS[post.topic] ?? "#1E40AF";
 

@@ -70,6 +70,13 @@ describe("ContactModal", () => {
   beforeEach(() => {
     vi.clearAllMocks();
     document.body.style.overflow = "";
+
+    const existingElement = document.getElementById("__next");
+    if (!existingElement) {
+      const div = document.createElement("div");
+      div.id = "__next";
+      document.body.appendChild(div);
+    }
   });
 
   it("should render when isOpen is true", () => {

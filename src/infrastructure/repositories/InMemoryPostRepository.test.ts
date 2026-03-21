@@ -39,13 +39,13 @@ describe("InMemoryPostRepository", () => {
 
     const data = repository.getRawPostData("test-post.md");
 
-    expect(data.slug).toBe("test-post");
+    expect(data!.slug).toBe("test-post");
   });
 
-  it("should throw error when post not found", () => {
-    expect(() => repository.getRawPostData("non-existent")).toThrow(
-      "Post not found: non-existent"
-    );
+  it("should return null when post not found", () => {
+    const result = repository.getRawPostData("non-existent");
+
+    expect(result).toBeNull();
   });
 
   it("should clear all posts", () => {

@@ -23,13 +23,9 @@ export class InMemoryPostRepository implements IPostRepository {
     return Array.from(this.posts.keys()).map((slug) => `${slug}.md`);
   }
 
-  getRawPostData(slug: string): RawPostData {
+  getRawPostData(slug: string): RawPostData | null {
     const realSlug = slug.replace(/\.md$/, "");
-    const data = this.posts.get(realSlug);
-    if (!data) {
-      throw new Error(`Post not found: ${slug}`);
-    }
-    return data;
+    return this.posts.get(realSlug) ?? null;
   }
 
   clear(): void {

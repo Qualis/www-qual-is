@@ -6,5 +6,5 @@ export interface RawPostData {
 
 export interface IPostRepository {
   getAllSlugs(): string[];
-  getRawPostData(slug: string): RawPostData;
+  getRawPostData(slug: string): RawPostData | null;
 }

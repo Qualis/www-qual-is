@@ -212,6 +212,15 @@ describe("Services", () => {
     expect(icons.length).toBeGreaterThanOrEqual(6);
   });
 
+  it("should mark all challenge icons as aria-hidden", () => {
+    const { container } = render(<Services />);
+
+    const icons = container.querySelectorAll("svg");
+    icons.forEach((icon) => {
+      expect(icon).toHaveAttribute("aria-hidden", "true");
+    });
+  });
+
   it("should apply correct section classes", () => {
     const { container } = render(<Services />);
 

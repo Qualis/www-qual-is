@@ -20,9 +20,9 @@ describe("FileSystemPostRepository", () => {
 
     const data = repository.getRawPostData(firstSlug!);
 
-    expect(data.slug).toBe(firstSlug!.replace(/\.md$/, ""));
-    expect(data.frontMatter).toBeDefined();
-    expect(data.content).toBeDefined();
+    expect(data!.slug).toBe(firstSlug!.replace(/\.md$/, ""));
+    expect(data!.frontMatter).toBeDefined();
+    expect(data!.content).toBeDefined();
   });
 
   it("should use custom directory when provided", () => {
@@ -41,7 +41,7 @@ describe("FileSystemPostRepository", () => {
 
     const data = repository.getRawPostData(firstSlug!);
 
-    expect(data.slug).not.toContain(".md");
+    expect(data!.slug).not.toContain(".md");
   });
 
   describe("error handling", () => {
@@ -63,28 +63,12 @@ describe("FileSystemPostRepository", () => {
       expect(() => repository.getAllSlugs()).toThrow(/Original error:/);
     });
 
-    it("should throw error when post file does not exist", () => {
+    it("should return null when post file does not exist", () => {
       const repository = new FileSystemPostRepository();
 
-      expect(() => repository.getRawPostData("nonexistent-post")).toThrow(
-        'Post file not found: "nonexistent-post.md"'
-      );
-    });
+      const result = repository.getRawPostData("nonexistent-post");
 
-    it("should include path in error message when post file not found", () => {
-      const repository = new FileSystemPostRepository();
-
-      expect(() => repository.getRawPostData("nonexistent-post")).toThrow(
-        /at path/
-      );
-    });
-
-    it("should list available posts when post file not found", () => {
-      const repository = new FileSystemPostRepository();
-
-      expect(() => repository.getRawPostData("nonexistent-post")).toThrow(
-        /Available posts:/
-      );
+      expect(result).toBeNull();
     });
 
     it("should throw error when post file has invalid YAML", () => {

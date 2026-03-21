@@ -21,7 +21,7 @@ export class PostService {
     );
   }
 
-  getPostBySlug(slug: string): Post {
+  getPostBySlug(slug: string): Post | null {
     return this.getPostBySlugUseCase.execute(slug);
   }
 

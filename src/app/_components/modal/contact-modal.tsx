@@ -3,8 +3,6 @@
 import React from "react";
 import Modal from "react-modal";
 
-Modal.setAppElement("#__next");
-
 interface ContactModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -16,6 +14,12 @@ export function ContactModal({
   onClose,
   title = "Reach out",
 }: ContactModalProps) {
+  React.useEffect(() => {
+    const appElement = document.querySelector("#__next");
+    if (appElement) {
+      Modal.setAppElement(appElement as HTMLElement);
+    }
+  }, []);
   return (
     <Modal
       isOpen={isOpen}

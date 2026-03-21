@@ -120,6 +120,13 @@ describe("Hero", () => {
     expect(svg).toBeInTheDocument();
   });
 
+  it("should mark SVG visualization as aria-hidden", () => {
+    const { container } = render(<Hero />);
+
+    const svg = container.querySelector("svg");
+    expect(svg).toHaveAttribute("aria-hidden", "true");
+  });
+
   it("should apply correct classes to section", () => {
     const { container } = render(<Hero />);
 

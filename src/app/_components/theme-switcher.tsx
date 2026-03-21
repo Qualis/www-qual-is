@@ -41,8 +41,6 @@ export const NoFOUCScript = (storageKey: string) => {
   media.addEventListener("change", window.updateDOM);
 };
 
-let updateDOM: () => void;
-
 const Switch = () => {
   const [mode, setMode] = useState<ColorSchemePreference>(
     () =>
@@ -52,7 +50,6 @@ const Switch = () => {
   );
 
   useEffect(() => {
-    updateDOM = window.updateDOM;
     addEventListener("storage", (e: StorageEvent): void => {
       e.key === STORAGE_KEY && setMode(e.newValue as ColorSchemePreference);
     });
@@ -60,7 +57,7 @@ const Switch = () => {
 
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, mode);
-    updateDOM();
+    window.updateDOM?.();
   }, [mode]);
 
   const handleModeSwitch = () => {

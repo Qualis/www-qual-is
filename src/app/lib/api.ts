@@ -2,7 +2,7 @@ import { Post } from "@/interfaces/post";
 import { PostNavigation } from "@/interfaces/postNavigation";
 import { container } from "@/infrastructure/di/container";
 
-export function getPostBySlug(slug: string): Post {
+export function getPostBySlug(slug: string): Post | null {
   const postService = container.getPostService();
   return postService.getPostBySlug(slug);
 }

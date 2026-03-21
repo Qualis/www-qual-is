@@ -40,6 +40,12 @@ vi.mock("@/app/lib/api", () => ({
   getAllPosts: vi.fn(() => mockPosts),
 }));
 
+vi.mock("next/navigation", () => ({
+  notFound: vi.fn(() => {
+    throw new Error("NEXT_NOT_FOUND");
+  }),
+}));
+
 vi.mock("next/og", () => ({
   ImageResponse: class MockImageResponse {
     constructor(
@@ -77,6 +83,12 @@ describe("OpenGraph Image", () => {
     });
 
     expect(result).toBeDefined();
+  });
+
+  it("should call notFound when post does not exist", async () => {
+    await expect(
+      OgImage({ params: Promise.resolve({ slug: "nonexistent-post" }) })
+    ).rejects.toThrow("NEXT_NOT_FOUND");
   });
 
   it("should generate static params for all posts", async () => {
