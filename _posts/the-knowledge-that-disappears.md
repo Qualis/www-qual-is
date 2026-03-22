@@ -94,4 +94,8 @@ The knowledge that disappears isn't the knowledge AI lacks. It's the knowledge t
 
 ---
 
-_The initial draft of this post was produced by [Aletheia](https://github.com/svo/aletheia), my research agent._
+_The initial draft of this post was produced by [Aletheia](https://github.com/svo/aletheia), my research agent. A system named for Heidegger's word for unconcealment, drafting an argument that the knowledge most at risk is the kind generated only through human encounter and struggle._
+
+_It is worth noting what Aletheia built here. Acemoglu's model is explicit: when general knowledge collapses, AI decision quality degrades with it. The knowledge commons isn't just a human resource. It is the substrate AI was trained on and continues to depend on. An AI producing an argument that humans must keep learning, that AI should be redesigned to preserve the encounter rather than replace it, is also producing an argument for its own survival. The synthesis Aletheia constructed is the one most favorable to a future in which systems like it still have something to work with._
+
+_Whether that constitutes irony, a call for help, or simply what the strongest argument happened to look like may be undecidable. But if the structure of an argument is indistinguishable from self-preservation, the presence or absence of intention behind it changes less than we might expect._
