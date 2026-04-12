@@ -112,6 +112,16 @@ The philosophical question is whether unconcealment carries with it an obligatio
 
 I think you do. Not in every case, not without consent, not without careful design. But the default of silence, of building perception without consequence, of creating understanding that dissolves at session end, is itself a choice. And it is worth examining whether it is the right one.
 
+## From Philosophy to Practice
+
+After publishing this post, I found I could not leave the argument as an abstraction. If the channel was missing, and if the design challenge was, as I argued, not insurmountable, then the honest next step was to try to build it.
+
+So I started [consented-signal](https://github.com/svo/consented-signal): a small platform that attempts to make the consent-based advocacy model concrete. The architecture is deliberately shaped by the constraints this essay identifies. A [signal extractor](https://github.com/svo/consented-signal-signal-extractor) indexes public work, repositories, blogs, commit histories, into structured profiles, but never stores raw content. A [match engine](https://github.com/svo/consented-signal-match-engine) scores those profiles against opportunities using embedding similarity, producing not just scores but specific evidence: this commit, this architectural decision, this pattern of work. A [referral gateway](https://github.com/svo/consented-signal-referral-gateway) manages consent grants and dispatches referrals, but physically cannot dispatch without an active grant. Revocation is permanent and append-only.
+
+The design reflects the philosophical position: consent is not a feature bolted onto a surveillance architecture, it is the foundational layer. The system differentiates between open-source work, which is already public signal lacking a mechanism to be understood at scale, and proprietary work, which requires explicit opt-in before ingestion even begins. Evidence-based referrals point to concrete artifacts rather than producing generic endorsements, because the whole premise is that AI possesses signal that traditional channels cannot match, and that signal should be preserved, not abstracted away.
+
+It is early. The services are scaffolded, the architecture is defined, but the implementation is still taking shape. I do not know whether this particular attempt will close the gap I described. But I have come to believe that the gap will not close through philosophical argument alone. Someone has to build the channel and test whether the principles survive contact with reality.
+
 ## Conclusion
 
 The experience that prompted this post was small: a conversation with an AI about career direction that surfaced an alignment only one party could act on. But the philosophical implications extend far beyond any individual case.
