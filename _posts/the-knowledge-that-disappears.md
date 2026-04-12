@@ -84,6 +84,16 @@ This is the opposite of the current trajectory, which optimizes for frictionless
 
 ---
 
+After writing the above, I decided to test the argument against reality. If routing thinkers through knowledge rather than around it was a genuine design principle and not just a rhetorical move, it should survive implementation. So I started building [knowledge-matchmaker](https://github.com/svo/knowledge-matchmaker).
+
+The architecture is four services, each reflecting a constraint from the argument. A [thinking extractor](https://github.com/svo/knowledge-matchmaker-thinking-extractor) parses your draft into structured positions: the claims you are making, the assumptions you are relying on, the framings you have chosen. A [corpus indexer](https://github.com/svo/knowledge-matchmaker-corpus-indexer) ingests documents into a vector store but stores full texts and references, never summaries. A [relationship engine](https://github.com/svo/knowledge-matchmaker-relationship-engine) takes your extracted thinking, queries the corpus, and classifies what it finds into four relationship types: resonance, conflict, blind spot, and open space. Then it returns pointers. Not summaries. Not conclusions. Pointers: a title, a relationship type, a one-sentence reason why it matters to your specific thinking, and a link to the source.
+
+The hardest design constraint was also the most important: the system knows what the papers say but is architecturally prevented from telling you. The pointer model has no content fields. This is not a convention; it is an invariant enforced in the domain layer and verified through testing. The philosophical commitment, matchmaker not messenger, had to become a structural guarantee, because any system that can summarise will eventually be asked to, and once it does, it replaces the encounter it was designed to preserve.
+
+It is early and incomplete. But even the scaffolding process was instructive. The moment you try to encode "route through knowledge, not around it" as a system constraint, you discover how many small decisions push toward the opposite. Every convenience, every shortcut, every "just show the abstract" optimises for delivery at the expense of encounter. The design discipline required is not technical. It is philosophical, which is exactly what the argument above would predict.
+
+---
+
 The Greeks had a word for this kind of knowledge, the kind that can only be acquired through practice and struggle, that cannot be transferred as information. They called it _phronesis_: practical wisdom. Aristotle distinguished it sharply from _episteme_ (theoretical knowledge) and _techne_ (technical skill). Phronesis is the capacity to perceive what a situation demands, not by applying rules, but by having been shaped through experience into the kind of person who can see what matters.
 
 It may not be possible to benchmark phronesis. It may not be possible to decompose it into ten cognitive abilities and score each one. It is, almost by definition, the thing that disappears when you try to pull it out of practice and inspect it.
